@@ -15,6 +15,7 @@ namespace WDE.Common.MPQ
         Wrath_3_3_5a = 335,
         Cataclysm_4_3_4 = 434,
         Mop_5_4_8 = 548,
-        Legion_7_3_5 = 735
+        Legion_7_3_5 = 735,
+        Retail_8_3_7 = 837
     }
 }

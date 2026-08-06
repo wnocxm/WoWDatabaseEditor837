@@ -37,6 +37,12 @@ namespace WDE.MPQ.Services
                 Version = GameFilesVersion.Legion_7_3_5;
                 return new CascArchive(settings.Path);
             }
+
+            if (Directory.Exists(Path.Join(settings.Path, "Data", "config")))
+            {
+                Version = GameFilesVersion.Retail_8_3_7;
+                return new CascArchive(settings.Path);
+            }
             
             var files = Directory.EnumerateFiles(Path.Join(settings.Path, "Data"), "*.mpq", new EnumerationOptions { RecurseSubdirectories = true, MatchType = MatchType.Win32, AttributesToSkip = 0, IgnoreInaccessible = true, MatchCasing = MatchCasing.CaseInsensitive})
                 .Where(x => !x.Contains("-update-"))

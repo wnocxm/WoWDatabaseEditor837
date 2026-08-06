@@ -6,7 +6,8 @@ namespace WDE.MPQ.ViewModels
         Wrath,
         Mop,
         Cata,
-        Legion
+        Legion,
+        Retail
     }
     
     public interface IWoWFilesVerifier

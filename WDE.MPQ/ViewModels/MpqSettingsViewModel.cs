@@ -84,7 +84,7 @@ namespace WDE.MPQ.ViewModels
         public string Name => "Client data files";
         public ImageUri Icon { get; } = new ImageUri("Icons/document_file_big.png");
         public string ShortDescription =>
-            "The editor can open 3.3.5, 4.3.4, 5.4.8 and 7.3.5 files for extended features.";
+            "The editor can open 3.3.5, 4.3.4, 5.4.8, 7.3.5 and retail 8.3.7 files for extended features.";
         public bool IsModified { get; set; }
         public bool IsRestartRequired => true;
         public ConfigurableGroup Group => ConfigurableGroup.Basic;

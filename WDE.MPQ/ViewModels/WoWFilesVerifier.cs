@@ -34,6 +34,9 @@ namespace WDE.MPQ.ViewModels
 
             if (File.Exists(Path.Join(wowFolder, "Data", "config", "3b", "05", "3b0517b51edbe0b96f6ac5ea7eaaed38")))
                 return WoWFilesType.Legion;
+
+            if (IsRetailCasc(wowFolder))
+                return WoWFilesType.Retail;
             
             if (ContainsAllFiles(wowFolder, wrathMpqs))
                 return WoWFilesType.Wrath;
@@ -45,6 +48,11 @@ namespace WDE.MPQ.ViewModels
                 return WoWFilesType.Cata;
 
             return WoWFilesType.Invalid;
+        }
+
+        private bool IsRetailCasc(string wowFolder)
+        {
+            return Directory.Exists(Path.Join(wowFolder, "Data", "config"));
         }
 
         private bool ContainsAllFiles(string wowFolder, string[] files)

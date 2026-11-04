@@ -48,6 +48,9 @@ namespace WDE.MapRenderer.Managers
 
         private IEnumerable<object> OpenDbc(string name)
         {
+            if (gameFiles.WoWVersion == GameFilesVersion.Retail_8_3_7)
+                throw new NotSupportedException("The 3D view does not support retail (8.x+) client files yet. Clear the 'Client data files' path in the settings or pick a supported client (3.3.5, 4.3.4, 5.4.8, 7.3.5).");
+
             var bytes = gameFiles.ReadFileSync($"DBFilesClient\\{name}.dbc");
             if (bytes == null)
                 bytes = gameFiles.ReadFileSync($"DBFilesClient\\{name}.db2");

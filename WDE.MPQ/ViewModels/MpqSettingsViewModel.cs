@@ -38,18 +38,31 @@ namespace WDE.MPQ.ViewModels
                 var folder = await windowManager.ShowFolderPickerDialog(woWPath ?? "");
                 if (folder != null)
                 {
-                    if (verifier.VerifyFolder(folder) == WoWFilesType.Invalid)
+                    var type = verifier.VerifyFolder(folder);
+                    if (type == WoWFilesType.Invalid)
                     {
                         await messageBoxService.ShowDialog(new MessageBoxFactory<bool>()
                             .SetTitle("WoW Client Data")
                             .SetMainInstruction("Invalid WoW folder")
                             .SetContent(
-                                "This doesn't look like a correct WoW folder.\n\nSelect main game folder (wow.exe file must be there).\n\nOther WoW versions are not supported now.")
+                                "This doesn't look like a correct WoW folder.\n\nSelect main game folder (the folder with wow.exe and the Data folder). For 8.x clients you can select either the World of Warcraft folder or its _retail_ folder.\n\nOther WoW versions are not supported now.")
                             .WithOkButton(true)
                             .Build());
                     }
                     else
-                        WoWPath = folder;
+                    {
+                        WoWPath = verifier.ResolveGameFolder(folder) ?? folder;
+                        if (type == WoWFilesType.Retail)
+                        {
+                            await messageBoxService.ShowDialog(new MessageBoxFactory<bool>()
+                                .SetTitle("WoW Client Data")
+                                .SetMainInstruction("Retail (8.x+) client files")
+                                .SetContent(
+                                    "The folder was recognized as a retail (8.x or newer) client.\n\nThe 3D map and model preview do not support these client files yet. Database editing does not need this setting; for spell, area, faction and other names configure the DBC settings with the extracted dbc folder of your server instead.")
+                                .WithOkButton(true)
+                                .Build());
+                        }
+                    }
                 }
             });
         }

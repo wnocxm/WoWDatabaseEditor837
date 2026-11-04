@@ -1,7 +1,7 @@
 {
   "id": "npc_vendor",
   "compatibility": [
-    "TrinityWrath"
+    "TrinityWrath", "TrinityBfa"
   ],
   "name": "Npc Vendor",
   "single_solution_name": "Npc {name} Vendor",

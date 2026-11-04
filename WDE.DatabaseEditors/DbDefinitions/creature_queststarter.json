@@ -1,7 +1,7 @@
 {
   "id": "creature_queststarter",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata"
+    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata", "TrinityBfa"
   ],
   "name": "Creature Quest Starter",
   "single_solution_name": "Creature {name} quest starter",

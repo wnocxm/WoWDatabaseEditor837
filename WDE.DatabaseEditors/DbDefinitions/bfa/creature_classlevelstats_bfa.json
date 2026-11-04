@@ -1,0 +1,63 @@
+{
+  "id": "creature_classlevelstats",
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature Classlevelstats",
+  "single_solution_name": "Creature Classlevelstats",
+  "multi_solution_name": "Creature Classlevelstats",
+  "description": "This table contains the base values for creature health, mana, armor, attack power, ranged attack power, damage, and experience.",
+  "table_name": "creature_classlevelstats",
+  "table_index_name": "level",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Advanced",
+  "picker": "",
+  "primary_key": [
+    "level",
+    "class"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Level",
+          "db_column_name": "level",
+          "value_type": "uint",
+          "preferred_width": 55.0
+        },
+        {
+          "name": "Class",
+          "db_column_name": "class",
+          "value_type": "UnitClassParameter",
+          "preferred_width": 115.0
+        },
+        {
+          "name": "Base mana",
+          "db_column_name": "basemana",
+          "value_type": "uint",
+          "preferred_width": 70.0
+        },
+        {
+          "name": "Attack power",
+          "db_column_name": "attackpower",
+          "value_type": "uint",
+          "preferred_width": 90.0
+        },
+        {
+          "name": "Ranged attack power",
+          "db_column_name": "rangedattackpower",
+          "value_type": "uint",
+          "preferred_width": 90.0
+        },
+        {
+          "name": "Comment",
+          "db_column_name": "comment",
+          "value_type": "string",
+          "can_be_null": true
+        }
+      ]
+    }
+  ]
+}

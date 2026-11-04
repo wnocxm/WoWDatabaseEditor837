@@ -271,7 +271,7 @@
         "description": "{source}: Summon creature {pram1} at {targetid:choose(8):{targetcoords}|{target}'s position, moved by offset {targetcoords}} as summon type {pram2}{pram2value:choose(8):| with duration {pram3} seconds}{pram4value:choose(0):| and attack action invoker}",
         "tags": [
             "Azeroth",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit,Position",
         "implicit_source": "SMART_TARGET_SELF",
@@ -444,7 +444,7 @@
         "description": "{source}: {pram2value:choose(0):Remove|Add} phasegroup {pram1}",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit",
         "target_is_source": true
@@ -485,7 +485,7 @@
         "tags": [
             "Azeroth",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -537,7 +537,7 @@
         "tags": [
             "Azeroth",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -648,7 +648,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -694,7 +694,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_ACTION_INVOKER"
     },
@@ -949,7 +949,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -972,7 +972,7 @@
         "tags": [
             "TrinityCata",
             "TrinityWrath",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -1084,7 +1084,7 @@
         "description": "{source}: {pram2value:choose(0):Remove phase id {pram1}|Add phase id to {pram1}}",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit",
         "target_is_source": true
@@ -1283,7 +1283,7 @@
         "tags": [
             "TrinityCata",
             "TrinityMaster",
-            "Azeroth"
+            "Azeroth", "TrinityBfa"
         ],
         "do_not_propose_target": true,
         "target_types": "Player",
@@ -1458,7 +1458,7 @@
         "tags": [
             "TrinityCata",
             "TrinityMaster",
-            "Azeroth"
+            "Azeroth", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF"
     },
@@ -1480,7 +1480,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -1521,7 +1521,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -1565,7 +1565,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -1637,7 +1637,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit,Position",
         "implicit_source": "SMART_TARGET_SELF",
@@ -1782,7 +1782,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "GameObject",
         "target_is_source": true
@@ -1887,7 +1887,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Unit",
         "target_is_source": true
@@ -1918,7 +1918,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_NONE"
     },
@@ -1930,7 +1930,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_NONE"
     },
@@ -2291,7 +2291,7 @@
         "tags": [
             "TrinityCata",
             "TrinityMaster",
-            "Azeroth"
+            "Azeroth", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit",
         "target_is_source": true
@@ -2310,7 +2310,7 @@
         "tags": [
             "Azeroth",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit",
         "target_is_source": true
@@ -2346,7 +2346,7 @@
         "tags": [
             "Azeroth",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "GameObject,Unit",
         "target_is_source": true
@@ -2386,7 +2386,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "Azeroth"
+            "Azeroth", "TrinityBfa"
         ],
         "target_types": "Creature",
         "uses_target_position": true,
@@ -2707,7 +2707,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Creature",
         "uses_target_position": true,
@@ -2831,7 +2831,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "implicit_source": "SMART_TARGET_SELF",
         "usable_with_script_types": "Creature,TimedActionList"
@@ -2850,7 +2850,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Unit",
         "target_is_source": true
@@ -2869,7 +2869,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -2888,7 +2888,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -2955,7 +2955,7 @@
         "tags": [
             "Azeroth",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Unit",
         "target_is_source": true
@@ -2976,7 +2976,7 @@
         ],
         "description": "{source}: Stop movement",
         "tags": [
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "Unit",
         "target_is_source": true
@@ -3030,7 +3030,7 @@
         "description": "{source}: Plays Anim with ID {pram1}",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -3048,7 +3048,7 @@
         "description": "{source}: Starts playing scene with Id: {pram1}",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Player",
         "target_is_source": true
@@ -3066,7 +3066,7 @@
         "description": "{source}: Stops playing scene with Id: {pram1}",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Player",
         "target_is_source": true
@@ -3210,7 +3210,7 @@
         "description": "{source}: Plays Cinematic with Entry: {pram1}",
         "tags": [
             "TrinityWrath",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "target_types": "Player",
         "target_is_source": true
@@ -3248,7 +3248,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Creature",
         "target_is_source": true
@@ -3274,7 +3274,7 @@
         "description": "{source}: Plays SpellVisual with SpellVisualKitId: {pram1}, KitType: {pram2} for {pram3} ms",
         "tags": [
             "TrinityCata",
-            "TrinityMaster"
+            "TrinityMaster", "TrinityBfa"
         ],
         "target_types": "Unit",
         "target_is_source": true

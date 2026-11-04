@@ -1,7 +1,7 @@
 {
   "id": "creature_questender",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata"
+    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata", "TrinityBfa"
   ],
   "name": "Creature Quest Ender",
   "single_solution_name": "Creature {name} quest ender",

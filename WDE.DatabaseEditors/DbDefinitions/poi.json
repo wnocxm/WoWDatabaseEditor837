@@ -2,7 +2,7 @@
   "id": "points_of_interest",
   "compatibility": [
     "TrinityWrath",
-    "TrinityCata"
+    "TrinityCata", "TrinityBfa"
   ],
   "name": "Points Of Interest",
   "single_solution_name": "Points Of Interest",

@@ -1,7 +1,7 @@
 {
     "id": "spell_linked_spell",
     "compatibility": [
-      "TrinityWrath", "TrinityCata", "TrinityMaster"
+      "TrinityWrath", "TrinityCata", "TrinityMaster", "TrinityBfa"
     ],
     "name": "Spell Linked Spell",
     "single_solution_name": "{name} linked spell editor",

@@ -435,7 +435,7 @@
         "tags": [
             "TrinityWrath",
             "TrinityMaster",
-            "TrinityCata"
+            "TrinityCata", "TrinityBfa"
         ],
         "usable_with_script_types": "Creature,TimedActionList"
     },

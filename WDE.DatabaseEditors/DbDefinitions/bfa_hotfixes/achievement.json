@@ -1,0 +1,116 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Achievement (hotfix)",
+  "single_solution_name": "Achievement (hotfix)",
+  "multi_solution_name": "Achievement (hotfix)",
+  "description": "8.3.7 hotfixes database table `achievement`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "achievement",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Title",
+          "db_column_name": "Title",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Reward",
+          "db_column_name": "Reward",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "InstanceID",
+          "db_column_name": "InstanceID",
+          "value_type": "int"
+        },
+        {
+          "name": "Faction",
+          "db_column_name": "Faction",
+          "value_type": "int"
+        },
+        {
+          "name": "Supercedes",
+          "db_column_name": "Supercedes",
+          "value_type": "int"
+        },
+        {
+          "name": "Category",
+          "db_column_name": "Category",
+          "value_type": "int"
+        },
+        {
+          "name": "MinimumCriteria",
+          "db_column_name": "MinimumCriteria",
+          "value_type": "int"
+        },
+        {
+          "name": "Points",
+          "db_column_name": "Points",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "UiOrder",
+          "db_column_name": "UiOrder",
+          "value_type": "int"
+        },
+        {
+          "name": "IconFileID",
+          "db_column_name": "IconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "RewardItemID",
+          "db_column_name": "RewardItemID",
+          "value_type": "int"
+        },
+        {
+          "name": "CriteriaTree",
+          "db_column_name": "CriteriaTree",
+          "value_type": "uint"
+        },
+        {
+          "name": "SharesCriteria",
+          "db_column_name": "SharesCriteria",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

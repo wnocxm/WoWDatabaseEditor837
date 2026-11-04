@@ -1,0 +1,78 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item (hotfix)",
+  "single_solution_name": "Item (hotfix)",
+  "multi_solution_name": "Item (hotfix)",
+  "description": "8.3.7 hotfixes database table `item`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassID",
+          "db_column_name": "ClassID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SubclassID",
+          "db_column_name": "SubclassID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Material",
+          "db_column_name": "Material",
+          "value_type": "uint"
+        },
+        {
+          "name": "InventoryType",
+          "db_column_name": "InventoryType",
+          "value_type": "int"
+        },
+        {
+          "name": "SheatheType",
+          "db_column_name": "SheatheType",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundOverrideSubclassID",
+          "db_column_name": "SoundOverrideSubclassID",
+          "value_type": "int"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemGroupSoundsID",
+          "db_column_name": "ItemGroupSoundsID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

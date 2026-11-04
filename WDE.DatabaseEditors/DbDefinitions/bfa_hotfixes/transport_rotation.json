@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Transport Rotation (hotfix)",
+  "single_solution_name": "Transport Rotation (hotfix)",
+  "multi_solution_name": "Transport Rotation (hotfix)",
+  "description": "8.3.7 hotfixes database table `transport_rotation`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "transport_rotation",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Rot1",
+          "db_column_name": "Rot1",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot2",
+          "db_column_name": "Rot2",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot3",
+          "db_column_name": "Rot3",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot4",
+          "db_column_name": "Rot4",
+          "value_type": "float"
+        },
+        {
+          "name": "TimeIndex",
+          "db_column_name": "TimeIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "GameObjectsID",
+          "db_column_name": "GameObjectsID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

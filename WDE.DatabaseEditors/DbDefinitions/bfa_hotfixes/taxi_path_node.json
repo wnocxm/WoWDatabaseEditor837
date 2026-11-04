@@ -1,0 +1,88 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Taxi Path Node (hotfix)",
+  "single_solution_name": "Taxi Path Node (hotfix)",
+  "multi_solution_name": "Taxi Path Node (hotfix)",
+  "description": "8.3.7 hotfixes database table `taxi_path_node`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "taxi_path_node",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "LocX",
+          "db_column_name": "LocX",
+          "value_type": "float"
+        },
+        {
+          "name": "LocY",
+          "db_column_name": "LocY",
+          "value_type": "float"
+        },
+        {
+          "name": "LocZ",
+          "db_column_name": "LocZ",
+          "value_type": "float"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PathID",
+          "db_column_name": "PathID",
+          "value_type": "uint"
+        },
+        {
+          "name": "NodeIndex",
+          "db_column_name": "NodeIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "ContinentID",
+          "db_column_name": "ContinentID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "Delay",
+          "db_column_name": "Delay",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArrivalEventID",
+          "db_column_name": "ArrivalEventID",
+          "value_type": "int"
+        },
+        {
+          "name": "DepartureEventID",
+          "db_column_name": "DepartureEventID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

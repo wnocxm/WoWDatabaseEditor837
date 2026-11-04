@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Effect (hotfix)",
+  "single_solution_name": "Item Effect (hotfix)",
+  "multi_solution_name": "Item Effect (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_effect`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_effect",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "LegacySlotIndex",
+          "db_column_name": "LegacySlotIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "TriggerType",
+          "db_column_name": "TriggerType",
+          "value_type": "int"
+        },
+        {
+          "name": "Charges",
+          "db_column_name": "Charges",
+          "value_type": "int"
+        },
+        {
+          "name": "CoolDownMSec",
+          "db_column_name": "CoolDownMSec",
+          "value_type": "int"
+        },
+        {
+          "name": "CategoryCoolDownMSec",
+          "db_column_name": "CategoryCoolDownMSec",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellCategoryID",
+          "db_column_name": "SpellCategoryID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "ChrSpecializationID",
+          "db_column_name": "ChrSpecializationID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentItemID",
+          "db_column_name": "ParentItemID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

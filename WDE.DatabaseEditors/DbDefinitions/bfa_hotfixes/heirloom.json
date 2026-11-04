@@ -1,0 +1,114 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Heirloom (hotfix)",
+  "single_solution_name": "Heirloom (hotfix)",
+  "multi_solution_name": "Heirloom (hotfix)",
+  "description": "8.3.7 hotfixes database table `heirloom`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "heirloom",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "SourceText",
+          "db_column_name": "SourceText",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID",
+          "db_column_name": "ItemID",
+          "value_type": "int"
+        },
+        {
+          "name": "LegacyUpgradedItemID",
+          "db_column_name": "LegacyUpgradedItemID",
+          "value_type": "int"
+        },
+        {
+          "name": "StaticUpgradedItemID",
+          "db_column_name": "StaticUpgradedItemID",
+          "value_type": "int"
+        },
+        {
+          "name": "SourceTypeEnum",
+          "db_column_name": "SourceTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "LegacyItemID",
+          "db_column_name": "LegacyItemID",
+          "value_type": "int"
+        },
+        {
+          "name": "UpgradeItemID1",
+          "db_column_name": "UpgradeItemID1",
+          "value_type": "int"
+        },
+        {
+          "name": "UpgradeItemID2",
+          "db_column_name": "UpgradeItemID2",
+          "value_type": "int"
+        },
+        {
+          "name": "UpgradeItemID3",
+          "db_column_name": "UpgradeItemID3",
+          "value_type": "int"
+        },
+        {
+          "name": "UpgradeItemID4",
+          "db_column_name": "UpgradeItemID4",
+          "value_type": "int"
+        },
+        {
+          "name": "UpgradeItemBonusListID1",
+          "db_column_name": "UpgradeItemBonusListID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeItemBonusListID2",
+          "db_column_name": "UpgradeItemBonusListID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeItemBonusListID3",
+          "db_column_name": "UpgradeItemBonusListID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeItemBonusListID4",
+          "db_column_name": "UpgradeItemBonusListID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

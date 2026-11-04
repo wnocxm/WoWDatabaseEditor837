@@ -1,0 +1,114 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Artifact Appearance (hotfix)",
+  "single_solution_name": "Artifact Appearance (hotfix)",
+  "multi_solution_name": "Artifact Appearance (hotfix)",
+  "description": "8.3.7 hotfixes database table `artifact_appearance`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "artifact_appearance",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArtifactAppearanceSetID",
+          "db_column_name": "ArtifactAppearanceSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayIndex",
+          "db_column_name": "DisplayIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "UnlockPlayerConditionID",
+          "db_column_name": "UnlockPlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemAppearanceModifierID",
+          "db_column_name": "ItemAppearanceModifierID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiSwatchColor",
+          "db_column_name": "UiSwatchColor",
+          "value_type": "int"
+        },
+        {
+          "name": "UiModelSaturation",
+          "db_column_name": "UiModelSaturation",
+          "value_type": "float"
+        },
+        {
+          "name": "UiModelOpacity",
+          "db_column_name": "UiModelOpacity",
+          "value_type": "float"
+        },
+        {
+          "name": "OverrideShapeshiftFormID",
+          "db_column_name": "OverrideShapeshiftFormID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OverrideShapeshiftDisplayID",
+          "db_column_name": "OverrideShapeshiftDisplayID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiItemAppearanceID",
+          "db_column_name": "UiItemAppearanceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiAltItemAppearanceID",
+          "db_column_name": "UiAltItemAppearanceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiCameraID",
+          "db_column_name": "UiCameraID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UsablePlayerConditionID",
+          "db_column_name": "UsablePlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Effect (hotfix)",
+  "single_solution_name": "Spell Effect (hotfix)",
+  "multi_solution_name": "Spell Effect (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_effect`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_effect",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectAura",
+          "db_column_name": "EffectAura",
+          "value_type": "int"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectIndex",
+          "db_column_name": "EffectIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "Effect",
+          "db_column_name": "Effect",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectAmplitude",
+          "db_column_name": "EffectAmplitude",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectAttributes",
+          "db_column_name": "EffectAttributes",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectAuraPeriod",
+          "db_column_name": "EffectAuraPeriod",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectBonusCoefficient",
+          "db_column_name": "EffectBonusCoefficient",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectChainAmplitude",
+          "db_column_name": "EffectChainAmplitude",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectChainTargets",
+          "db_column_name": "EffectChainTargets",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectItemType",
+          "db_column_name": "EffectItemType",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectMechanic",
+          "db_column_name": "EffectMechanic",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectPointsPerResource",
+          "db_column_name": "EffectPointsPerResource",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectPosFacing",
+          "db_column_name": "EffectPosFacing",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectRealPointsPerLevel",
+          "db_column_name": "EffectRealPointsPerLevel",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectTriggerSpell",
+          "db_column_name": "EffectTriggerSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "BonusCoefficientFromAP",
+          "db_column_name": "BonusCoefficientFromAP",
+          "value_type": "float"
+        },
+        {
+          "name": "PvpMultiplier",
+          "db_column_name": "PvpMultiplier",
+          "value_type": "float"
+        },
+        {
+          "name": "Coefficient",
+          "db_column_name": "Coefficient",
+          "value_type": "float"
+        },
+        {
+          "name": "Variance",
+          "db_column_name": "Variance",
+          "value_type": "float"
+        },
+        {
+          "name": "ResourceCoefficient",
+          "db_column_name": "ResourceCoefficient",
+          "value_type": "float"
+        },
+        {
+          "name": "GroupSizeBasePointsCoefficient",
+          "db_column_name": "GroupSizeBasePointsCoefficient",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectBasePoints",
+          "db_column_name": "EffectBasePoints",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectMiscValue1",
+          "db_column_name": "EffectMiscValue1",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectMiscValue2",
+          "db_column_name": "EffectMiscValue2",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectRadiusIndex1",
+          "db_column_name": "EffectRadiusIndex1",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectRadiusIndex2",
+          "db_column_name": "EffectRadiusIndex2",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectSpellClassMask1",
+          "db_column_name": "EffectSpellClassMask1",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectSpellClassMask2",
+          "db_column_name": "EffectSpellClassMask2",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectSpellClassMask3",
+          "db_column_name": "EffectSpellClassMask3",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectSpellClassMask4",
+          "db_column_name": "EffectSpellClassMask4",
+          "value_type": "int"
+        },
+        {
+          "name": "ImplicitTarget1",
+          "db_column_name": "ImplicitTarget1",
+          "value_type": "int"
+        },
+        {
+          "name": "ImplicitTarget2",
+          "db_column_name": "ImplicitTarget2",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

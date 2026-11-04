@@ -1,0 +1,108 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Light (hotfix)",
+  "single_solution_name": "Light (hotfix)",
+  "multi_solution_name": "Light (hotfix)",
+  "description": "8.3.7 hotfixes database table `light`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "light",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GameCoordsX",
+          "db_column_name": "GameCoordsX",
+          "value_type": "float"
+        },
+        {
+          "name": "GameCoordsY",
+          "db_column_name": "GameCoordsY",
+          "value_type": "float"
+        },
+        {
+          "name": "GameCoordsZ",
+          "db_column_name": "GameCoordsZ",
+          "value_type": "float"
+        },
+        {
+          "name": "GameFalloffStart",
+          "db_column_name": "GameFalloffStart",
+          "value_type": "float"
+        },
+        {
+          "name": "GameFalloffEnd",
+          "db_column_name": "GameFalloffEnd",
+          "value_type": "float"
+        },
+        {
+          "name": "ContinentID",
+          "db_column_name": "ContinentID",
+          "value_type": "int"
+        },
+        {
+          "name": "LightParamsID1",
+          "db_column_name": "LightParamsID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID2",
+          "db_column_name": "LightParamsID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID3",
+          "db_column_name": "LightParamsID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID4",
+          "db_column_name": "LightParamsID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID5",
+          "db_column_name": "LightParamsID5",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID6",
+          "db_column_name": "LightParamsID6",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID7",
+          "db_column_name": "LightParamsID7",
+          "value_type": "uint"
+        },
+        {
+          "name": "LightParamsID8",
+          "db_column_name": "LightParamsID8",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

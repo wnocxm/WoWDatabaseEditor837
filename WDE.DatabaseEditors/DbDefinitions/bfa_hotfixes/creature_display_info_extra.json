@@ -1,0 +1,108 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature Display Info Extra (hotfix)",
+  "single_solution_name": "Creature Display Info Extra (hotfix)",
+  "multi_solution_name": "Creature Display Info Extra (hotfix)",
+  "description": "8.3.7 hotfixes database table `creature_display_info_extra`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "creature_display_info_extra",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayRaceID",
+          "db_column_name": "DisplayRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "DisplaySexID",
+          "db_column_name": "DisplaySexID",
+          "value_type": "int"
+        },
+        {
+          "name": "DisplayClassID",
+          "db_column_name": "DisplayClassID",
+          "value_type": "int"
+        },
+        {
+          "name": "SkinID",
+          "db_column_name": "SkinID",
+          "value_type": "int"
+        },
+        {
+          "name": "FaceID",
+          "db_column_name": "FaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "HairStyleID",
+          "db_column_name": "HairStyleID",
+          "value_type": "int"
+        },
+        {
+          "name": "HairColorID",
+          "db_column_name": "HairColorID",
+          "value_type": "int"
+        },
+        {
+          "name": "FacialHairID",
+          "db_column_name": "FacialHairID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "BakeMaterialResourcesID",
+          "db_column_name": "BakeMaterialResourcesID",
+          "value_type": "int"
+        },
+        {
+          "name": "HDBakeMaterialResourcesID",
+          "db_column_name": "HDBakeMaterialResourcesID",
+          "value_type": "int"
+        },
+        {
+          "name": "CustomDisplayOption1",
+          "db_column_name": "CustomDisplayOption1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CustomDisplayOption2",
+          "db_column_name": "CustomDisplayOption2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CustomDisplayOption3",
+          "db_column_name": "CustomDisplayOption3",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

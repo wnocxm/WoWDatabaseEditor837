@@ -1,0 +1,98 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Override Spell Data (hotfix)",
+  "single_solution_name": "Override Spell Data (hotfix)",
+  "multi_solution_name": "Override Spell Data (hotfix)",
+  "description": "8.3.7 hotfixes database table `override_spell_data`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "override_spell_data",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Spells1",
+          "db_column_name": "Spells1",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells2",
+          "db_column_name": "Spells2",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells3",
+          "db_column_name": "Spells3",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells4",
+          "db_column_name": "Spells4",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells5",
+          "db_column_name": "Spells5",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells6",
+          "db_column_name": "Spells6",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells7",
+          "db_column_name": "Spells7",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells8",
+          "db_column_name": "Spells8",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells9",
+          "db_column_name": "Spells9",
+          "value_type": "int"
+        },
+        {
+          "name": "Spells10",
+          "db_column_name": "Spells10",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerActionBarFileDataID",
+          "db_column_name": "PlayerActionBarFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

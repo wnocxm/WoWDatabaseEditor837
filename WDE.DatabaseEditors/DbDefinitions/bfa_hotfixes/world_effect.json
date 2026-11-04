@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "World Effect (hotfix)",
+  "single_solution_name": "World Effect (hotfix)",
+  "multi_solution_name": "World Effect (hotfix)",
+  "description": "8.3.7 hotfixes database table `world_effect`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "world_effect",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestFeedbackEffectID",
+          "db_column_name": "QuestFeedbackEffectID",
+          "value_type": "uint"
+        },
+        {
+          "name": "WhenToDisplay",
+          "db_column_name": "WhenToDisplay",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetType",
+          "db_column_name": "TargetType",
+          "value_type": "int"
+        },
+        {
+          "name": "TargetAsset",
+          "db_column_name": "TargetAsset",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CombatConditionID",
+          "db_column_name": "CombatConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

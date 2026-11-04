@@ -1,0 +1,113 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Sound Kit (hotfix)",
+  "single_solution_name": "Sound Kit (hotfix)",
+  "multi_solution_name": "Sound Kit (hotfix)",
+  "description": "8.3.7 hotfixes database table `sound_kit`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "sound_kit",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundType",
+          "db_column_name": "SoundType",
+          "value_type": "int"
+        },
+        {
+          "name": "VolumeFloat",
+          "db_column_name": "VolumeFloat",
+          "value_type": "float"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinDistance",
+          "db_column_name": "MinDistance",
+          "value_type": "float"
+        },
+        {
+          "name": "DistanceCutoff",
+          "db_column_name": "DistanceCutoff",
+          "value_type": "float"
+        },
+        {
+          "name": "EAXDef",
+          "db_column_name": "EAXDef",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundKitAdvancedID",
+          "db_column_name": "SoundKitAdvancedID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VolumeVariationPlus",
+          "db_column_name": "VolumeVariationPlus",
+          "value_type": "float"
+        },
+        {
+          "name": "VolumeVariationMinus",
+          "db_column_name": "VolumeVariationMinus",
+          "value_type": "float"
+        },
+        {
+          "name": "PitchVariationPlus",
+          "db_column_name": "PitchVariationPlus",
+          "value_type": "float"
+        },
+        {
+          "name": "PitchVariationMinus",
+          "db_column_name": "PitchVariationMinus",
+          "value_type": "float"
+        },
+        {
+          "name": "DialogType",
+          "db_column_name": "DialogType",
+          "value_type": "int"
+        },
+        {
+          "name": "PitchAdjust",
+          "db_column_name": "PitchAdjust",
+          "value_type": "float"
+        },
+        {
+          "name": "BusOverwriteID",
+          "db_column_name": "BusOverwriteID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxInstances",
+          "db_column_name": "MaxInstances",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

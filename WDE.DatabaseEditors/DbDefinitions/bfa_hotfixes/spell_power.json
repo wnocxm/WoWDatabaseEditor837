@@ -1,0 +1,103 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Power (hotfix)",
+  "single_solution_name": "Spell Power (hotfix)",
+  "multi_solution_name": "Spell Power (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_power`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_power",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "ManaCost",
+          "db_column_name": "ManaCost",
+          "value_type": "int"
+        },
+        {
+          "name": "ManaCostPerLevel",
+          "db_column_name": "ManaCostPerLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "ManaPerSecond",
+          "db_column_name": "ManaPerSecond",
+          "value_type": "int"
+        },
+        {
+          "name": "PowerDisplayID",
+          "db_column_name": "PowerDisplayID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AltPowerBarID",
+          "db_column_name": "AltPowerBarID",
+          "value_type": "int"
+        },
+        {
+          "name": "PowerCostPct",
+          "db_column_name": "PowerCostPct",
+          "value_type": "float"
+        },
+        {
+          "name": "PowerCostMaxPct",
+          "db_column_name": "PowerCostMaxPct",
+          "value_type": "float"
+        },
+        {
+          "name": "PowerPctPerSecond",
+          "db_column_name": "PowerPctPerSecond",
+          "value_type": "float"
+        },
+        {
+          "name": "PowerType",
+          "db_column_name": "PowerType",
+          "value_type": "int"
+        },
+        {
+          "name": "RequiredAuraSpellID",
+          "db_column_name": "RequiredAuraSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "OptionalCost",
+          "db_column_name": "OptionalCost",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

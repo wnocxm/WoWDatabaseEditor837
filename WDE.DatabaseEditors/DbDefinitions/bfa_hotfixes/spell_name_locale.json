@@ -1,0 +1,50 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Name Locale (hotfix)",
+  "single_solution_name": "Spell Name Locale (hotfix)",
+  "multi_solution_name": "Spell Name Locale (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_name_locale`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_name_locale",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "locale",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "locale",
+          "db_column_name": "locale",
+          "value_type": "string"
+        },
+        {
+          "name": "Name_lang",
+          "db_column_name": "Name_lang",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

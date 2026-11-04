@@ -1,0 +1,103 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Skill Line (hotfix)",
+  "single_solution_name": "Skill Line (hotfix)",
+  "multi_solution_name": "Skill Line (hotfix)",
+  "description": "8.3.7 hotfixes database table `skill_line`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "skill_line",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "DisplayName",
+          "db_column_name": "DisplayName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "AlternateVerb",
+          "db_column_name": "AlternateVerb",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "HordeDisplayName",
+          "db_column_name": "HordeDisplayName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "OverrideSourceInfoDisplayName",
+          "db_column_name": "OverrideSourceInfoDisplayName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CategoryID",
+          "db_column_name": "CategoryID",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellIconFileID",
+          "db_column_name": "SpellIconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "CanLink",
+          "db_column_name": "CanLink",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentSkillLineID",
+          "db_column_name": "ParentSkillLineID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentTierIndex",
+          "db_column_name": "ParentTierIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellBookSpellID",
+          "db_column_name": "SpellBookSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

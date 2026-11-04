@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Limit Category Condition (hotfix)",
+  "single_solution_name": "Item Limit Category Condition (hotfix)",
+  "multi_solution_name": "Item Limit Category Condition (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_limit_category_condition`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_limit_category_condition",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AddQuantity",
+          "db_column_name": "AddQuantity",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentItemLimitCategoryID",
+          "db_column_name": "ParentItemLimitCategoryID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

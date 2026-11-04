@@ -1,0 +1,93 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Expected Stat (hotfix)",
+  "single_solution_name": "Expected Stat (hotfix)",
+  "multi_solution_name": "Expected Stat (hotfix)",
+  "description": "8.3.7 hotfixes database table `expected_stat`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "expected_stat",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExpansionID",
+          "db_column_name": "ExpansionID",
+          "value_type": "int"
+        },
+        {
+          "name": "CreatureHealth",
+          "db_column_name": "CreatureHealth",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerHealth",
+          "db_column_name": "PlayerHealth",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureAutoAttackDps",
+          "db_column_name": "CreatureAutoAttackDps",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureArmor",
+          "db_column_name": "CreatureArmor",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerMana",
+          "db_column_name": "PlayerMana",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerPrimaryStat",
+          "db_column_name": "PlayerPrimaryStat",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerSecondaryStat",
+          "db_column_name": "PlayerSecondaryStat",
+          "value_type": "float"
+        },
+        {
+          "name": "ArmorConstant",
+          "db_column_name": "ArmorConstant",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureSpellDamage",
+          "db_column_name": "CreatureSpellDamage",
+          "value_type": "float"
+        },
+        {
+          "name": "Lvl",
+          "db_column_name": "Lvl",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

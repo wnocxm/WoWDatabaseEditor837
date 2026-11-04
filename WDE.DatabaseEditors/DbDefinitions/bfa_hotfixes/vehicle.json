@@ -1,0 +1,173 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Vehicle (hotfix)",
+  "single_solution_name": "Vehicle (hotfix)",
+  "multi_solution_name": "Vehicle (hotfix)",
+  "description": "8.3.7 hotfixes database table `vehicle`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "vehicle",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "FlagsB",
+          "db_column_name": "FlagsB",
+          "value_type": "uint"
+        },
+        {
+          "name": "TurnSpeed",
+          "db_column_name": "TurnSpeed",
+          "value_type": "float"
+        },
+        {
+          "name": "PitchSpeed",
+          "db_column_name": "PitchSpeed",
+          "value_type": "float"
+        },
+        {
+          "name": "PitchMin",
+          "db_column_name": "PitchMin",
+          "value_type": "float"
+        },
+        {
+          "name": "PitchMax",
+          "db_column_name": "PitchMax",
+          "value_type": "float"
+        },
+        {
+          "name": "MouseLookOffsetPitch",
+          "db_column_name": "MouseLookOffsetPitch",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraFadeDistScalarMin",
+          "db_column_name": "CameraFadeDistScalarMin",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraFadeDistScalarMax",
+          "db_column_name": "CameraFadeDistScalarMax",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraPitchOffset",
+          "db_column_name": "CameraPitchOffset",
+          "value_type": "float"
+        },
+        {
+          "name": "FacingLimitRight",
+          "db_column_name": "FacingLimitRight",
+          "value_type": "float"
+        },
+        {
+          "name": "FacingLimitLeft",
+          "db_column_name": "FacingLimitLeft",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraYawOffset",
+          "db_column_name": "CameraYawOffset",
+          "value_type": "float"
+        },
+        {
+          "name": "UiLocomotionType",
+          "db_column_name": "UiLocomotionType",
+          "value_type": "uint"
+        },
+        {
+          "name": "VehicleUIIndicatorID",
+          "db_column_name": "VehicleUIIndicatorID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MissileTargetingID",
+          "db_column_name": "MissileTargetingID",
+          "value_type": "int"
+        },
+        {
+          "name": "SeatID1",
+          "db_column_name": "SeatID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID2",
+          "db_column_name": "SeatID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID3",
+          "db_column_name": "SeatID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID4",
+          "db_column_name": "SeatID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID5",
+          "db_column_name": "SeatID5",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID6",
+          "db_column_name": "SeatID6",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID7",
+          "db_column_name": "SeatID7",
+          "value_type": "uint"
+        },
+        {
+          "name": "SeatID8",
+          "db_column_name": "SeatID8",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerDisplayID1",
+          "db_column_name": "PowerDisplayID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerDisplayID2",
+          "db_column_name": "PowerDisplayID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerDisplayID3",
+          "db_column_name": "PowerDisplayID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

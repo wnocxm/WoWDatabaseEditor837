@@ -1,0 +1,148 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Destructible Model Data (hotfix)",
+  "single_solution_name": "Destructible Model Data (hotfix)",
+  "multi_solution_name": "Destructible Model Data (hotfix)",
+  "description": "8.3.7 hotfixes database table `destructible_model_data`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "destructible_model_data",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "State0ImpactEffectDoodadSet",
+          "db_column_name": "State0ImpactEffectDoodadSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State0AmbientDoodadSet",
+          "db_column_name": "State0AmbientDoodadSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "State1Wmo",
+          "db_column_name": "State1Wmo",
+          "value_type": "uint"
+        },
+        {
+          "name": "State1DestructionDoodadSet",
+          "db_column_name": "State1DestructionDoodadSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State1ImpactEffectDoodadSet",
+          "db_column_name": "State1ImpactEffectDoodadSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State1AmbientDoodadSet",
+          "db_column_name": "State1AmbientDoodadSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "State2Wmo",
+          "db_column_name": "State2Wmo",
+          "value_type": "uint"
+        },
+        {
+          "name": "State2DestructionDoodadSet",
+          "db_column_name": "State2DestructionDoodadSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State2ImpactEffectDoodadSet",
+          "db_column_name": "State2ImpactEffectDoodadSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State2AmbientDoodadSet",
+          "db_column_name": "State2AmbientDoodadSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "State3Wmo",
+          "db_column_name": "State3Wmo",
+          "value_type": "uint"
+        },
+        {
+          "name": "State3InitDoodadSet",
+          "db_column_name": "State3InitDoodadSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "State3AmbientDoodadSet",
+          "db_column_name": "State3AmbientDoodadSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "EjectDirection",
+          "db_column_name": "EjectDirection",
+          "value_type": "uint"
+        },
+        {
+          "name": "DoNotHighlight",
+          "db_column_name": "DoNotHighlight",
+          "value_type": "uint"
+        },
+        {
+          "name": "State0Wmo",
+          "db_column_name": "State0Wmo",
+          "value_type": "uint"
+        },
+        {
+          "name": "HealEffect",
+          "db_column_name": "HealEffect",
+          "value_type": "uint"
+        },
+        {
+          "name": "HealEffectSpeed",
+          "db_column_name": "HealEffectSpeed",
+          "value_type": "uint"
+        },
+        {
+          "name": "State0NameSet",
+          "db_column_name": "State0NameSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State1NameSet",
+          "db_column_name": "State1NameSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State2NameSet",
+          "db_column_name": "State2NameSet",
+          "value_type": "int"
+        },
+        {
+          "name": "State3NameSet",
+          "db_column_name": "State3NameSet",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

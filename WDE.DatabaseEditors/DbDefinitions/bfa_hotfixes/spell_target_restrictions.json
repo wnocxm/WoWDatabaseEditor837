@@ -1,0 +1,78 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Target Restrictions (hotfix)",
+  "single_solution_name": "Spell Target Restrictions (hotfix)",
+  "multi_solution_name": "Spell Target Restrictions (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_target_restrictions`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_target_restrictions",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ConeDegrees",
+          "db_column_name": "ConeDegrees",
+          "value_type": "float"
+        },
+        {
+          "name": "MaxTargets",
+          "db_column_name": "MaxTargets",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxTargetLevel",
+          "db_column_name": "MaxTargetLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetCreatureType",
+          "db_column_name": "TargetCreatureType",
+          "value_type": "int"
+        },
+        {
+          "name": "Targets",
+          "db_column_name": "Targets",
+          "value_type": "int"
+        },
+        {
+          "name": "Width",
+          "db_column_name": "Width",
+          "value_type": "float"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

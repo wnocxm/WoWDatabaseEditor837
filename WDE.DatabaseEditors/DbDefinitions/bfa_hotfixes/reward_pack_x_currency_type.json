@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Reward Pack X Currency Type (hotfix)",
+  "single_solution_name": "Reward Pack X Currency Type (hotfix)",
+  "multi_solution_name": "Reward Pack X Currency Type (hotfix)",
+  "description": "8.3.7 hotfixes database table `reward_pack_x_currency_type`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "reward_pack_x_currency_type",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyTypeID",
+          "db_column_name": "CurrencyTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Quantity",
+          "db_column_name": "Quantity",
+          "value_type": "int"
+        },
+        {
+          "name": "RewardPackID",
+          "db_column_name": "RewardPackID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

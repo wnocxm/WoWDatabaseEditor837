@@ -1,0 +1,73 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Skill Race Class Info (hotfix)",
+  "single_solution_name": "Skill Race Class Info (hotfix)",
+  "multi_solution_name": "Skill Race Class Info (hotfix)",
+  "description": "8.3.7 hotfixes database table `skill_race_class_info`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "skill_race_class_info",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RaceMask",
+          "db_column_name": "RaceMask",
+          "value_type": "long"
+        },
+        {
+          "name": "SkillID",
+          "db_column_name": "SkillID",
+          "value_type": "int"
+        },
+        {
+          "name": "ClassMask",
+          "db_column_name": "ClassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "Availability",
+          "db_column_name": "Availability",
+          "value_type": "int"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "SkillTierID",
+          "db_column_name": "SkillTierID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

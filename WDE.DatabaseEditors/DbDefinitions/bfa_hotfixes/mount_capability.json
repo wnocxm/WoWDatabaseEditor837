@@ -1,0 +1,78 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Mount Capability (hotfix)",
+  "single_solution_name": "Mount Capability (hotfix)",
+  "multi_solution_name": "Mount Capability (hotfix)",
+  "description": "8.3.7 hotfixes database table `mount_capability`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "mount_capability",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReqRidingSkill",
+          "db_column_name": "ReqRidingSkill",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReqAreaID",
+          "db_column_name": "ReqAreaID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReqSpellAuraID",
+          "db_column_name": "ReqSpellAuraID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReqSpellKnownID",
+          "db_column_name": "ReqSpellKnownID",
+          "value_type": "int"
+        },
+        {
+          "name": "ModSpellAuraID",
+          "db_column_name": "ModSpellAuraID",
+          "value_type": "int"
+        },
+        {
+          "name": "ReqMapID",
+          "db_column_name": "ReqMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

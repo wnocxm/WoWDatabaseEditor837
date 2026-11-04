@@ -1,0 +1,118 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Ui Map Assignment (hotfix)",
+  "single_solution_name": "Ui Map Assignment (hotfix)",
+  "multi_solution_name": "Ui Map Assignment (hotfix)",
+  "description": "8.3.7 hotfixes database table `ui_map_assignment`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "ui_map_assignment",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "UiMinX",
+          "db_column_name": "UiMinX",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMinY",
+          "db_column_name": "UiMinY",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMaxX",
+          "db_column_name": "UiMaxX",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMaxY",
+          "db_column_name": "UiMaxY",
+          "value_type": "float"
+        },
+        {
+          "name": "Region1X",
+          "db_column_name": "Region1X",
+          "value_type": "float"
+        },
+        {
+          "name": "Region1Y",
+          "db_column_name": "Region1Y",
+          "value_type": "float"
+        },
+        {
+          "name": "Region1Z",
+          "db_column_name": "Region1Z",
+          "value_type": "float"
+        },
+        {
+          "name": "Region2X",
+          "db_column_name": "Region2X",
+          "value_type": "float"
+        },
+        {
+          "name": "Region2Y",
+          "db_column_name": "Region2Y",
+          "value_type": "float"
+        },
+        {
+          "name": "Region2Z",
+          "db_column_name": "Region2Z",
+          "value_type": "float"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiMapID",
+          "db_column_name": "UiMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID",
+          "db_column_name": "MapID",
+          "value_type": "int"
+        },
+        {
+          "name": "AreaID",
+          "db_column_name": "AreaID",
+          "value_type": "int"
+        },
+        {
+          "name": "WmoDoodadPlacementID",
+          "db_column_name": "WmoDoodadPlacementID",
+          "value_type": "int"
+        },
+        {
+          "name": "WmoGroupID",
+          "db_column_name": "WmoGroupID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

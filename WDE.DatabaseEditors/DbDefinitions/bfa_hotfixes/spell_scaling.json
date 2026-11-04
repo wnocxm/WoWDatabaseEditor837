@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Scaling (hotfix)",
+  "single_solution_name": "Spell Scaling (hotfix)",
+  "multi_solution_name": "Spell Scaling (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_scaling`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_scaling",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "Class",
+          "db_column_name": "Class",
+          "value_type": "int"
+        },
+        {
+          "name": "MinScalingLevel",
+          "db_column_name": "MinScalingLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxScalingLevel",
+          "db_column_name": "MaxScalingLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "ScalesFromItemLevel",
+          "db_column_name": "ScalesFromItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

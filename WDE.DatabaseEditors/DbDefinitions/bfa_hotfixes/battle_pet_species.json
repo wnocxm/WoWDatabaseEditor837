@@ -1,0 +1,90 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Battle Pet Species (hotfix)",
+  "single_solution_name": "Battle Pet Species (hotfix)",
+  "multi_solution_name": "Battle Pet Species (hotfix)",
+  "description": "8.3.7 hotfixes database table `battle_pet_species`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "battle_pet_species",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "SourceText",
+          "db_column_name": "SourceText",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureID",
+          "db_column_name": "CreatureID",
+          "value_type": "int"
+        },
+        {
+          "name": "SummonSpellID",
+          "db_column_name": "SummonSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "PetTypeEnum",
+          "db_column_name": "PetTypeEnum",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "SourceTypeEnum",
+          "db_column_name": "SourceTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "CardUIModelSceneID",
+          "db_column_name": "CardUIModelSceneID",
+          "value_type": "int"
+        },
+        {
+          "name": "LoadoutUIModelSceneID",
+          "db_column_name": "LoadoutUIModelSceneID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

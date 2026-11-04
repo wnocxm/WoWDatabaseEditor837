@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Azerite Tier Unlock (hotfix)",
+  "single_solution_name": "Azerite Tier Unlock (hotfix)",
+  "multi_solution_name": "Azerite Tier Unlock (hotfix)",
+  "description": "8.3.7 hotfixes database table `azerite_tier_unlock`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "azerite_tier_unlock",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCreationContext",
+          "db_column_name": "ItemCreationContext",
+          "value_type": "uint"
+        },
+        {
+          "name": "Tier",
+          "db_column_name": "Tier",
+          "value_type": "uint"
+        },
+        {
+          "name": "AzeriteLevel",
+          "db_column_name": "AzeriteLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "AzeriteTierUnlockSetID",
+          "db_column_name": "AzeriteTierUnlockSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

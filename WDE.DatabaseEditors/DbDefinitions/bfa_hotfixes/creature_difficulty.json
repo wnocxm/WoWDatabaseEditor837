@@ -1,0 +1,97 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature Difficulty (hotfix)",
+  "single_solution_name": "Creature Difficulty (hotfix)",
+  "multi_solution_name": "Creature Difficulty (hotfix)",
+  "description": "8.3.7 hotfixes database table `creature_difficulty`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "creature_difficulty",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureID",
+          "db_column_name": "CreatureID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags3",
+          "db_column_name": "Flags3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags4",
+          "db_column_name": "Flags4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags5",
+          "db_column_name": "Flags5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags6",
+          "db_column_name": "Flags6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags7",
+          "db_column_name": "Flags7",
+          "value_type": "uint"
+        },
+        {
+          "name": "FactionTemplateID",
+          "db_column_name": "FactionTemplateID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Expansion",
+          "db_column_name": "Expansion",
+          "value_type": "int"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

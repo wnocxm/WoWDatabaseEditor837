@@ -1,0 +1,103 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Faction Template (hotfix)",
+  "single_solution_name": "Faction Template (hotfix)",
+  "multi_solution_name": "Faction Template (hotfix)",
+  "description": "8.3.7 hotfixes database table `faction_template`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "faction_template",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Faction",
+          "db_column_name": "Faction",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "FactionGroup",
+          "db_column_name": "FactionGroup",
+          "value_type": "uint"
+        },
+        {
+          "name": "FriendGroup",
+          "db_column_name": "FriendGroup",
+          "value_type": "uint"
+        },
+        {
+          "name": "EnemyGroup",
+          "db_column_name": "EnemyGroup",
+          "value_type": "uint"
+        },
+        {
+          "name": "Enemies1",
+          "db_column_name": "Enemies1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Enemies2",
+          "db_column_name": "Enemies2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Enemies3",
+          "db_column_name": "Enemies3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Enemies4",
+          "db_column_name": "Enemies4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Friend1",
+          "db_column_name": "Friend1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Friend2",
+          "db_column_name": "Friend2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Friend3",
+          "db_column_name": "Friend3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Friend4",
+          "db_column_name": "Friend4",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

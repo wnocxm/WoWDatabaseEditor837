@@ -1,0 +1,89 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature Family (hotfix)",
+  "single_solution_name": "Creature Family (hotfix)",
+  "multi_solution_name": "Creature Family (hotfix)",
+  "description": "8.3.7 hotfixes database table `creature_family`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "creature_family",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MinScale",
+          "db_column_name": "MinScale",
+          "value_type": "float"
+        },
+        {
+          "name": "MinScaleLevel",
+          "db_column_name": "MinScaleLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxScale",
+          "db_column_name": "MaxScale",
+          "value_type": "float"
+        },
+        {
+          "name": "MaxScaleLevel",
+          "db_column_name": "MaxScaleLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "PetFoodMask",
+          "db_column_name": "PetFoodMask",
+          "value_type": "int"
+        },
+        {
+          "name": "PetTalentType",
+          "db_column_name": "PetTalentType",
+          "value_type": "int"
+        },
+        {
+          "name": "IconFileID",
+          "db_column_name": "IconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "SkillLine1",
+          "db_column_name": "SkillLine1",
+          "value_type": "int"
+        },
+        {
+          "name": "SkillLine2",
+          "db_column_name": "SkillLine2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

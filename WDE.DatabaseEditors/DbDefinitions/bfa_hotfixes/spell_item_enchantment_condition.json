@@ -1,0 +1,188 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Item Enchantment Condition (hotfix)",
+  "single_solution_name": "Spell Item Enchantment Condition (hotfix)",
+  "multi_solution_name": "Spell Item Enchantment Condition (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_item_enchantment_condition`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_item_enchantment_condition",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperandType1",
+          "db_column_name": "LtOperandType1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperandType2",
+          "db_column_name": "LtOperandType2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperandType3",
+          "db_column_name": "LtOperandType3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperandType4",
+          "db_column_name": "LtOperandType4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperandType5",
+          "db_column_name": "LtOperandType5",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperand1",
+          "db_column_name": "LtOperand1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperand2",
+          "db_column_name": "LtOperand2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperand3",
+          "db_column_name": "LtOperand3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperand4",
+          "db_column_name": "LtOperand4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LtOperand5",
+          "db_column_name": "LtOperand5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator1",
+          "db_column_name": "Operator1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator2",
+          "db_column_name": "Operator2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator3",
+          "db_column_name": "Operator3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator4",
+          "db_column_name": "Operator4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator5",
+          "db_column_name": "Operator5",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperandType1",
+          "db_column_name": "RtOperandType1",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperandType2",
+          "db_column_name": "RtOperandType2",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperandType3",
+          "db_column_name": "RtOperandType3",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperandType4",
+          "db_column_name": "RtOperandType4",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperandType5",
+          "db_column_name": "RtOperandType5",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperand1",
+          "db_column_name": "RtOperand1",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperand2",
+          "db_column_name": "RtOperand2",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperand3",
+          "db_column_name": "RtOperand3",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperand4",
+          "db_column_name": "RtOperand4",
+          "value_type": "uint"
+        },
+        {
+          "name": "RtOperand5",
+          "db_column_name": "RtOperand5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Logic1",
+          "db_column_name": "Logic1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Logic2",
+          "db_column_name": "Logic2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Logic3",
+          "db_column_name": "Logic3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Logic4",
+          "db_column_name": "Logic4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Logic5",
+          "db_column_name": "Logic5",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

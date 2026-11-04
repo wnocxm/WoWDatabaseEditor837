@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Armor Total (hotfix)",
+  "single_solution_name": "Item Armor Total (hotfix)",
+  "multi_solution_name": "Item Armor Total (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_armor_total`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_armor_total",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevel",
+          "db_column_name": "ItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "Cloth",
+          "db_column_name": "Cloth",
+          "value_type": "float"
+        },
+        {
+          "name": "Leather",
+          "db_column_name": "Leather",
+          "value_type": "float"
+        },
+        {
+          "name": "Mail",
+          "db_column_name": "Mail",
+          "value_type": "float"
+        },
+        {
+          "name": "Plate",
+          "db_column_name": "Plate",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

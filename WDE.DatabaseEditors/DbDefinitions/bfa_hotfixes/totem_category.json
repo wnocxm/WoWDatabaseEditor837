@@ -1,0 +1,54 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Totem Category (hotfix)",
+  "single_solution_name": "Totem Category (hotfix)",
+  "multi_solution_name": "Totem Category (hotfix)",
+  "description": "8.3.7 hotfixes database table `totem_category`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "totem_category",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "TotemCategoryType",
+          "db_column_name": "TotemCategoryType",
+          "value_type": "uint"
+        },
+        {
+          "name": "TotemCategoryMask",
+          "db_column_name": "TotemCategoryMask",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Skill Line Ability (hotfix)",
+  "single_solution_name": "Skill Line Ability (hotfix)",
+  "multi_solution_name": "Skill Line Ability (hotfix)",
+  "description": "8.3.7 hotfixes database table `skill_line_ability`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "skill_line_ability",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "RaceMask",
+          "db_column_name": "RaceMask",
+          "value_type": "long"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SkillLine",
+          "db_column_name": "SkillLine",
+          "value_type": "int"
+        },
+        {
+          "name": "Spell",
+          "db_column_name": "Spell",
+          "value_type": "int"
+        },
+        {
+          "name": "MinSkillLineRank",
+          "db_column_name": "MinSkillLineRank",
+          "value_type": "int"
+        },
+        {
+          "name": "ClassMask",
+          "db_column_name": "ClassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "SupercedesSpell",
+          "db_column_name": "SupercedesSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "AcquireMethod",
+          "db_column_name": "AcquireMethod",
+          "value_type": "int"
+        },
+        {
+          "name": "TrivialSkillLineRankHigh",
+          "db_column_name": "TrivialSkillLineRankHigh",
+          "value_type": "int"
+        },
+        {
+          "name": "TrivialSkillLineRankLow",
+          "db_column_name": "TrivialSkillLineRankLow",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "NumSkillUps",
+          "db_column_name": "NumSkillUps",
+          "value_type": "int"
+        },
+        {
+          "name": "UniqueBit",
+          "db_column_name": "UniqueBit",
+          "value_type": "int"
+        },
+        {
+          "name": "TradeSkillCategoryID",
+          "db_column_name": "TradeSkillCategoryID",
+          "value_type": "int"
+        },
+        {
+          "name": "SkillupSkillLineID",
+          "db_column_name": "SkillupSkillLineID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

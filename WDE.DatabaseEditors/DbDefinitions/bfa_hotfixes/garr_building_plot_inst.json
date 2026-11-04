@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Garr Building Plot Inst (hotfix)",
+  "single_solution_name": "Garr Building Plot Inst (hotfix)",
+  "multi_solution_name": "Garr Building Plot Inst (hotfix)",
+  "description": "8.3.7 hotfixes database table `garr_building_plot_inst`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "garr_building_plot_inst",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "MapOffsetX",
+          "db_column_name": "MapOffsetX",
+          "value_type": "float"
+        },
+        {
+          "name": "MapOffsetY",
+          "db_column_name": "MapOffsetY",
+          "value_type": "float"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrBuildingID",
+          "db_column_name": "GarrBuildingID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrSiteLevelPlotInstID",
+          "db_column_name": "GarrSiteLevelPlotInstID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiTextureAtlasMemberID",
+          "db_column_name": "UiTextureAtlasMemberID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Char Titles (hotfix)",
+  "single_solution_name": "Char Titles (hotfix)",
+  "multi_solution_name": "Char Titles (hotfix)",
+  "description": "8.3.7 hotfixes database table `char_titles`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "char_titles",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Name1",
+          "db_column_name": "Name1",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MaskID",
+          "db_column_name": "MaskID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

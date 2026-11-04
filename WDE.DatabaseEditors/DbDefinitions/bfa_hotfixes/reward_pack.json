@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Reward Pack (hotfix)",
+  "single_solution_name": "Reward Pack (hotfix)",
+  "multi_solution_name": "Reward Pack (hotfix)",
+  "description": "8.3.7 hotfixes database table `reward_pack`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "reward_pack",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CharTitleID",
+          "db_column_name": "CharTitleID",
+          "value_type": "int"
+        },
+        {
+          "name": "Money",
+          "db_column_name": "Money",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArtifactXPDifficulty",
+          "db_column_name": "ArtifactXPDifficulty",
+          "value_type": "int"
+        },
+        {
+          "name": "ArtifactXPMultiplier",
+          "db_column_name": "ArtifactXPMultiplier",
+          "value_type": "float"
+        },
+        {
+          "name": "ArtifactXPCategoryID",
+          "db_column_name": "ArtifactXPCategoryID",
+          "value_type": "uint"
+        },
+        {
+          "name": "TreasurePickerID",
+          "db_column_name": "TreasurePickerID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

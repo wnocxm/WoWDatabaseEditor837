@@ -1,0 +1,73 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Modifier Tree (hotfix)",
+  "single_solution_name": "Modifier Tree (hotfix)",
+  "multi_solution_name": "Modifier Tree (hotfix)",
+  "description": "8.3.7 hotfixes database table `modifier_tree`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "modifier_tree",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Parent",
+          "db_column_name": "Parent",
+          "value_type": "uint"
+        },
+        {
+          "name": "Operator",
+          "db_column_name": "Operator",
+          "value_type": "int"
+        },
+        {
+          "name": "Amount",
+          "db_column_name": "Amount",
+          "value_type": "int"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "int"
+        },
+        {
+          "name": "Asset",
+          "db_column_name": "Asset",
+          "value_type": "int"
+        },
+        {
+          "name": "SecondaryAsset",
+          "db_column_name": "SecondaryAsset",
+          "value_type": "int"
+        },
+        {
+          "name": "TertiaryAsset",
+          "db_column_name": "TertiaryAsset",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

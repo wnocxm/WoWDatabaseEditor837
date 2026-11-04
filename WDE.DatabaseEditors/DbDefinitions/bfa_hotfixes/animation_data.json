@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Animation Data (hotfix)",
+  "single_solution_name": "Animation Data (hotfix)",
+  "multi_solution_name": "Animation Data (hotfix)",
+  "description": "8.3.7 hotfixes database table `animation_data`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "animation_data",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "BehaviorID",
+          "db_column_name": "BehaviorID",
+          "value_type": "uint"
+        },
+        {
+          "name": "BehaviorTier",
+          "db_column_name": "BehaviorTier",
+          "value_type": "uint"
+        },
+        {
+          "name": "Fallback",
+          "db_column_name": "Fallback",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

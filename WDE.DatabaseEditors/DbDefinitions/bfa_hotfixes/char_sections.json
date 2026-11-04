@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Char Sections (hotfix)",
+  "single_solution_name": "Char Sections (hotfix)",
+  "multi_solution_name": "Char Sections (hotfix)",
+  "description": "8.3.7 hotfixes database table `char_sections`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "char_sections",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RaceID",
+          "db_column_name": "RaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "SexID",
+          "db_column_name": "SexID",
+          "value_type": "int"
+        },
+        {
+          "name": "BaseSection",
+          "db_column_name": "BaseSection",
+          "value_type": "int"
+        },
+        {
+          "name": "VariationIndex",
+          "db_column_name": "VariationIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "ColorIndex",
+          "db_column_name": "ColorIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "MaterialResourcesID1",
+          "db_column_name": "MaterialResourcesID1",
+          "value_type": "int"
+        },
+        {
+          "name": "MaterialResourcesID2",
+          "db_column_name": "MaterialResourcesID2",
+          "value_type": "int"
+        },
+        {
+          "name": "MaterialResourcesID3",
+          "db_column_name": "MaterialResourcesID3",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

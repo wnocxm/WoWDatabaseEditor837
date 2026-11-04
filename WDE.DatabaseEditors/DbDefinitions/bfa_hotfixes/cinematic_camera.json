@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Cinematic Camera (hotfix)",
+  "single_solution_name": "Cinematic Camera (hotfix)",
+  "multi_solution_name": "Cinematic Camera (hotfix)",
+  "description": "8.3.7 hotfixes database table `cinematic_camera`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "cinematic_camera",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OriginX",
+          "db_column_name": "OriginX",
+          "value_type": "float"
+        },
+        {
+          "name": "OriginY",
+          "db_column_name": "OriginY",
+          "value_type": "float"
+        },
+        {
+          "name": "OriginZ",
+          "db_column_name": "OriginZ",
+          "value_type": "float"
+        },
+        {
+          "name": "SoundID",
+          "db_column_name": "SoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OriginFacing",
+          "db_column_name": "OriginFacing",
+          "value_type": "float"
+        },
+        {
+          "name": "FileDataID",
+          "db_column_name": "FileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

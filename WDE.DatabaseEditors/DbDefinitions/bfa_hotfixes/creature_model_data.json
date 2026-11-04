@@ -1,0 +1,223 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature Model Data (hotfix)",
+  "single_solution_name": "Creature Model Data (hotfix)",
+  "multi_solution_name": "Creature Model Data (hotfix)",
+  "description": "8.3.7 hotfixes database table `creature_model_data`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "creature_model_data",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GeoBox1",
+          "db_column_name": "GeoBox1",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBox2",
+          "db_column_name": "GeoBox2",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBox3",
+          "db_column_name": "GeoBox3",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBox4",
+          "db_column_name": "GeoBox4",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBox5",
+          "db_column_name": "GeoBox5",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBox6",
+          "db_column_name": "GeoBox6",
+          "value_type": "float"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "FileDataID",
+          "db_column_name": "FileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "BloodID",
+          "db_column_name": "BloodID",
+          "value_type": "uint"
+        },
+        {
+          "name": "FootprintTextureID",
+          "db_column_name": "FootprintTextureID",
+          "value_type": "uint"
+        },
+        {
+          "name": "FootprintTextureLength",
+          "db_column_name": "FootprintTextureLength",
+          "value_type": "float"
+        },
+        {
+          "name": "FootprintTextureWidth",
+          "db_column_name": "FootprintTextureWidth",
+          "value_type": "float"
+        },
+        {
+          "name": "FootprintParticleScale",
+          "db_column_name": "FootprintParticleScale",
+          "value_type": "float"
+        },
+        {
+          "name": "FoleyMaterialID",
+          "db_column_name": "FoleyMaterialID",
+          "value_type": "uint"
+        },
+        {
+          "name": "FootstepCameraEffectID",
+          "db_column_name": "FootstepCameraEffectID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DeathThudCameraEffectID",
+          "db_column_name": "DeathThudCameraEffectID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundID",
+          "db_column_name": "SoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SizeClass",
+          "db_column_name": "SizeClass",
+          "value_type": "uint"
+        },
+        {
+          "name": "CollisionWidth",
+          "db_column_name": "CollisionWidth",
+          "value_type": "float"
+        },
+        {
+          "name": "CollisionHeight",
+          "db_column_name": "CollisionHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "WorldEffectScale",
+          "db_column_name": "WorldEffectScale",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureGeosetDataID",
+          "db_column_name": "CreatureGeosetDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HoverHeight",
+          "db_column_name": "HoverHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "AttachedEffectScale",
+          "db_column_name": "AttachedEffectScale",
+          "value_type": "float"
+        },
+        {
+          "name": "ModelScale",
+          "db_column_name": "ModelScale",
+          "value_type": "float"
+        },
+        {
+          "name": "MissileCollisionRadius",
+          "db_column_name": "MissileCollisionRadius",
+          "value_type": "float"
+        },
+        {
+          "name": "MissileCollisionPush",
+          "db_column_name": "MissileCollisionPush",
+          "value_type": "float"
+        },
+        {
+          "name": "MissileCollisionRaise",
+          "db_column_name": "MissileCollisionRaise",
+          "value_type": "float"
+        },
+        {
+          "name": "MountHeight",
+          "db_column_name": "MountHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "OverrideLootEffectScale",
+          "db_column_name": "OverrideLootEffectScale",
+          "value_type": "float"
+        },
+        {
+          "name": "OverrideNameScale",
+          "db_column_name": "OverrideNameScale",
+          "value_type": "float"
+        },
+        {
+          "name": "OverrideSelectionRadius",
+          "db_column_name": "OverrideSelectionRadius",
+          "value_type": "float"
+        },
+        {
+          "name": "TamedPetBaseScale",
+          "db_column_name": "TamedPetBaseScale",
+          "value_type": "float"
+        },
+        {
+          "name": "Unknown820_1",
+          "db_column_name": "Unknown820_1",
+          "value_type": "int"
+        },
+        {
+          "name": "Unknown820_2",
+          "db_column_name": "Unknown820_2",
+          "value_type": "float"
+        },
+        {
+          "name": "Unknown820_31",
+          "db_column_name": "Unknown820_31",
+          "value_type": "float"
+        },
+        {
+          "name": "Unknown820_32",
+          "db_column_name": "Unknown820_32",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

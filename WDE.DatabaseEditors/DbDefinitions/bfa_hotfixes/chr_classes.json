@@ -1,0 +1,143 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Chr Classes (hotfix)",
+  "single_solution_name": "Chr Classes (hotfix)",
+  "multi_solution_name": "Chr Classes (hotfix)",
+  "description": "8.3.7 hotfixes database table `chr_classes`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "chr_classes",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Filename",
+          "db_column_name": "Filename",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "NameMale",
+          "db_column_name": "NameMale",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "NameFemale",
+          "db_column_name": "NameFemale",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "PetNameToken",
+          "db_column_name": "PetNameToken",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreateScreenFileDataID",
+          "db_column_name": "CreateScreenFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SelectScreenFileDataID",
+          "db_column_name": "SelectScreenFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "LowResScreenFileDataID",
+          "db_column_name": "LowResScreenFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartingLevel",
+          "db_column_name": "StartingLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellTextureBlobFileDataID",
+          "db_column_name": "SpellTextureBlobFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "CinematicSequenceID",
+          "db_column_name": "CinematicSequenceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DefaultSpec",
+          "db_column_name": "DefaultSpec",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrimaryStatPriority",
+          "db_column_name": "PrimaryStatPriority",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayPower",
+          "db_column_name": "DisplayPower",
+          "value_type": "uint"
+        },
+        {
+          "name": "RangedAttackPowerPerAgility",
+          "db_column_name": "RangedAttackPowerPerAgility",
+          "value_type": "uint"
+        },
+        {
+          "name": "AttackPowerPerAgility",
+          "db_column_name": "AttackPowerPerAgility",
+          "value_type": "uint"
+        },
+        {
+          "name": "AttackPowerPerStrength",
+          "db_column_name": "AttackPowerPerStrength",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellClassSet",
+          "db_column_name": "SpellClassSet",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

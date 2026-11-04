@@ -1,0 +1,154 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Gameobjects (hotfix)",
+  "single_solution_name": "Gameobjects (hotfix)",
+  "multi_solution_name": "Gameobjects (hotfix)",
+  "description": "8.3.7 hotfixes database table `gameobjects`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "gameobjects",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "PosX",
+          "db_column_name": "PosX",
+          "value_type": "float"
+        },
+        {
+          "name": "PosY",
+          "db_column_name": "PosY",
+          "value_type": "float"
+        },
+        {
+          "name": "PosZ",
+          "db_column_name": "PosZ",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot1",
+          "db_column_name": "Rot1",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot2",
+          "db_column_name": "Rot2",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot3",
+          "db_column_name": "Rot3",
+          "value_type": "float"
+        },
+        {
+          "name": "Rot4",
+          "db_column_name": "Rot4",
+          "value_type": "float"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OwnerID",
+          "db_column_name": "OwnerID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayID",
+          "db_column_name": "DisplayID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Scale",
+          "db_column_name": "Scale",
+          "value_type": "float"
+        },
+        {
+          "name": "TypeID",
+          "db_column_name": "TypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseUseFlags",
+          "db_column_name": "PhaseUseFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseID",
+          "db_column_name": "PhaseID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseGroupID",
+          "db_column_name": "PhaseGroupID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PropValue1",
+          "db_column_name": "PropValue1",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue2",
+          "db_column_name": "PropValue2",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue3",
+          "db_column_name": "PropValue3",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue4",
+          "db_column_name": "PropValue4",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue5",
+          "db_column_name": "PropValue5",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue6",
+          "db_column_name": "PropValue6",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue7",
+          "db_column_name": "PropValue7",
+          "value_type": "int"
+        },
+        {
+          "name": "PropValue8",
+          "db_column_name": "PropValue8",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

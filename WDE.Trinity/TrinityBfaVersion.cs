@@ -27,13 +27,12 @@ namespace WDE.Trinity
         public PhasingType PhasingType => PhasingType.PhaseIds;
         public GameVersion Version { get; } = new(8, 3, 7, 35662);
 
-        // npc_text in 8.3.7 uses BroadcastTextID0-7 (no text0_0), broadcast_text lives in the hotfixes database,
-        // creature_classlevelstats has no base hp/damage columns and areatrigger_create_properties does not exist yet.
+        // npc_text in 8.3.7 uses BroadcastTextID0-7 (no text0_0), creature_classlevelstats has no base hp/damage columns
+        // and areatrigger_create_properties does not exist yet. broadcast_text is read from the hotfixes database.
         public ISet<Type> UnsupportedTables { get; } = new HashSet<Type>()
         {
             typeof(INpcText),
             typeof(ICreatureClassLevelStat),
-            typeof(IBroadcastText),
             typeof(IAreaTriggerCreateProperties)
         };
         public bool AlternativeTrinityDatabase => false;

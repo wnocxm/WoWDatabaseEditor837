@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Ui Map Link (hotfix)",
+  "single_solution_name": "Ui Map Link (hotfix)",
+  "multi_solution_name": "Ui Map Link (hotfix)",
+  "description": "8.3.7 hotfixes database table `ui_map_link`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "ui_map_link",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "UiMinX",
+          "db_column_name": "UiMinX",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMinY",
+          "db_column_name": "UiMinY",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMaxX",
+          "db_column_name": "UiMaxX",
+          "value_type": "float"
+        },
+        {
+          "name": "UiMaxY",
+          "db_column_name": "UiMaxY",
+          "value_type": "float"
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentUiMapID",
+          "db_column_name": "ParentUiMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "ChildUiMapID",
+          "db_column_name": "ChildUiMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "OverrideHighlightFileDataID",
+          "db_column_name": "OverrideHighlightFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "OverrideHighlightAtlasID",
+          "db_column_name": "OverrideHighlightAtlasID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

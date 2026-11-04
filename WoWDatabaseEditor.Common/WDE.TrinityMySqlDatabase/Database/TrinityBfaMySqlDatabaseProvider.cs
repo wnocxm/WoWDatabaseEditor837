@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LinqKit;
 using LinqToDB;
+using WDE.Common;
 using WDE.Common.CoreVersion;
 using WDE.Common.Database;
 using WDE.MySqlDatabaseCommon.CommonModels;
@@ -20,8 +21,35 @@ namespace WDE.TrinityMySqlDatabase.Database;
 /// </summary>
 public class TrinityBfaMySqlDatabaseProvider : BaseTrinityMySqlDatabaseProvider<TrinityBfaDatabase>
 {
-    public TrinityBfaMySqlDatabaseProvider(IWorldDatabaseSettingsProvider settings, IAuthDatabaseSettingsProvider authSettings, DatabaseLogger databaseLogger, ICurrentCoreVersion currentCoreVersion) : base(settings, authSettings, databaseLogger, currentCoreVersion)
+    private readonly IMySqlHotfixConnectionStringProvider hotfixConnection;
+
+    public TrinityBfaMySqlDatabaseProvider(IWorldDatabaseSettingsProvider settings,
+        IAuthDatabaseSettingsProvider authSettings,
+        IMySqlHotfixConnectionStringProvider hotfixConnection,
+        DatabaseLogger databaseLogger,
+        ICurrentCoreVersion currentCoreVersion) : base(settings, authSettings, databaseLogger, currentCoreVersion)
     {
+        this.hotfixConnection = hotfixConnection;
+    }
+
+    /// <summary>
+    /// Runs a query against the hotfixes database. broadcast_text is optional for the editor,
+    /// so when the hotfixes database is not configured or not reachable the fallback value is returned.
+    /// </summary>
+    private async Task<R> Hotfix<R>(Func<TrinityBfaHotfixDatabase, Task<R>> query, R fallback)
+    {
+        if (hotfixConnection.IsEmpty)
+            return fallback;
+        try
+        {
+            await using var db = new TrinityBfaHotfixDatabase(hotfixConnection.ConnectionString);
+            return await query(db);
+        }
+        catch (Exception e)
+        {
+            LOG.LogError(e, "Couldn't read from the hotfixes database");
+            return fallback;
+        }
     }
 
     public override void ConnectOrThrow()
@@ -107,15 +135,20 @@ public class TrinityBfaMySqlDatabaseProvider : BaseTrinityMySqlDatabaseProvider<
     }
 
     // broadcast_text is in the hotfixes database in 8.3.7
-    public override async Task<IReadOnlyList<IBroadcastText>> GetBroadcastTextsAsync() => Array.Empty<IBroadcastText>();
+    public override Task<IReadOnlyList<IBroadcastText>> GetBroadcastTextsAsync() =>
+        Hotfix<IReadOnlyList<IBroadcastText>>(async db => await db.BroadcastTexts.OrderBy(t => t.Id).ToListAsync<IBroadcastText>(), Array.Empty<IBroadcastText>());
 
-    public override IBroadcastText? GetBroadcastTextByText(string text) => null;
+    public override IBroadcastText? GetBroadcastTextByText(string text) =>
+        GetBroadcastTextByTextAsync(text).GetAwaiter().GetResult();
 
-    public override async Task<IBroadcastText?> GetBroadcastTextByTextAsync(string text) => null;
+    public override Task<IBroadcastText?> GetBroadcastTextByTextAsync(string text) =>
+        Hotfix<IBroadcastText?>(async db => await db.BroadcastTexts.FirstOrDefaultAsync(t => t.Text == text || t.Text1 == text), null);
 
-    public override async Task<IBroadcastText?> GetBroadcastTextByIdAsync(uint id) => null;
+    public override Task<IBroadcastText?> GetBroadcastTextByIdAsync(uint id) =>
+        Hotfix<IBroadcastText?>(async db => await db.BroadcastTexts.FirstOrDefaultAsync(t => t.Id == id), null);
 
-    public override async Task<IBroadcastTextLocale?> GetBroadcastTextLocaleByTextAsync(string text) => null;
+    public override Task<IBroadcastTextLocale?> GetBroadcastTextLocaleByTextAsync(string text) =>
+        Hotfix<IBroadcastTextLocale?>(async db => await db.BroadcastTextLocale.FirstOrDefaultAsync(t => t.Text == text || t.Text1 == text), null);
 
     public override async Task<ICreature?> GetCreatureByGuidAsync(uint entry, uint guid)
     {

@@ -1,0 +1,75 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Barber Shop Style (hotfix)",
+  "single_solution_name": "Barber Shop Style (hotfix)",
+  "multi_solution_name": "Barber Shop Style (hotfix)",
+  "description": "8.3.7 hotfixes database table `barber_shop_style`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "barber_shop_style",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "DisplayName",
+          "db_column_name": "DisplayName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "uint"
+        },
+        {
+          "name": "CostModifier",
+          "db_column_name": "CostModifier",
+          "value_type": "float"
+        },
+        {
+          "name": "Race",
+          "db_column_name": "Race",
+          "value_type": "uint"
+        },
+        {
+          "name": "Sex",
+          "db_column_name": "Sex",
+          "value_type": "uint"
+        },
+        {
+          "name": "Data",
+          "db_column_name": "Data",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

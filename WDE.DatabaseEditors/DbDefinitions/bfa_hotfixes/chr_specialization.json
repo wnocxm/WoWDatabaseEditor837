@@ -1,0 +1,106 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Chr Specialization (hotfix)",
+  "single_solution_name": "Chr Specialization (hotfix)",
+  "multi_solution_name": "Chr Specialization (hotfix)",
+  "description": "8.3.7 hotfixes database table `chr_specialization`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "chr_specialization",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "FemaleName",
+          "db_column_name": "FemaleName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassID",
+          "db_column_name": "ClassID",
+          "value_type": "int"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "PetTalentType",
+          "db_column_name": "PetTalentType",
+          "value_type": "int"
+        },
+        {
+          "name": "Role",
+          "db_column_name": "Role",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellIconFileID",
+          "db_column_name": "SpellIconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "PrimaryStatPriority",
+          "db_column_name": "PrimaryStatPriority",
+          "value_type": "int"
+        },
+        {
+          "name": "AnimReplacements",
+          "db_column_name": "AnimReplacements",
+          "value_type": "int"
+        },
+        {
+          "name": "MasterySpellID1",
+          "db_column_name": "MasterySpellID1",
+          "value_type": "int"
+        },
+        {
+          "name": "MasterySpellID2",
+          "db_column_name": "MasterySpellID2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

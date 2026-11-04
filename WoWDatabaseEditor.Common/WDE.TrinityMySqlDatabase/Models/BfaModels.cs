@@ -408,3 +408,76 @@ public class SmartScriptWaypointBfa : ISmartScriptWaypoint
         };
     }
 }
+
+// hotfixes database
+
+[Table(Name = "broadcast_text")]
+public class MySqlBroadcastTextBfa : IBroadcastText
+{
+    [PrimaryKey]
+    [Column(Name = "ID")]
+    public uint Id { get; set; }
+
+    [Column(Name = "LanguageID")]
+    public uint Language { get; set; }
+
+    [Column(Name = "Text")]
+    public string? Text { get; set; }
+
+    [Column(Name = "Text1")]
+    public string? Text1 { get; set; }
+
+    [Column(Name = "EmoteID1")]
+    public uint EmoteId1 { get; set; }
+
+    [Column(Name = "EmoteID2")]
+    public uint EmoteId2 { get; set; }
+
+    [Column(Name = "EmoteID3")]
+    public uint EmoteId3 { get; set; }
+
+    [Column(Name = "EmoteDelay1")]
+    public uint EmoteDelay1 { get; set; }
+
+    [Column(Name = "EmoteDelay2")]
+    public uint EmoteDelay2 { get; set; }
+
+    [Column(Name = "EmoteDelay3")]
+    public uint EmoteDelay3 { get; set; }
+
+    [Column(Name = "SoundEntriesID1")]
+    public uint Sound1 { get; set; }
+
+    [Column(Name = "SoundEntriesID2")]
+    public uint Sound2 { get; set; }
+
+    public uint SoundEntriesId => Sound1;
+
+    [Column(Name = "EmotesID")]
+    public uint EmotesId { get; set; }
+
+    [Column(Name = "Flags")]
+    public uint Flags { get; set; }
+
+    [PrimaryKey]
+    [Column(Name = "VerifiedBuild")]
+    public int VerifiedBuild { get; set; }
+}
+
+[Table(Name = "broadcast_text_locale")]
+public class MySqlBroadcastTextLocaleBfa : IBroadcastTextLocale
+{
+    [PrimaryKey]
+    [Column(Name = "ID")]
+    public uint Id { get; set; }
+
+    [PrimaryKey]
+    [Column(Name = "locale")]
+    public string Locale { get; set; } = "";
+
+    [Column(Name = "Text_lang")]
+    public string? Text { get; set; }
+
+    [Column(Name = "Text1_lang")]
+    public string? Text1 { get; set; }
+}

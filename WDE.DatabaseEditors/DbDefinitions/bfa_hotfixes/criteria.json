@@ -1,0 +1,93 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Criteria (hotfix)",
+  "single_solution_name": "Criteria (hotfix)",
+  "multi_solution_name": "Criteria (hotfix)",
+  "description": "8.3.7 hotfixes database table `criteria`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "criteria",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "int"
+        },
+        {
+          "name": "Asset",
+          "db_column_name": "Asset",
+          "value_type": "int"
+        },
+        {
+          "name": "ModifierTreeId",
+          "db_column_name": "ModifierTreeId",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartEvent",
+          "db_column_name": "StartEvent",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartAsset",
+          "db_column_name": "StartAsset",
+          "value_type": "int"
+        },
+        {
+          "name": "StartTimer",
+          "db_column_name": "StartTimer",
+          "value_type": "uint"
+        },
+        {
+          "name": "FailEvent",
+          "db_column_name": "FailEvent",
+          "value_type": "uint"
+        },
+        {
+          "name": "FailAsset",
+          "db_column_name": "FailAsset",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "EligibilityWorldStateID",
+          "db_column_name": "EligibilityWorldStateID",
+          "value_type": "int"
+        },
+        {
+          "name": "EligibilityWorldStateValue",
+          "db_column_name": "EligibilityWorldStateValue",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

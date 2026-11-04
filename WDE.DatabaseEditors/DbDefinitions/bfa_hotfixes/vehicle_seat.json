@@ -1,0 +1,363 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Vehicle Seat (hotfix)",
+  "single_solution_name": "Vehicle Seat (hotfix)",
+  "multi_solution_name": "Vehicle Seat (hotfix)",
+  "description": "8.3.7 hotfixes database table `vehicle_seat`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "vehicle_seat",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AttachmentOffsetX",
+          "db_column_name": "AttachmentOffsetX",
+          "value_type": "float"
+        },
+        {
+          "name": "AttachmentOffsetY",
+          "db_column_name": "AttachmentOffsetY",
+          "value_type": "float"
+        },
+        {
+          "name": "AttachmentOffsetZ",
+          "db_column_name": "AttachmentOffsetZ",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraOffsetX",
+          "db_column_name": "CameraOffsetX",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraOffsetY",
+          "db_column_name": "CameraOffsetY",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraOffsetZ",
+          "db_column_name": "CameraOffsetZ",
+          "value_type": "float"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "FlagsB",
+          "db_column_name": "FlagsB",
+          "value_type": "int"
+        },
+        {
+          "name": "FlagsC",
+          "db_column_name": "FlagsC",
+          "value_type": "int"
+        },
+        {
+          "name": "AttachmentID",
+          "db_column_name": "AttachmentID",
+          "value_type": "int"
+        },
+        {
+          "name": "EnterPreDelay",
+          "db_column_name": "EnterPreDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterSpeed",
+          "db_column_name": "EnterSpeed",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterGravity",
+          "db_column_name": "EnterGravity",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterMinDuration",
+          "db_column_name": "EnterMinDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterMaxDuration",
+          "db_column_name": "EnterMaxDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterMinArcHeight",
+          "db_column_name": "EnterMinArcHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterMaxArcHeight",
+          "db_column_name": "EnterMaxArcHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterAnimStart",
+          "db_column_name": "EnterAnimStart",
+          "value_type": "int"
+        },
+        {
+          "name": "EnterAnimLoop",
+          "db_column_name": "EnterAnimLoop",
+          "value_type": "int"
+        },
+        {
+          "name": "RideAnimStart",
+          "db_column_name": "RideAnimStart",
+          "value_type": "int"
+        },
+        {
+          "name": "RideAnimLoop",
+          "db_column_name": "RideAnimLoop",
+          "value_type": "int"
+        },
+        {
+          "name": "RideUpperAnimStart",
+          "db_column_name": "RideUpperAnimStart",
+          "value_type": "int"
+        },
+        {
+          "name": "RideUpperAnimLoop",
+          "db_column_name": "RideUpperAnimLoop",
+          "value_type": "int"
+        },
+        {
+          "name": "ExitPreDelay",
+          "db_column_name": "ExitPreDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitSpeed",
+          "db_column_name": "ExitSpeed",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitGravity",
+          "db_column_name": "ExitGravity",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitMinDuration",
+          "db_column_name": "ExitMinDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitMaxDuration",
+          "db_column_name": "ExitMaxDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitMinArcHeight",
+          "db_column_name": "ExitMinArcHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitMaxArcHeight",
+          "db_column_name": "ExitMaxArcHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "ExitAnimStart",
+          "db_column_name": "ExitAnimStart",
+          "value_type": "int"
+        },
+        {
+          "name": "ExitAnimLoop",
+          "db_column_name": "ExitAnimLoop",
+          "value_type": "int"
+        },
+        {
+          "name": "ExitAnimEnd",
+          "db_column_name": "ExitAnimEnd",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleEnterAnim",
+          "db_column_name": "VehicleEnterAnim",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleEnterAnimBone",
+          "db_column_name": "VehicleEnterAnimBone",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleExitAnim",
+          "db_column_name": "VehicleExitAnim",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleExitAnimBone",
+          "db_column_name": "VehicleExitAnimBone",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleRideAnimLoop",
+          "db_column_name": "VehicleRideAnimLoop",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleRideAnimLoopBone",
+          "db_column_name": "VehicleRideAnimLoopBone",
+          "value_type": "int"
+        },
+        {
+          "name": "PassengerAttachmentID",
+          "db_column_name": "PassengerAttachmentID",
+          "value_type": "int"
+        },
+        {
+          "name": "PassengerYaw",
+          "db_column_name": "PassengerYaw",
+          "value_type": "float"
+        },
+        {
+          "name": "PassengerPitch",
+          "db_column_name": "PassengerPitch",
+          "value_type": "float"
+        },
+        {
+          "name": "PassengerRoll",
+          "db_column_name": "PassengerRoll",
+          "value_type": "float"
+        },
+        {
+          "name": "VehicleEnterAnimDelay",
+          "db_column_name": "VehicleEnterAnimDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "VehicleExitAnimDelay",
+          "db_column_name": "VehicleExitAnimDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "VehicleAbilityDisplay",
+          "db_column_name": "VehicleAbilityDisplay",
+          "value_type": "int"
+        },
+        {
+          "name": "EnterUISoundID",
+          "db_column_name": "EnterUISoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExitUISoundID",
+          "db_column_name": "ExitUISoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiSkinFileDataID",
+          "db_column_name": "UiSkinFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "CameraEnteringDelay",
+          "db_column_name": "CameraEnteringDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraEnteringDuration",
+          "db_column_name": "CameraEnteringDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraExitingDelay",
+          "db_column_name": "CameraExitingDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraExitingDuration",
+          "db_column_name": "CameraExitingDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraPosChaseRate",
+          "db_column_name": "CameraPosChaseRate",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraFacingChaseRate",
+          "db_column_name": "CameraFacingChaseRate",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraEnteringZoom",
+          "db_column_name": "CameraEnteringZoom",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraSeatZoomMin",
+          "db_column_name": "CameraSeatZoomMin",
+          "value_type": "float"
+        },
+        {
+          "name": "CameraSeatZoomMax",
+          "db_column_name": "CameraSeatZoomMax",
+          "value_type": "float"
+        },
+        {
+          "name": "EnterAnimKitID",
+          "db_column_name": "EnterAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "RideAnimKitID",
+          "db_column_name": "RideAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "ExitAnimKitID",
+          "db_column_name": "ExitAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleEnterAnimKitID",
+          "db_column_name": "VehicleEnterAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleRideAnimKitID",
+          "db_column_name": "VehicleRideAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "VehicleExitAnimKitID",
+          "db_column_name": "VehicleExitAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "CameraModeID",
+          "db_column_name": "CameraModeID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

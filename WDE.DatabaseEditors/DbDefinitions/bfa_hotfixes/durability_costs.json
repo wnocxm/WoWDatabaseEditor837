@@ -1,0 +1,183 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Durability Costs (hotfix)",
+  "single_solution_name": "Durability Costs (hotfix)",
+  "multi_solution_name": "Durability Costs (hotfix)",
+  "description": "8.3.7 hotfixes database table `durability_costs`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "durability_costs",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost1",
+          "db_column_name": "WeaponSubClassCost1",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost2",
+          "db_column_name": "WeaponSubClassCost2",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost3",
+          "db_column_name": "WeaponSubClassCost3",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost4",
+          "db_column_name": "WeaponSubClassCost4",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost5",
+          "db_column_name": "WeaponSubClassCost5",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost6",
+          "db_column_name": "WeaponSubClassCost6",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost7",
+          "db_column_name": "WeaponSubClassCost7",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost8",
+          "db_column_name": "WeaponSubClassCost8",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost9",
+          "db_column_name": "WeaponSubClassCost9",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost10",
+          "db_column_name": "WeaponSubClassCost10",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost11",
+          "db_column_name": "WeaponSubClassCost11",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost12",
+          "db_column_name": "WeaponSubClassCost12",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost13",
+          "db_column_name": "WeaponSubClassCost13",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost14",
+          "db_column_name": "WeaponSubClassCost14",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost15",
+          "db_column_name": "WeaponSubClassCost15",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost16",
+          "db_column_name": "WeaponSubClassCost16",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost17",
+          "db_column_name": "WeaponSubClassCost17",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost18",
+          "db_column_name": "WeaponSubClassCost18",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost19",
+          "db_column_name": "WeaponSubClassCost19",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost20",
+          "db_column_name": "WeaponSubClassCost20",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubClassCost21",
+          "db_column_name": "WeaponSubClassCost21",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost1",
+          "db_column_name": "ArmorSubClassCost1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost2",
+          "db_column_name": "ArmorSubClassCost2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost3",
+          "db_column_name": "ArmorSubClassCost3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost4",
+          "db_column_name": "ArmorSubClassCost4",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost5",
+          "db_column_name": "ArmorSubClassCost5",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost6",
+          "db_column_name": "ArmorSubClassCost6",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost7",
+          "db_column_name": "ArmorSubClassCost7",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArmorSubClassCost8",
+          "db_column_name": "ArmorSubClassCost8",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

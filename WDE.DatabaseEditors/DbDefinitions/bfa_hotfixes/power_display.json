@@ -1,0 +1,64 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Power Display (hotfix)",
+  "single_solution_name": "Power Display (hotfix)",
+  "multi_solution_name": "Power Display (hotfix)",
+  "description": "8.3.7 hotfixes database table `power_display`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "power_display",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GlobalStringBaseTag",
+          "db_column_name": "GlobalStringBaseTag",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ActualType",
+          "db_column_name": "ActualType",
+          "value_type": "uint"
+        },
+        {
+          "name": "Red",
+          "db_column_name": "Red",
+          "value_type": "uint"
+        },
+        {
+          "name": "Green",
+          "db_column_name": "Green",
+          "value_type": "uint"
+        },
+        {
+          "name": "Blue",
+          "db_column_name": "Blue",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

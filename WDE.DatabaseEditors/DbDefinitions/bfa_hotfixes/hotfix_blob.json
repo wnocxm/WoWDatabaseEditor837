@@ -1,0 +1,55 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Hotfix Blob (hotfix)",
+  "single_solution_name": "Hotfix Blob (hotfix)",
+  "multi_solution_name": "Hotfix Blob (hotfix)",
+  "description": "8.3.7 hotfixes database table `hotfix_blob`.",
+  "database": "Hotfix",
+  "table_name": "hotfix_blob",
+  "table_index_name": "TableHash",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "TableHash",
+    "RecordId",
+    "locale"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "TableHash",
+          "db_column_name": "TableHash",
+          "value_type": "uint"
+        },
+        {
+          "name": "RecordId",
+          "db_column_name": "RecordId",
+          "value_type": "int"
+        },
+        {
+          "name": "locale",
+          "db_column_name": "locale",
+          "value_type": "string"
+        },
+        {
+          "name": "Blob",
+          "db_column_name": "Blob",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

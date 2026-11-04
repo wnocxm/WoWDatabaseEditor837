@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Azerite Level Info (hotfix)",
+  "single_solution_name": "Azerite Level Info (hotfix)",
+  "multi_solution_name": "Azerite Level Info (hotfix)",
+  "description": "8.3.7 hotfixes database table `azerite_level_info`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "azerite_level_info",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "BaseExperienceToNextLevel",
+          "db_column_name": "BaseExperienceToNextLevel",
+          "value_type": "long"
+        },
+        {
+          "name": "MinimumExperienceToNextLevel",
+          "db_column_name": "MinimumExperienceToNextLevel",
+          "value_type": "long"
+        },
+        {
+          "name": "ItemLevel",
+          "db_column_name": "ItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

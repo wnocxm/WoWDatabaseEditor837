@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Shapeshift (hotfix)",
+  "single_solution_name": "Spell Shapeshift (hotfix)",
+  "multi_solution_name": "Spell Shapeshift (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_shapeshift`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_shapeshift",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "StanceBarOrder",
+          "db_column_name": "StanceBarOrder",
+          "value_type": "int"
+        },
+        {
+          "name": "ShapeshiftExclude1",
+          "db_column_name": "ShapeshiftExclude1",
+          "value_type": "int"
+        },
+        {
+          "name": "ShapeshiftExclude2",
+          "db_column_name": "ShapeshiftExclude2",
+          "value_type": "int"
+        },
+        {
+          "name": "ShapeshiftMask1",
+          "db_column_name": "ShapeshiftMask1",
+          "value_type": "int"
+        },
+        {
+          "name": "ShapeshiftMask2",
+          "db_column_name": "ShapeshiftMask2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

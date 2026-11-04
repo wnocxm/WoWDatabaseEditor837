@@ -1,0 +1,180 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Item Enchantment (hotfix)",
+  "single_solution_name": "Spell Item Enchantment (hotfix)",
+  "multi_solution_name": "Spell Item Enchantment (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_item_enchantment`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_item_enchantment",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "HordeName",
+          "db_column_name": "HordeName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "EffectArg1",
+          "db_column_name": "EffectArg1",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectArg2",
+          "db_column_name": "EffectArg2",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectArg3",
+          "db_column_name": "EffectArg3",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectScalingPoints1",
+          "db_column_name": "EffectScalingPoints1",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectScalingPoints2",
+          "db_column_name": "EffectScalingPoints2",
+          "value_type": "float"
+        },
+        {
+          "name": "EffectScalingPoints3",
+          "db_column_name": "EffectScalingPoints3",
+          "value_type": "float"
+        },
+        {
+          "name": "TransmogPlayerConditionID",
+          "db_column_name": "TransmogPlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "TransmogCost",
+          "db_column_name": "TransmogCost",
+          "value_type": "uint"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "uint"
+        },
+        {
+          "name": "EffectPointsMin1",
+          "db_column_name": "EffectPointsMin1",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectPointsMin2",
+          "db_column_name": "EffectPointsMin2",
+          "value_type": "int"
+        },
+        {
+          "name": "EffectPointsMin3",
+          "db_column_name": "EffectPointsMin3",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemVisual",
+          "db_column_name": "ItemVisual",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredSkillID",
+          "db_column_name": "RequiredSkillID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredSkillRank",
+          "db_column_name": "RequiredSkillRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevel",
+          "db_column_name": "ItemLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "Charges",
+          "db_column_name": "Charges",
+          "value_type": "uint"
+        },
+        {
+          "name": "Effect1",
+          "db_column_name": "Effect1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Effect2",
+          "db_column_name": "Effect2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Effect3",
+          "db_column_name": "Effect3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ScalingClass",
+          "db_column_name": "ScalingClass",
+          "value_type": "int"
+        },
+        {
+          "name": "ScalingClassRestricted",
+          "db_column_name": "ScalingClassRestricted",
+          "value_type": "int"
+        },
+        {
+          "name": "ConditionID",
+          "db_column_name": "ConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

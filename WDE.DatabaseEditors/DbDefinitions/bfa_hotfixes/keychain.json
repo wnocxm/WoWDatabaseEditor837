@@ -1,0 +1,198 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Keychain (hotfix)",
+  "single_solution_name": "Keychain (hotfix)",
+  "multi_solution_name": "Keychain (hotfix)",
+  "description": "8.3.7 hotfixes database table `keychain`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "keychain",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key1",
+          "db_column_name": "Key1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key2",
+          "db_column_name": "Key2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key3",
+          "db_column_name": "Key3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key4",
+          "db_column_name": "Key4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key5",
+          "db_column_name": "Key5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key6",
+          "db_column_name": "Key6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key7",
+          "db_column_name": "Key7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key8",
+          "db_column_name": "Key8",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key9",
+          "db_column_name": "Key9",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key10",
+          "db_column_name": "Key10",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key11",
+          "db_column_name": "Key11",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key12",
+          "db_column_name": "Key12",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key13",
+          "db_column_name": "Key13",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key14",
+          "db_column_name": "Key14",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key15",
+          "db_column_name": "Key15",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key16",
+          "db_column_name": "Key16",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key17",
+          "db_column_name": "Key17",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key18",
+          "db_column_name": "Key18",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key19",
+          "db_column_name": "Key19",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key20",
+          "db_column_name": "Key20",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key21",
+          "db_column_name": "Key21",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key22",
+          "db_column_name": "Key22",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key23",
+          "db_column_name": "Key23",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key24",
+          "db_column_name": "Key24",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key25",
+          "db_column_name": "Key25",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key26",
+          "db_column_name": "Key26",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key27",
+          "db_column_name": "Key27",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key28",
+          "db_column_name": "Key28",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key29",
+          "db_column_name": "Key29",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key30",
+          "db_column_name": "Key30",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key31",
+          "db_column_name": "Key31",
+          "value_type": "uint"
+        },
+        {
+          "name": "Key32",
+          "db_column_name": "Key32",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

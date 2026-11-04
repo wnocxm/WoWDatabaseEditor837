@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Visual Kit (hotfix)",
+  "single_solution_name": "Spell Visual Kit (hotfix)",
+  "multi_solution_name": "Spell Visual Kit (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_visual_kit`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_visual_kit",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "FallbackPriority",
+          "db_column_name": "FallbackPriority",
+          "value_type": "int"
+        },
+        {
+          "name": "FallbackSpellVisualKitId",
+          "db_column_name": "FallbackSpellVisualKitId",
+          "value_type": "int"
+        },
+        {
+          "name": "DelayMin",
+          "db_column_name": "DelayMin",
+          "value_type": "uint"
+        },
+        {
+          "name": "DelayMax",
+          "db_column_name": "DelayMax",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

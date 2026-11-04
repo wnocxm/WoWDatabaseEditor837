@@ -1,0 +1,78 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Conversation Line (hotfix)",
+  "single_solution_name": "Conversation Line (hotfix)",
+  "multi_solution_name": "Conversation Line (hotfix)",
+  "description": "8.3.7 hotfixes database table `conversation_line`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "conversation_line",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "BroadcastTextID",
+          "db_column_name": "BroadcastTextID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellVisualKitID",
+          "db_column_name": "SpellVisualKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AdditionalDuration",
+          "db_column_name": "AdditionalDuration",
+          "value_type": "int"
+        },
+        {
+          "name": "NextConversationLineID",
+          "db_column_name": "NextConversationLineID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AnimKitID",
+          "db_column_name": "AnimKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpeechType",
+          "db_column_name": "SpeechType",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartAnimation",
+          "db_column_name": "StartAnimation",
+          "value_type": "uint"
+        },
+        {
+          "name": "EndAnimation",
+          "db_column_name": "EndAnimation",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

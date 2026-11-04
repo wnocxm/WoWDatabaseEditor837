@@ -1,6 +1,6 @@
 > **This fork targets TrinityCore BfA 8.3.7.** See [docs/BFA_837.md](docs/BFA_837.md) for what is supported.
 >
-> **Build (Windows):** install the .NET 8 SDK, then
+> **Build (Windows):** install the .NET 8 SDK (x64) and Java 17+ (needed by the ANTLR code generators, e.g. https://adoptium.net), then
 > ```
 > git clone --recurse-submodules https://github.com/wnocxm/WoWDatabaseEditor837
 > cd WoWDatabaseEditor837

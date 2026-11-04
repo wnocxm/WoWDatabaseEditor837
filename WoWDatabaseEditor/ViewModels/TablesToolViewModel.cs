@@ -18,7 +18,7 @@ namespace WoWDatabaseEditorCore.ViewModels;
 public partial class TablesToolViewModel : ObservableBase, ITool
 {
     [Notify] private bool visibility;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
     public string Title => "Tables";
     public string UniqueId => "tables";
     public ToolPreferedPosition PreferedPosition => ToolPreferedPosition.Left;

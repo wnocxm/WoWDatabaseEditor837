@@ -37,7 +37,7 @@ public partial class DefinitionViewModel : ObservableBase, IDropTarget
     [Notify] private string tablePrimaryKeyColumnName = "";
     [Notify] [AlsoNotify(nameof(IsTemplate), nameof(IsMultiRecord), nameof(IsSingleRow))] private RecordMode recordMode;
     [Notify] private DataDatabaseType dataDatabaseType;
-    [Notify] private OnlyConditionMode isOnlyConditionsTable;
+    [Notify("IsOnlyConditionsTable")] private OnlyConditionMode isOnlyConditionsTable;
     [Notify] private bool skipQuickLoad;
     [Notify] private string? groupName;
     [Notify] private string? reloadCommand;
@@ -76,7 +76,7 @@ public partial class DefinitionViewModel : ObservableBase, IDropTarget
     
     public ObservableCollectionExtended<ColumnGroupViewModel> Groups { get; } = new();
     
-    [Notify] private string? iconPath;
+    [Notify("IconPath")] private string? iconPath;
 
     public ObservableCollectionExtended<DatabaseSourceColumnViewModel> DatabaseSourceColumns { get; } = new();
 

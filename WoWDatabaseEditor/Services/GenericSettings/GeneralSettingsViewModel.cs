@@ -52,7 +52,7 @@ public partial class GeneralSettingsGroupViewModel : ObservableBase
     public string Name { get; }
     public IReadOnlyList<IGenericSetting> Settings { get; }
 
-    [Notify] private bool isModified;
+    [Notify("IsModified")] private bool isModified;
 
     public GeneralSettingsGroupViewModel(IGeneralSettingsGroup group)
     {

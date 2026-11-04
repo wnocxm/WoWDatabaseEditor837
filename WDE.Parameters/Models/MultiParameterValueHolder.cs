@@ -182,7 +182,7 @@ public partial class MultiParameterValueHolder<T> : IParameterValueHolder<T>, Sy
         }
     }
     
-    [Notify] private bool isUsed;
+    [Notify("IsUsed")] private bool isUsed;
 
     [Notify] private bool forceHidden;
     

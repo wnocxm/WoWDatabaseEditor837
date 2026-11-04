@@ -17,7 +17,7 @@ namespace WDE.LootEditor.Configuration;
 public partial class LootEditorButtonSettingViewModel : ObservableBase, ITableRowGroup, IReadOnlyList<ITableRowGroup>
 {
     public LootEditorConfiguration Parent { get; }
-    [Notify] [AlsoNotify(nameof(IsNonNullIcon))] private IconViewModel? icon;
+    [Notify("Icon")] [AlsoNotify(nameof(IsNonNullIcon))] private IconViewModel? icon;
     [Notify] [AlsoNotify(nameof(ButtonTextOrToolTip))] private string? buttonText;
     [Notify] [AlsoNotify(nameof(ButtonTextOrToolTip))] private string? buttonToolTip;
     [Notify] [AlsoNotify(nameof(IsCustomItemSetType))] private LootButtonType type;

@@ -9,7 +9,7 @@ public partial class ColumnGroupViewModel : ObservableBase
 {
     public DefinitionViewModel Parent { get; }
     [Notify] private string groupName;
-    [Notify] private bool isExpanded;
+    [Notify("IsExpanded")] private bool isExpanded;
     [Notify] private bool hasShowIf;
     [Notify] private string showIfColumnName = "";
     [Notify] private int showIfColumnValue;

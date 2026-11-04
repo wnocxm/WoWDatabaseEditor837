@@ -216,7 +216,7 @@ public partial class OutlinerToolViewModel : ObservableBase, ITool
     [Notify] private bool visibility;
     public ToolPreferedPosition PreferedPosition => ToolPreferedPosition.Right;
     public bool OpenOnStart => false;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
 
     private void ClearGroups()
     {

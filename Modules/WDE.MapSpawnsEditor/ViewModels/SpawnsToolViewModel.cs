@@ -24,7 +24,7 @@ public partial class SpawnsToolViewModel : ObservableBase, ITool
     private readonly ISpawnViewerProxy spawnViewerProxy;
     private readonly ISpawnSelectionService spawnSelectionService;
     [Notify] private bool visibility;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
 
     [Notify] private string searchText = "";
     [Notify] private bool showAllPhases = false;

@@ -25,7 +25,7 @@ public partial class LootCrossReferencesViewModel : ObservableBase, IDialog
     private IParameter<long> spellParameter;
     private IParameter<long> itemsParameter;
     private IParameter<long> zoneAreaParameter;
-    [Notify] private bool isLoading;
+    [Notify("IsLoading")] private bool isLoading;
 
     public ObservableCollectionExtended<CrossReferenceViewModel> Items { get; } = new();
     

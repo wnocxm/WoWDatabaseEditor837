@@ -24,11 +24,11 @@ public partial class LootGroup : ObservableBase, ITableRowGroup
 {
     public LootEditorViewModel ParentVm { get; }
 
-    [Notify] [AlsoNotify(nameof(IsModified))] private bool isGroupModified;
+    [Notify("IsGroupModified")] [AlsoNotify(nameof(IsModified))] private bool isGroupModified;
 
-    [Notify] private bool isExpanded = true;
+    [Notify("IsExpanded")] private bool isExpanded = true;
     
-    [Notify] private bool isFocused;
+    [Notify("IsFocused")] private bool isFocused;
 
     [Notify] private bool hasCrossReferencesCounter;
     

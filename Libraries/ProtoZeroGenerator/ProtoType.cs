@@ -30,7 +30,7 @@ public readonly struct ProtoType
         this.builtinType = builtinType;
     }
 
-    public string Name => IsScalar ? builtinType.ToString().ToLower() : name;
+    public string Name => IsScalar ? builtinType.ToString().ToLowerInvariant() : name;
 
     public BuiltinTypes BuiltinType => builtinType;
 

@@ -17,7 +17,7 @@ namespace WoWDatabaseEditorCore.Services.MemoryUsageDebug;
 public partial class MemoryUsageDebugToolViewModel : ObservableBase, ITool
 {
     [Notify] private bool visibility;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
     
     public string Title => "Debug memory usage";
     public string UniqueId => "debug_memory_usage";

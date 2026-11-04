@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using System;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -27,6 +28,14 @@ namespace BaseDesktopLoader
         // yet and stuff might break.
         public static void Main(System.Type[] modules, string[] args)
         {
+            // The editor is English only and builds SQL and identifiers with ToString/ToUpper/ToLower.
+            // With a culture like tr-TR ("i".ToUpper() == "İ", 1.5 -> "1,5") that silently breaks,
+            // so always run with the invariant culture.
+            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
+            CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
+            CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
+            CultureInfo.CurrentUICulture = CultureInfo.InvariantCulture;
+
             MigrateMacOsSettings();
             
             WoWDatabaseEditorCore.Avalonia.Program.PreloadedModules = modules;

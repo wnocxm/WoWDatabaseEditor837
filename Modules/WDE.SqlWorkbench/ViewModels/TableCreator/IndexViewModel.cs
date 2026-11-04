@@ -10,7 +10,7 @@ namespace WDE.SqlWorkbench.ViewModels;
 
 internal partial class IndexViewModel : ObservableBase
 {
-    [Notify] private string? indexName;
+    [Notify("IndexName")] private string? indexName;
     [Notify] [AlsoNotify(nameof(CanPickType))] private IndexKind kind;
     [Notify] private IndexType type;
     [Notify] private string? comment;

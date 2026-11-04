@@ -21,10 +21,10 @@ internal partial class BreakpointHitPopupViewModel : ObservableBase
 
     [Notify] private bool showTail;
 
-    [Notify] private bool isRunning;
-    [Notify] private bool isBreakpoint;
+    [Notify("IsRunning")] private bool isRunning;
+    [Notify("IsBreakpoint")] private bool isBreakpoint;
 
-    [Notify] private string ideName = "(...loading)";
+    [Notify("IdeName")] private string ideName = "(...loading)";
     [Notify] private string? solutionName;
     public AsyncAutoCommand DebugUnpauseCommand { get; }
     public AsyncAutoCommand DebugPauseCommand { get; }
@@ -35,7 +35,7 @@ internal partial class BreakpointHitPopupViewModel : ObservableBase
     [Notify] private string? hitModuleName;
     [Notify] private string hitFileName = "";
     [Notify] private string? source;
-    [Notify] private string? invoker;
+    [Notify("Invoker")] private string? invoker;
 
     public IAsyncCommand GoToBreakpointCommand { get; }
 

@@ -14,10 +14,10 @@ internal partial class DteViewModel : ObservableBase
 {
     private readonly IDTE model;
 
-    [Notify] private bool isRunning;
-    [Notify] private bool isBreakpoint;
+    [Notify("IsRunning")] private bool isRunning;
+    [Notify("IsBreakpoint")] private bool isBreakpoint;
 
-    [Notify] private string ideName = "(...loading)";
+    [Notify("IdeName")] private string ideName = "(...loading)";
     public AsyncAutoCommand DebugUnpauseCommand { get; }
     public AsyncAutoCommand DebugPauseCommand { get; }
 

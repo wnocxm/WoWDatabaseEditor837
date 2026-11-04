@@ -13,10 +13,10 @@ public partial class SpawnGroupPickerViewModel : IDialog
 {
     private readonly IMessageBoxService messageBoxService;
     private readonly IDatabaseProvider databaseProvider;
-    [Notify] private uint id;
+    [Notify("Id")] private uint id;
     [Notify] private string name = "";
     [Notify] private GroupTypeViewModel groupType;
-    [Notify] private bool isDialogEnabled = true;
+    [Notify("IsDialogEnabled")] private bool isDialogEnabled = true;
     public List<GroupTypeViewModel> SpawnGroupTypes { get; }
 
     public bool HasSpawnGroupType { get; }

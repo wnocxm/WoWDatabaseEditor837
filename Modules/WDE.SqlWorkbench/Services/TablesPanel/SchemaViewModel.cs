@@ -31,7 +31,7 @@ namespace WDE.SqlWorkbench.Services.TablesPanel;
 internal partial class SchemaViewModel : ObservableBase, INamedParentType
 {
     private readonly IConnection connection;
-    [Notify] private bool isExpanded;
+    [Notify("IsExpanded")] private bool isExpanded;
     
     public ConnectionListToolViewModel ParentViewModel { get; }
     public ImageUri Icon => new ImageUri("Icons/icon_mini_schema_big.png");

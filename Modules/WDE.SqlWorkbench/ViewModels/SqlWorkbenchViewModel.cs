@@ -73,7 +73,7 @@ internal partial class SqlWorkbenchViewModel : ObservableBase, ISolutionItemDocu
     [Notify] [AlsoNotify(nameof(CursorStatus))] private int caretLine = 1;
     [Notify] [AlsoNotify(nameof(CursorStatus))] private int caretColumn = 1;
 
-    [Notify] private bool isViewBound;
+    [Notify("IsViewBound")] private bool isViewBound;
 
     private readonly ISqlLanguageServer languageServer;
     private readonly IQueryUtility queryUtility;
@@ -110,7 +110,7 @@ internal partial class SqlWorkbenchViewModel : ObservableBase, ISolutionItemDocu
     public IAsyncCommand SaveFileCommand { get; }
     public IAsyncCommand<IConnection> ChangeConnectionCommand { get; }
 
-    [Notify] private bool isConnecting = true;
+    [Notify("IsConnecting")] private bool isConnecting = true;
     [Notify] private bool showNonPrintableChars = false;
     [Notify] private bool wordWrap = false;
     [Notify] private int limit = 10_000;
@@ -164,7 +164,7 @@ internal partial class SqlWorkbenchViewModel : ObservableBase, ISolutionItemDocu
         }
     }
     
-    [Notify] private bool isEnabled = true;
+    [Notify("IsEnabled")] private bool isEnabled = true;
 
     [Notify] [AlsoNotify(nameof(LanguageServerToolTipText), nameof(LanguageServerHealthy))] private LanguageServerStateEnum languageServerState;
     

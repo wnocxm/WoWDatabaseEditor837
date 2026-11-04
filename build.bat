@@ -11,6 +11,9 @@ setlocal
 cd /d "%~dp0"
 set OUT=bin\wowdatabaseeditor-win
 set LOG=build.log
+rem English compiler messages (the log is easier to read and search)
+set DOTNET_CLI_UI_LANGUAGE=en
+set VSLANG=1033
 
 echo ==== Environment ==== > %LOG%
 echo [.NET SDKs]

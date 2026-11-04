@@ -32,7 +32,7 @@ namespace WDE.Updater.ViewModels
 
         [Notify] private bool hasPendingUpdate;
 
-        [Notify] private ICommand installPendingCommandUpdate;
+        [Notify("InstallPendingCommandUpdate")] private ICommand installPendingCommandUpdate;
 
         public UpdateViewModel(IUpdateService updateService, 
             ITaskRunner taskRunner, 

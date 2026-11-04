@@ -80,7 +80,7 @@ public partial class SpawnGroup : IParentType
     public GroupType Type { get; }
     public string Name { get; }
     public string Header { get;  }
-    [Notify] private ImageUri icon;
+    [Notify("Icon")] private ImageUri icon;
 
     public override string ToString() => Header;
 

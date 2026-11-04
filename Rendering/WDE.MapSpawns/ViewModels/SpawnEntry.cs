@@ -25,7 +25,7 @@ public partial class SpawnEntry : IParentType
         Header = gameObjectTemplate.Name + " (" + Entry + ")";
     }
 
-    [Notify] private bool isExpanded;
+    [Notify("IsExpanded")] private bool isExpanded;
     public uint Entry { get; }
     public SpawnType Type { get; }
     public string Name { get; }

@@ -89,7 +89,7 @@ public partial class ConditionReferenceViewModel : ObservableBase, IDropTarget
 
 public partial class ConditionTargetViewModel : ObservableBase
 {
-    [Notify] private uint id;
+    [Notify("Id")] private uint id;
     [Notify] private string name;
     
     public ConditionTargetViewModel(ConditionReferenceViewModel parent,

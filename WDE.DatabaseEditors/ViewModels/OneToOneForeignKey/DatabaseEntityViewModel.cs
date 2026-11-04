@@ -12,7 +12,7 @@ namespace WDE.DatabaseEditors.ViewModels.OneToOneForeignKey
 {
     public partial class DatabaseFieldsGroup
     {
-        [Notify] private bool isExpanded;
+        [Notify("IsExpanded")] private bool isExpanded;
         [Notify] private bool showHeader = true;
         public string GroupName { get; }
 

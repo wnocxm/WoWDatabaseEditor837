@@ -80,7 +80,7 @@ internal partial class SourceCodeConfigurationViewModel : ObservableBase, IConfi
     public ImageUri Icon { get; } = new ImageUri("Icons/document_code_big.png");
     public string Name => "Server source code";
     public string? ShortDescription => "If you provide the path to the server source code, Find Anywhere will use it to search in the source code.";
-    [Notify] private bool isModified;
+    [Notify("IsModified")] private bool isModified;
     public bool IsRestartRequired => false;
     public ConfigurableGroup Group => ConfigurableGroup.Advanced;
 }

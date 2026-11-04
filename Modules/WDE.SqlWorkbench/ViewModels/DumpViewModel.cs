@@ -31,7 +31,7 @@ internal partial class DumpViewModel : ObservableBase, IWindowViewModel, IClosab
     private readonly IMessageBoxService messageBoxService;
     private readonly IClipboardService clipboardService;
 
-    [Notify] private bool isLoading;
+    [Notify("IsLoading")] private bool isLoading;
     
     [Notify] private string? outputFile;
 
@@ -276,7 +276,7 @@ internal partial class DumpViewModel : ObservableBase, IWindowViewModel, IClosab
 
 internal partial class DumpTableViewModel : ObservableBase
 {
-    [Notify] private bool isChecked;
+    [Notify("IsChecked")] private bool isChecked;
     public double? DataLength { get; }
 
     public DumpTableViewModel(string name, double? dataLength)

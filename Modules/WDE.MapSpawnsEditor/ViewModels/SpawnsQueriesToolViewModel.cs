@@ -15,7 +15,7 @@ public partial class SpawnsQueriesToolViewModel : ObservableBase, ITool
     private readonly INativeTextDocument logs;
     private readonly IPendingGameChangesService changes;
     [Notify] private bool visibility;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
 
     public INativeTextDocument LogDocument => logs;
     public string Title => "3D Map Queries Log";

@@ -38,9 +38,9 @@ internal partial class ImportViewModel : ObservableBase, IWindowViewModel, IClos
 
     [Notify] private bool autoDeleteSaveTempFile = true;
 
-    [Notify] private bool isLoading;
+    [Notify("IsLoading")] private bool isLoading;
 
-    [Notify] private bool importInProgress;
+    [Notify("ImportInProgress")] private bool importInProgress;
 
     [Notify] private double totalSize;
 
@@ -282,7 +282,7 @@ internal partial class ImportViewModel : ObservableBase, IWindowViewModel, IClos
 
 internal partial class ImportFileViewModel : ObservableBase
 {
-    [Notify] private bool isChecked;
+    [Notify("IsChecked")] private bool isChecked;
     [Notify] private MySqlFileImportState state;
     public long SizeBytes { get; }
     public double SizeMegaBytes { get; }

@@ -967,7 +967,7 @@ public partial class LootEditorViewModel : ObservableBase, ISolutionItemDocument
 
     private Task? pendingLoadingTask;
 
-    [Notify] [AlsoNotify(nameof(IsLoading))] private bool isInitialLoading;
+    [Notify("IsInitialLoading")] [AlsoNotify(nameof(IsLoading))] private bool isInitialLoading;
     
     [Notify] [AlsoNotify(nameof(IsLoading))] private int loadingCounter = 0;
     

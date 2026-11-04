@@ -52,9 +52,9 @@ public partial class DefinitionEditorViewModel : ObservableBase
     public IMetaColumnViewModelFactory MetaColumnFactory { get; }
     public List<ICoreVersion> AllCoreVersions { get; }
 
-    [Notify] private DataDatabaseType importTableDatabaseType = DataDatabaseType.World;
+    [Notify("ImportTableDatabaseType")] private DataDatabaseType importTableDatabaseType = DataDatabaseType.World;
 
-    [Notify] private string importTableName = "";
+    [Notify("ImportTableName")] private string importTableName = "";
     
     [Notify] private string searchText = "";
 
@@ -582,7 +582,7 @@ public partial class DefinitionStubViewModel : ObservableBase
         icon = definition.IconPath != null ? new ImageUri(definition.IconPath) : ImageUri.Empty;
     }
 
-    [Notify] private ImageUri? icon;
+    [Notify("Icon")] private ImageUri? icon;
     [Notify] private string tableName;
     public string RelativePath { get; }
 

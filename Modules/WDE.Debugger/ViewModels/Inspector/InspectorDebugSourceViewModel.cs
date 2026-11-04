@@ -30,7 +30,7 @@ internal partial class InspectorDebugSourceViewModel : ObservableBase, IParentTy
     public uint NestLevel { get; set; }
     public bool IsVisible { get; set; } = true;
     public IParentType? Parent { get; set; }
-    [Notify] private bool isExpanded = true;
+    [Notify("IsExpanded")] private bool isExpanded = true;
     public IReadOnlyList<IParentType> NestedParents => Array.Empty<IParentType>();
     public IReadOnlyList<IChildType> Children => DebugPoints;
     public event NotifyCollectionChangedEventHandler? ChildrenChanged;

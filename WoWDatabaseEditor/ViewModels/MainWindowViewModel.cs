@@ -56,7 +56,7 @@ namespace WoWDatabaseEditorCore.ViewModels
 
         private readonly Dictionary<string, ITool> toolById = new();
 
-        [Notify] private bool is3dViewSupported;
+        [Notify("Is3dViewSupported")] private bool is3dViewSupported;
 
         public MainWindowViewModel(IDocumentManager documentManager,
             StatusBarViewModel statusBarViewModel,

@@ -113,7 +113,7 @@ public partial class MultipleParametersPickerItemViewModel : ObservableBase
 {
     private readonly IParameter<long> parameter;
     [Notify] [AlsoNotify(nameof(Name))] private long key;
-    [Notify] private bool isPhantom;
+    [Notify("IsPhantom")] private bool isPhantom;
     
     public string Name => parameter.ToString(key, ToStringOptions.WithoutNumber);
     

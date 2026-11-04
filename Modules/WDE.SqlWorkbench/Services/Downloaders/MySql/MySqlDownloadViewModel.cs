@@ -25,11 +25,11 @@ internal partial class MySqlDownloadViewModel : ObservableBase, IDialog, ITaskPr
     private readonly IMainThread mainThread;
     [Notify] private int downloadProgress;
     [Notify] private int downloadLength;
-    [Notify] private bool isDownloading;
-    [Notify] private bool isFetchingVersions;
+    [Notify("IsDownloading")] private bool isDownloading;
+    [Notify("IsFetchingVersions")] private bool isFetchingVersions;
     [Notify] private MySqlRelease? selectedMySqlDbVersion;
     [Notify] private string downloadText = "Download";
-    [Notify] private bool isDownloaded;
+    [Notify("IsDownloaded")] private bool isDownloaded;
     public ObservableCollection<MySqlRelease> MySqlVersions { get; } = new();
 
     public IAsyncCommand DownloadSelectedVersionCommand { get; }

@@ -19,8 +19,8 @@ public partial class ServerExecutableService : ObservableBase, IServerExecutable
     private readonly Lazy<IMessageBoxService> messageBoxService;
     private readonly IServerExecutableConfiguration configuration;
     private readonly Lazy<IStatusBar> statusBar;
-    [Notify] private bool isWorldServerRunning;
-    [Notify] private bool isAuthServerRunning;
+    [Notify("IsWorldServerRunning")] private bool isWorldServerRunning;
+    [Notify("IsAuthServerRunning")] private bool isAuthServerRunning;
     public IAsyncCommand ToggleWorldServer { get; }
     public IAsyncCommand ToggleAuthServer { get; }
 

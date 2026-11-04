@@ -45,7 +45,7 @@ namespace WDE.QuestChainEditor.ViewModels;
 public partial class QuestChainDocumentViewModel : ObservableBase, ISolutionItemDocument, IProblemSourceDocument, IWindowViewModel, ISolutionItemManualUpdateSessionOnSave
 {
     [Notify] private Point viewportLocation; // must be bound or else BringToView animation won't work
-    [Notify] private bool isSearchBoxVisible;
+    [Notify("IsSearchBoxVisible")] private bool isSearchBoxVisible;
     [Notify] private bool shiftAltConnectionMessageVisible;
     [Notify] private bool shiftAltConnectionTeachingTipVisible;
 

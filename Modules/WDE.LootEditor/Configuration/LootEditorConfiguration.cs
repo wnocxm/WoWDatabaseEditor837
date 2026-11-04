@@ -31,7 +31,7 @@ public partial class LootEditorConfiguration : ObservableBase, IConfigurable, ID
     public IParameterFactory ParameterFactory { get; }
     public ILootEditorFeatures EditorFeatures { get; }
     private readonly ILootEditorPreferences preferences;
-    [Notify] private bool isModified;
+    [Notify("IsModified")] private bool isModified;
     
     public ICommand Save { get; }
     public ImageUri Icon { get; } = new ImageUri("Icons/document_moneybagbitcoin_big.png");

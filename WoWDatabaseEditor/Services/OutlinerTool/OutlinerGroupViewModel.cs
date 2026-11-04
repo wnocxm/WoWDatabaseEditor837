@@ -9,7 +9,7 @@ namespace WoWDatabaseEditorCore.Services.OutlinerTool;
 
 public partial class OutlinerGroupViewModel : IParentType
 {
-    [Notify] private bool isExpanded = true;
+    [Notify("IsExpanded")] private bool isExpanded = true;
     private string name;
     public string Name { get; private set; }
 

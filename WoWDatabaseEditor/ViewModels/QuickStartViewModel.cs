@@ -75,7 +75,7 @@ namespace WoWDatabaseEditorCore.ViewModels
         
         public object? QuickStartPanel { get; }
 
-        [Notify] private bool isDotNet8Installed = true;
+        [Notify("IsDotNet8Installed")] private bool isDotNet8Installed = true;
 
         public ICommand OpenDotNet8Website { get; }
 

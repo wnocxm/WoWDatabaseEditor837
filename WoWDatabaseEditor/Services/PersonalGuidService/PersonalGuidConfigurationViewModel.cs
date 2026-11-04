@@ -56,7 +56,7 @@ public partial class PersonalGuidConfigurationViewModel : ObservableBase, IConfi
     public ICommand ResetCreatureCounter { get; }
     public ICommand ResetGameObjectCounter { get; }
     
-    [AlsoNotify(nameof(IsModified))] [Notify] private bool isEnabled;
+    [AlsoNotify(nameof(IsModified))] [Notify("IsEnabled")] private bool isEnabled;
     [AlsoNotify(nameof(IsModified), nameof(LastCreatureGuid))] [Notify] private uint startCreatureGuid;
     [AlsoNotify(nameof(IsModified), nameof(LastCreatureGuid))] [Notify] private uint creatureGuidCount;
     [AlsoNotify(nameof(IsModified))] [Notify] private uint currentCreatureGuid;

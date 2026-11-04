@@ -23,7 +23,7 @@ internal partial class DebuggerLogsToolViewModel : ObservableBase, ITool
     private readonly IParameterFactory parameterFactory;
     private readonly ILogExpressionService logExpressionService;
     [Notify] private bool visibility;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
     public string Title => "Debugger logs";
     public string UniqueId => "debugger_logs_tool";
     public ToolPreferedPosition PreferedPosition => ToolPreferedPosition.Bottom;

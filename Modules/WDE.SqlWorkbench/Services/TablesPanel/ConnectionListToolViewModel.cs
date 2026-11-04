@@ -44,7 +44,7 @@ internal partial class ConnectionListToolViewModel : ObservableBase, ITablesTool
     private readonly IConnection connection;
     private readonly IConnectionsManager connectionsManager;
     private readonly Lazy<IExtendedSqlEditorService> sqlEditorService;
-    [Notify] private bool isLoading;
+    [Notify("IsLoading")] private bool isLoading;
     [Notify] private bool listUpdated;
     [Notify] private string searchText = "";
     [Notify] [AlsoNotify(nameof(SelectedDatabase), nameof(SelectedTable), nameof(SelectedRoutine), nameof(SelectedGroup),

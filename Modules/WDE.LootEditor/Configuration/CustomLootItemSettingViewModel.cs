@@ -14,7 +14,7 @@ namespace WDE.LootEditor.Configuration;
 
 public partial class CustomLootItemSettingViewModel : ObservableBase, ITableRow
 {
-    [Notify] private long itemOrCurrencyId;
+    [Notify("ItemOrCurrencyId")] private long itemOrCurrencyId;
     [Notify] private float chance = 100;
     [Notify] private long lootMode = 1;
     [Notify] private long groupId;

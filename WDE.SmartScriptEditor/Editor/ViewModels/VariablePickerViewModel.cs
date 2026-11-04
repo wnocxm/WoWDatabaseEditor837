@@ -127,11 +127,11 @@ public partial class VariablePickerViewModel : ObservableBase, IDialog
 
 public partial class VariableItemViewModel : ObservableBase
 {
-    [Notify] private long id;
+    [Notify("Id")] private long id;
     [Notify] private uint entry;
     [Notify] private string name;
     [Notify] private string? comment;
-    [Notify] private bool isPhantom;
+    [Notify("IsPhantom")] private bool isPhantom;
     public readonly long? OriginalId;
 
     private VariableItemViewModel(long id, string name)

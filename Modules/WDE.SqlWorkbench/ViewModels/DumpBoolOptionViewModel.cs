@@ -10,7 +10,7 @@ namespace WDE.SqlWorkbench.ViewModels;
 internal partial class DumpBoolOptionViewModel : ObservableBase
 {
     private readonly FieldInfo field;
-    [Notify] private bool isChecked;
+    [Notify("IsChecked")] private bool isChecked;
     public string Name { get; }
     public string Description { get; }
 

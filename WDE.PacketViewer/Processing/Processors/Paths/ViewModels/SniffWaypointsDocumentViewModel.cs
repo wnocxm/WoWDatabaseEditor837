@@ -310,7 +310,7 @@ public partial class CreaturePathViewModel : ObservableBase, ITableRowGroup
 {
     private readonly TimeSpan duration;
     private readonly Vector3 initialPosition;
-    [Notify] private bool isVisible = true;
+    [Notify("IsVisible")] private bool isVisible = true;
     [Notify] private float totalDistance;
     [Notify] private float averageSpeed;
     public string Duration => $"{(int)duration.TotalSeconds} s {(int)duration.Milliseconds} ms";

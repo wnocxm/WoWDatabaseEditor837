@@ -111,7 +111,7 @@ public partial class PathPreviewViewModel : ObservableBase, IWizard, IMapContext
 
     [Notify] private MapViewModel? selectedMap = null;
     [Notify] private double downloadMapProgress = 0;
-    [Notify] private bool isDownloadingMapData;
+    [Notify("IsDownloadingMapData")] private bool isDownloadingMapData;
     [Notify] private bool autoFetch = true;
     private CancellationTokenSource? fetchingPathsToken;
     [Notify] private Point topLeft;

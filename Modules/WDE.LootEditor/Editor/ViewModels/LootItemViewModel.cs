@@ -68,8 +68,8 @@ public partial class LootItemViewModel : ObservableBase, ITableRow
         }
     }
 
-    [Notify] private bool isModified;
-    [Notify] private bool isDuplicate;
+    [Notify("IsModified")] private bool isModified;
+    [Notify("IsDuplicate")] private bool isDuplicate;
 
     public event Func<LootItemViewModel, EventArgs, Task>? OnReferenceLootChanged;
     public event Func<LootItemViewModel, OnBeforeChangedEventArgs<long>, Task>? OnBeforeReferenceLootChanged;

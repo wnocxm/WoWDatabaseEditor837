@@ -25,7 +25,7 @@ internal partial class ConnectionConfigViewModel : ObservableBase
     [Notify]  private string password = "";
     [Notify]  private string defaultDatabase = "";
     [Notify]  [AlsoNotify(nameof(ConnectionNameOrFallBack))] private string connectionName = "";
-    [Notify]  private string? icon = "";
+    [Notify("Icon")]  private string? icon = "";
     [Notify]  private bool defaultExpandSchemas;
     [Notify] [AlsoNotify(nameof(Color))] private bool hasColor;
     [Notify]  private QueryExecutionSafety safeMode;

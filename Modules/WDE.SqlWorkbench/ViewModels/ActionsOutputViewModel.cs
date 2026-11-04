@@ -20,7 +20,7 @@ namespace WDE.SqlWorkbench.ViewModels;
 public partial class ActionsOutputViewModel : ObservableBase, ITool, IActionsOutputService
 {
     private readonly IMainThread mainThread;
-    [Notify] private bool isSelected;
+    [Notify("IsSelected")] private bool isSelected;
     [Notify] private bool visibility;
     [Notify] [AlsoNotify(nameof(FocusedItem))] private int focusedIndex = -1;
     private ObservableCollection<ActionOutputViewModel> actions = new();

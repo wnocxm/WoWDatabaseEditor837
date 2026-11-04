@@ -25,11 +25,11 @@ internal partial class MariaDownloadViewModel : ObservableBase, IDialog, ITaskPr
     private readonly IMainThread mainThread;
     [Notify] private int downloadProgress;
     [Notify] private int downloadLength;
-    [Notify] private bool isDownloading;
-    [Notify] private bool isFetchingVersions;
+    [Notify("IsDownloading")] private bool isDownloading;
+    [Notify("IsFetchingVersions")] private bool isFetchingVersions;
     [Notify] private MariaDbRelease? selectedMariaDbVersion;
     [Notify] private string downloadText = "Download";
-    [Notify] private bool isDownloaded;
+    [Notify("IsDownloaded")] private bool isDownloaded;
     public ObservableCollection<MariaDbRelease> MariaDbVersions { get; } = new();
 
     public IAsyncCommand DownloadSelectedVersionCommand { get; }

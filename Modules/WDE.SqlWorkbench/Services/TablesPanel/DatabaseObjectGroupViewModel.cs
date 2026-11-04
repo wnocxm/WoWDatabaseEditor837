@@ -11,7 +11,7 @@ namespace WDE.SqlWorkbench.Services.TablesPanel;
 
 internal partial class DatabaseObjectGroupViewModel : ObservableBase, INamedParentType
 {
-    [Notify] private bool isExpanded;
+    [Notify("IsExpanded")] private bool isExpanded;
     
     private ObservableCollection<IChildType> children = new ObservableCollection<IChildType>();
     

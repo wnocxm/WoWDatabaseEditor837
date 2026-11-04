@@ -8,7 +8,7 @@ namespace WDE.QuestChainEditor.ViewModels;
 
 public partial class PendingConnectionViewModel : ObservableBase
 {
-    [Notify] private bool isVisible;
+    [Notify("IsVisible")] private bool isVisible;
     [Notify] private Point targetLocation;
 
     [Notify] private BaseQuestViewModel? from;

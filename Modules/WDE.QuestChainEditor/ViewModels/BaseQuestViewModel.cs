@@ -12,13 +12,13 @@ namespace WDE.QuestChainEditor.ViewModels;
 public abstract partial class BaseQuestViewModel : ObservableBase
 {
     [Notify] private string header = "";
-    [Notify] private bool isDragging;
-    [Notify] private bool isSelected;
-    [Notify] private bool isProblematic;
+    [Notify("IsDragging")] private bool isDragging;
+    [Notify("IsSelected")] private bool isSelected;
+    [Notify("IsProblematic")] private bool isProblematic;
     [Notify] private Point anchor;
     [Notify] private double perfectX;
     [Notify] private double perfectY;
-    [Notify] private bool isHighlighted;
+    [Notify("IsHighlighted")] private bool isHighlighted;
 
     private Rect bounds;
     private Point location;

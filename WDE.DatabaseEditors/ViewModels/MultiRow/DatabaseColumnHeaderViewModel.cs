@@ -9,7 +9,7 @@ namespace WDE.DatabaseEditors.ViewModels.MultiRow
 {
     public partial class DatabaseColumnHeaderViewModel : ObservableBase, ITableColumnHeader
     {
-        [Notify] private bool isVisible = true;
+        [Notify("IsVisible")] private bool isVisible = true;
         public string Name { get; }
         public string? Help { get; }
         public string DatabaseName { get; }

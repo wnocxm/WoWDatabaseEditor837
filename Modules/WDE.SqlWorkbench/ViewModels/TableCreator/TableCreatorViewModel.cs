@@ -29,7 +29,7 @@ namespace WDE.SqlWorkbench.ViewModels;
 
 internal partial class TableCreatorViewModel : ObservableBase, IDocument, IDropTarget
 {
-    [Notify] private bool isLoading;
+    [Notify("IsLoading")] private bool isLoading;
     [Notify] private string tableName;
     [Notify] private string tableComment = "";
     [Notify] private string schemaName;

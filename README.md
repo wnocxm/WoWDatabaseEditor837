@@ -1,3 +1,15 @@
+> **This fork targets TrinityCore BfA 8.3.7.** See [docs/BFA_837.md](docs/BFA_837.md) for what is supported.
+>
+> **Build (Windows):** install the .NET 8 SDK, then
+> ```
+> git clone --recurse-submodules https://github.com/wnocxm/WoWDatabaseEditor837
+> cd WoWDatabaseEditor837
+> build.bat
+> ```
+> Start `bin\wowdatabaseeditor-win\WoWDatabaseEditor.exe`, then in the settings pick core version
+> **TrinityCore BfA 8.3.7**, fill the world, auth and hotfix database connections and set DBC version
+> **BFA_35662** with the path to the server's `dbc/enUS` folder.
+
 # WoW Database Editor
 Integrated development environment (IDE) for Smart Scripts and database editing for TrinityCore based servers.
 

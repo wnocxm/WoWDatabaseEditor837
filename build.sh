@@ -2,22 +2,6 @@ set -e
 # Display installed .NET SDKs
 dotnet --list-sdks
 
-echo $APPVEYOR_PULL_REQUEST_NUMBER
-
-if [ -z "$APPVEYOR_PULL_REQUEST_NUMBER" ]; then
-    git clone -b avalonia11 https://$REPO_TOKEN@github.com/BAndysc/WoWDatabaseEditorExtras --recurse-submodules
-    
-    cd WoWDatabaseEditorExtras/WoWDatabaseEditor
-    git checkout $APPVEYOR_REPO_COMMIT
-    cd ..
-    cd ..
-
-    EXTRA_CSPROJ='<ProjectReference Include="..\\WoWDatabaseEditorExtras\\WDE.Github\\WDE.Github.csproj" />'
-    sed -i "\#</ItemGroup>#i $EXTRA_CSPROJ" "LoaderAvalonia/LoaderAvalonia.csproj"
-    sed -i '/};/i ,typeof(GithubModule)' "LoaderAvalonia/Program.cs"
-    sed -i '/using WoWDatabaseEditorCore.Avalonia;/i using WDE.Github;' "LoaderAvalonia/Program.cs"
-fi
-
 # Publish projects for Windows, macOS, and Linux
 dotnet publish -c Release --self-contained false -f net8.0 -o bin/wowdatabaseeditor-avalonia-win/ LoaderAvalonia/LoaderAvalonia.csproj -r win-x64 -p:PublishSingleFile=true -p:PublishTrimmed=false
 
@@ -65,13 +49,9 @@ cd ../../
 # Appending to app.ini for all platforms
 for app_ini in bin/wowdatabaseeditor-avalonia-win/app.ini bin/wowdatabaseeditor-avalonia-mac/app.ini bin/wowdatabaseeditor-avalonia-linux/app.ini; do
 {
-echo "COMMIT=$APPVEYOR_REPO_COMMIT"
-echo "BRANCH=$APPVEYOR_REPO_BRANCH"
-echo "VERSION=$APPVEYOR_BUILD_VERSION"
-echo "BUILD_VERSION=$APPVEYOR_BUILD_NUMBER"
-echo "UPDATE_SERVER=$DEPLOY_URL"
+echo "COMMIT=$(git rev-parse --short HEAD 2>/dev/null)"
+echo "BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
 echo "MARKETPLACE=default"
-echo "MAPDATA_SERVER=$DEPLOY_URL"
 } >> "$app_ini"
 done
 

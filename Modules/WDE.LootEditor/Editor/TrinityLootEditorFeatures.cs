@@ -5,7 +5,7 @@ using WDE.Module.Attributes;
 
 namespace WDE.LootEditor.Editor;
 
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth", "TrinityBfa")]
 [AutoRegister]
 [SingleInstance]
 public abstract class BaseTrinityLootEditorFeatures : ILootEditorFeatures
@@ -89,7 +89,7 @@ public abstract class BaseTrinityLootEditorFeatures : ILootEditorFeatures
     };
 }
 
-[RequiresCore("TrinityMaster", "TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityMaster", "TrinityWrath", "Azeroth", "TrinityBfa")]
 [AutoRegister]
 [SingleInstance]
 public class TrinityLootEditorFeatures : BaseTrinityLootEditorFeatures

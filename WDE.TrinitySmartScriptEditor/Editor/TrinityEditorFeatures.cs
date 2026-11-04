@@ -39,6 +39,37 @@ namespace WDE.TrinitySmartScriptEditor.Editor
         }
     }
 
+    // TrinityCore 8.3.7: smart_scripts has event_param1-5 and action_param1-6
+    [AutoRegister]
+    [SingleInstance]
+    [RequiresCore("TrinityBfa")]
+    public class TrinityBfaEditorFeatures : IEditorFeatures
+    {
+        public string Name => "TC";
+        public bool SupportsSource => false;
+        public bool SupportsEventCooldown => false;
+        public bool SupportsTargetCondition => false;
+        public bool SupportsEventTimerId => false;
+        public bool SourceHasPosition => false;
+        public ParametersCount ConditionParametersCount { get; } = new ParametersCount(3, 0, 1);
+        public ParametersCount EventParametersCount { get; } = new ParametersCount(5, 0, 0);
+        public ParametersCount ActionParametersCount { get; } = new ParametersCount(6, 0, 0);
+        public ParametersCount TargetParametersCount { get; } = new ParametersCount(3, 4, 0);
+        public IParameter<long> ConditionTargetParameter { get; }
+        public IParameter<long> EventFlagsParameter => SmartEventFlagParameter.Instance;
+        public int TargetConditionId => -1;
+        public int? NonBreakableLinkFlag => null;
+
+        public TrinityBfaEditorFeatures(ICurrentCoreVersion coreVersion)
+        {
+            var conditionTargetParam = new Parameter();
+            conditionTargetParam.Items = new Dictionary<long, SelectOption>() {[0] = new("Action invoker"), [1] = new("Object")};
+            if (coreVersion.Current.SmartScriptFeatures.SupportsConditionTargetVictim)
+                conditionTargetParam.Items.Add(2, new SelectOption("Victim"));
+            ConditionTargetParameter = conditionTargetParam;
+        }
+    }
+
     [AutoRegister]
     [SingleInstance]
     [RequiresCore("TrinityWrath", "TrinityCata")]

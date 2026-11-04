@@ -8,7 +8,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.Quests;
 
 [AutoRegister]
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth", "TrinityBfa")]
 public class TrinityQuestQueryProvider : IUpdateQueryProvider<QuestChainDiff>
 {
     private readonly ICachedDatabaseProvider databaseProvider;
@@ -18,7 +18,8 @@ public class TrinityQuestQueryProvider : IUpdateQueryProvider<QuestChainDiff>
     public TrinityQuestQueryProvider(ICachedDatabaseProvider databaseProvider, ICurrentCoreVersion currentCoreVersion)
     {
         this.databaseProvider = databaseProvider;
-        hasBreadcrumb = currentCoreVersion.Current.Tag != "Azeroth";
+        // quest_template_addon.BreadcrumbForQuestId does not exist in AzerothCore nor in TrinityCore 8.3.7
+        hasBreadcrumb = currentCoreVersion.Current.Tag != "Azeroth" && currentCoreVersion.Current.Tag != "TrinityBfa";
     }
     
     public IQuery Update(QuestChainDiff diff)

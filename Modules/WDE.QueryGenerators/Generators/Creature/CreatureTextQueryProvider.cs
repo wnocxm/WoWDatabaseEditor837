@@ -6,7 +6,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.Creature;
 
 [AutoRegister]
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth", "TrinityBfa")]
 public class CreatureTextGenerator : BaseInsertQueryProvider<ICreatureText>, IDeleteQueryProvider<ICreatureText>
 {
     public override DatabaseTable TableName => DatabaseTable.WorldTable("creature_text");

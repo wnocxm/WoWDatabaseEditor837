@@ -7,7 +7,7 @@ namespace WDE.QueryGenerators.Generators.Gossips;
 
 [AutoRegister]
 [SingleInstance]
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "Azeroth", "TrinityBfa")]
 public class GossipMenuQueryProvider : BaseInsertQueryProvider<IGossipMenuLine>, IDeleteQueryProvider<IGossipMenuLine>
 {
     protected override object Convert(IGossipMenuLine menu)

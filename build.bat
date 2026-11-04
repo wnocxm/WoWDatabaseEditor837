@@ -44,6 +44,19 @@ echo ==== CrashReport ==== >> %LOG%
 dotnet publish -c Release --self-contained false -f net8.0 -r win-x64 -o %OUT% Modules\CrashReport\CrashReport.csproj -p:PublishSingleFile=true -p:PublishTrimmed=false >> %LOG% 2>&1 || goto :error
 echo ==== Packet parser ==== >> %LOG%
 dotnet publish -c Release --self-contained false -f net8.0 -r win-x64 -o %OUT%\parser WoWPacketParserLoader >> %LOG% 2>&1 || goto :error
+rem the parser loads its version modules from parser\Parsers\WowPacketParserModule.<version>.dll
+if not exist "%OUT%\parser\Parsers" mkdir "%OUT%\parser\Parsers"
+move /y "%OUT%\parser\WowPacketParserModule.*" "%OUT%\parser\Parsers\" >> %LOG% 2>&1
+if not exist "%OUT%\parser\Parsers\WowPacketParserModule.V8_0_1_27101.dll" (
+    echo Packet parser modules are missing >> %LOG%
+    goto :error
+)
+
+echo ==== Native libraries ==== >> %LOG%
+rem CascLib/StormLib are needed to read game client files (Client data files setting)
+if not exist "%OUT%\casc.dll" curl -fsSL -o "%OUT%\casc.dll" https://github.com/BAndysc/StormCascLibBinary/releases/download/windows/CascLib.dll >> %LOG% 2>&1
+if not exist "%OUT%\storm.dll" curl -fsSL -o "%OUT%\storm.dll" https://github.com/BAndysc/StormCascLibBinary/releases/download/windows/StormLib.dll >> %LOG% 2>&1
+if not exist "%OUT%\casc.dll" echo WARNING: casc.dll could not be downloaded, client data files will not work
 
 echo.
 echo Done. Start %OUT%\WoWDatabaseEditor.exe

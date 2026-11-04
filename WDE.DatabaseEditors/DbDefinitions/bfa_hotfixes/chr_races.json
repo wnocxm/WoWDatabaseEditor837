@@ -1,0 +1,314 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Chr Races (hotfix)",
+  "single_solution_name": "Chr Races (hotfix)",
+  "multi_solution_name": "Chr Races (hotfix)",
+  "description": "8.3.7 hotfixes database table `chr_races`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "chr_races",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ClientPrefix",
+          "db_column_name": "ClientPrefix",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ClientFileString",
+          "db_column_name": "ClientFileString",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "NameFemale",
+          "db_column_name": "NameFemale",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "NameLowercase",
+          "db_column_name": "NameLowercase",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "NameFemaleLowercase",
+          "db_column_name": "NameFemaleLowercase",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleDisplayId",
+          "db_column_name": "MaleDisplayId",
+          "value_type": "uint"
+        },
+        {
+          "name": "FemaleDisplayId",
+          "db_column_name": "FemaleDisplayId",
+          "value_type": "uint"
+        },
+        {
+          "name": "HighResMaleDisplayId",
+          "db_column_name": "HighResMaleDisplayId",
+          "value_type": "uint"
+        },
+        {
+          "name": "HighResFemaleDisplayId",
+          "db_column_name": "HighResFemaleDisplayId",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreateScreenFileDataID",
+          "db_column_name": "CreateScreenFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "SelectScreenFileDataID",
+          "db_column_name": "SelectScreenFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleCustomizeOffset1",
+          "db_column_name": "MaleCustomizeOffset1",
+          "value_type": "float"
+        },
+        {
+          "name": "MaleCustomizeOffset2",
+          "db_column_name": "MaleCustomizeOffset2",
+          "value_type": "float"
+        },
+        {
+          "name": "MaleCustomizeOffset3",
+          "db_column_name": "MaleCustomizeOffset3",
+          "value_type": "float"
+        },
+        {
+          "name": "FemaleCustomizeOffset1",
+          "db_column_name": "FemaleCustomizeOffset1",
+          "value_type": "float"
+        },
+        {
+          "name": "FemaleCustomizeOffset2",
+          "db_column_name": "FemaleCustomizeOffset2",
+          "value_type": "float"
+        },
+        {
+          "name": "FemaleCustomizeOffset3",
+          "db_column_name": "FemaleCustomizeOffset3",
+          "value_type": "float"
+        },
+        {
+          "name": "LowResScreenFileDataID",
+          "db_column_name": "LowResScreenFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "AlteredFormStartVisualKitID1",
+          "db_column_name": "AlteredFormStartVisualKitID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "AlteredFormStartVisualKitID2",
+          "db_column_name": "AlteredFormStartVisualKitID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AlteredFormStartVisualKitID3",
+          "db_column_name": "AlteredFormStartVisualKitID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "AlteredFormFinishVisualKitID1",
+          "db_column_name": "AlteredFormFinishVisualKitID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "AlteredFormFinishVisualKitID2",
+          "db_column_name": "AlteredFormFinishVisualKitID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AlteredFormFinishVisualKitID3",
+          "db_column_name": "AlteredFormFinishVisualKitID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "HeritageArmorAchievementID",
+          "db_column_name": "HeritageArmorAchievementID",
+          "value_type": "int"
+        },
+        {
+          "name": "StartingLevel",
+          "db_column_name": "StartingLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "UiDisplayOrder",
+          "db_column_name": "UiDisplayOrder",
+          "value_type": "int"
+        },
+        {
+          "name": "FemaleSkeletonFileDataID",
+          "db_column_name": "FemaleSkeletonFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleSkeletonFileDataID",
+          "db_column_name": "MaleSkeletonFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "HelmVisFallbackRaceID",
+          "db_column_name": "HelmVisFallbackRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "TransmogrifyDisabledSlotMask",
+          "db_column_name": "TransmogrifyDisabledSlotMask",
+          "value_type": "int"
+        },
+        {
+          "name": "FactionID",
+          "db_column_name": "FactionID",
+          "value_type": "int"
+        },
+        {
+          "name": "CinematicSequenceID",
+          "db_column_name": "CinematicSequenceID",
+          "value_type": "int"
+        },
+        {
+          "name": "ResSicknessSpellID",
+          "db_column_name": "ResSicknessSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "SplashSoundID",
+          "db_column_name": "SplashSoundID",
+          "value_type": "int"
+        },
+        {
+          "name": "BaseLanguage",
+          "db_column_name": "BaseLanguage",
+          "value_type": "int"
+        },
+        {
+          "name": "CreatureType",
+          "db_column_name": "CreatureType",
+          "value_type": "int"
+        },
+        {
+          "name": "Alliance",
+          "db_column_name": "Alliance",
+          "value_type": "int"
+        },
+        {
+          "name": "RaceRelated",
+          "db_column_name": "RaceRelated",
+          "value_type": "int"
+        },
+        {
+          "name": "UnalteredVisualRaceID",
+          "db_column_name": "UnalteredVisualRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "CharComponentTextureLayoutID",
+          "db_column_name": "CharComponentTextureLayoutID",
+          "value_type": "int"
+        },
+        {
+          "name": "CharComponentTexLayoutHiResID",
+          "db_column_name": "CharComponentTexLayoutHiResID",
+          "value_type": "int"
+        },
+        {
+          "name": "DefaultClassID",
+          "db_column_name": "DefaultClassID",
+          "value_type": "int"
+        },
+        {
+          "name": "NeutralRaceID",
+          "db_column_name": "NeutralRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleModelFallbackRaceID",
+          "db_column_name": "MaleModelFallbackRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleModelFallbackSex",
+          "db_column_name": "MaleModelFallbackSex",
+          "value_type": "int"
+        },
+        {
+          "name": "FemaleModelFallbackRaceID",
+          "db_column_name": "FemaleModelFallbackRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "FemaleModelFallbackSex",
+          "db_column_name": "FemaleModelFallbackSex",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleTextureFallbackRaceID",
+          "db_column_name": "MaleTextureFallbackRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaleTextureFallbackSex",
+          "db_column_name": "MaleTextureFallbackSex",
+          "value_type": "int"
+        },
+        {
+          "name": "FemaleTextureFallbackRaceID",
+          "db_column_name": "FemaleTextureFallbackRaceID",
+          "value_type": "int"
+        },
+        {
+          "name": "FemaleTextureFallbackSex",
+          "db_column_name": "FemaleTextureFallbackSex",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

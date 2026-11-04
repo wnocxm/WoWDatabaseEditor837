@@ -1,0 +1,64 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Prestige Level Info (hotfix)",
+  "single_solution_name": "Prestige Level Info (hotfix)",
+  "multi_solution_name": "Prestige Level Info (hotfix)",
+  "description": "8.3.7 hotfixes database table `prestige_level_info`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "prestige_level_info",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "PrestigeLevel",
+          "db_column_name": "PrestigeLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "BadgeTextureFileDataID",
+          "db_column_name": "BadgeTextureFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "AwardedAchievementID",
+          "db_column_name": "AwardedAchievementID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

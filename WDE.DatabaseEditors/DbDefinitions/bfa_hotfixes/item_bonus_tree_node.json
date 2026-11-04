@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Bonus Tree Node (hotfix)",
+  "single_solution_name": "Item Bonus Tree Node (hotfix)",
+  "multi_solution_name": "Item Bonus Tree Node (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_bonus_tree_node`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_bonus_tree_node",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemContext",
+          "db_column_name": "ItemContext",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChildItemBonusTreeID",
+          "db_column_name": "ChildItemBonusTreeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChildItemBonusListID",
+          "db_column_name": "ChildItemBonusListID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChildItemLevelSelectorID",
+          "db_column_name": "ChildItemLevelSelectorID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentItemBonusTreeID",
+          "db_column_name": "ParentItemBonusTreeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

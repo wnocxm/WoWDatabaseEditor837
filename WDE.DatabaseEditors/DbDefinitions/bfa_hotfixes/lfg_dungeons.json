@@ -1,0 +1,210 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Lfg Dungeons (hotfix)",
+  "single_solution_name": "Lfg Dungeons (hotfix)",
+  "multi_solution_name": "Lfg Dungeons (hotfix)",
+  "description": "8.3.7 hotfixes database table `lfg_dungeons`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "lfg_dungeons",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "TypeID",
+          "db_column_name": "TypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Subtype",
+          "db_column_name": "Subtype",
+          "value_type": "uint"
+        },
+        {
+          "name": "Faction",
+          "db_column_name": "Faction",
+          "value_type": "int"
+        },
+        {
+          "name": "IconTextureFileID",
+          "db_column_name": "IconTextureFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "RewardsBgTextureFileID",
+          "db_column_name": "RewardsBgTextureFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "PopupBgTextureFileID",
+          "db_column_name": "PopupBgTextureFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "ExpansionLevel",
+          "db_column_name": "ExpansionLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MapID",
+          "db_column_name": "MapID",
+          "value_type": "int"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinGear",
+          "db_column_name": "MinGear",
+          "value_type": "float"
+        },
+        {
+          "name": "GroupID",
+          "db_column_name": "GroupID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredPlayerConditionId",
+          "db_column_name": "RequiredPlayerConditionId",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetLevel",
+          "db_column_name": "TargetLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetLevelMin",
+          "db_column_name": "TargetLevelMin",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetLevelMax",
+          "db_column_name": "TargetLevelMax",
+          "value_type": "uint"
+        },
+        {
+          "name": "RandomID",
+          "db_column_name": "RandomID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ScenarioID",
+          "db_column_name": "ScenarioID",
+          "value_type": "uint"
+        },
+        {
+          "name": "FinalEncounterID",
+          "db_column_name": "FinalEncounterID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CountTank",
+          "db_column_name": "CountTank",
+          "value_type": "uint"
+        },
+        {
+          "name": "CountHealer",
+          "db_column_name": "CountHealer",
+          "value_type": "uint"
+        },
+        {
+          "name": "CountDamage",
+          "db_column_name": "CountDamage",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinCountTank",
+          "db_column_name": "MinCountTank",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinCountHealer",
+          "db_column_name": "MinCountHealer",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinCountDamage",
+          "db_column_name": "MinCountDamage",
+          "value_type": "uint"
+        },
+        {
+          "name": "BonusReputationAmount",
+          "db_column_name": "BonusReputationAmount",
+          "value_type": "uint"
+        },
+        {
+          "name": "MentorItemLevel",
+          "db_column_name": "MentorItemLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MentorCharLevel",
+          "db_column_name": "MentorCharLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

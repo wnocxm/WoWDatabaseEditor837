@@ -1,0 +1,55 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Banned Addons (hotfix)",
+  "single_solution_name": "Banned Addons (hotfix)",
+  "multi_solution_name": "Banned Addons (hotfix)",
+  "description": "8.3.7 hotfixes database table `banned_addons`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "banned_addons",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Version",
+          "db_column_name": "Version",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

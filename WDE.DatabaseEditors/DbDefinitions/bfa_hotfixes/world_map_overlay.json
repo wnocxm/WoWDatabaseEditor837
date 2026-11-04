@@ -1,0 +1,113 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "World Map Overlay (hotfix)",
+  "single_solution_name": "World Map Overlay (hotfix)",
+  "multi_solution_name": "World Map Overlay (hotfix)",
+  "description": "8.3.7 hotfixes database table `world_map_overlay`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "world_map_overlay",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiMapArtID",
+          "db_column_name": "UiMapArtID",
+          "value_type": "uint"
+        },
+        {
+          "name": "TextureWidth",
+          "db_column_name": "TextureWidth",
+          "value_type": "uint"
+        },
+        {
+          "name": "TextureHeight",
+          "db_column_name": "TextureHeight",
+          "value_type": "uint"
+        },
+        {
+          "name": "OffsetX",
+          "db_column_name": "OffsetX",
+          "value_type": "int"
+        },
+        {
+          "name": "OffsetY",
+          "db_column_name": "OffsetY",
+          "value_type": "int"
+        },
+        {
+          "name": "HitRectTop",
+          "db_column_name": "HitRectTop",
+          "value_type": "int"
+        },
+        {
+          "name": "HitRectBottom",
+          "db_column_name": "HitRectBottom",
+          "value_type": "int"
+        },
+        {
+          "name": "HitRectLeft",
+          "db_column_name": "HitRectLeft",
+          "value_type": "int"
+        },
+        {
+          "name": "HitRectRight",
+          "db_column_name": "HitRectRight",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID1",
+          "db_column_name": "AreaID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID2",
+          "db_column_name": "AreaID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID3",
+          "db_column_name": "AreaID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID4",
+          "db_column_name": "AreaID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Misc (hotfix)",
+  "single_solution_name": "Spell Misc (hotfix)",
+  "multi_solution_name": "Spell Misc (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_misc`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_misc",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Attributes1",
+          "db_column_name": "Attributes1",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes2",
+          "db_column_name": "Attributes2",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes3",
+          "db_column_name": "Attributes3",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes4",
+          "db_column_name": "Attributes4",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes5",
+          "db_column_name": "Attributes5",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes6",
+          "db_column_name": "Attributes6",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes7",
+          "db_column_name": "Attributes7",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes8",
+          "db_column_name": "Attributes8",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes9",
+          "db_column_name": "Attributes9",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes10",
+          "db_column_name": "Attributes10",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes11",
+          "db_column_name": "Attributes11",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes12",
+          "db_column_name": "Attributes12",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes13",
+          "db_column_name": "Attributes13",
+          "value_type": "int"
+        },
+        {
+          "name": "Attributes14",
+          "db_column_name": "Attributes14",
+          "value_type": "int"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CastingTimeIndex",
+          "db_column_name": "CastingTimeIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "DurationIndex",
+          "db_column_name": "DurationIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "RangeIndex",
+          "db_column_name": "RangeIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "SchoolMask",
+          "db_column_name": "SchoolMask",
+          "value_type": "uint"
+        },
+        {
+          "name": "Speed",
+          "db_column_name": "Speed",
+          "value_type": "float"
+        },
+        {
+          "name": "LaunchDelay",
+          "db_column_name": "LaunchDelay",
+          "value_type": "float"
+        },
+        {
+          "name": "MinDuration",
+          "db_column_name": "MinDuration",
+          "value_type": "float"
+        },
+        {
+          "name": "SpellIconFileDataID",
+          "db_column_name": "SpellIconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "ActiveIconFileDataID",
+          "db_column_name": "ActiveIconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "ContentTuningID",
+          "db_column_name": "ContentTuningID",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

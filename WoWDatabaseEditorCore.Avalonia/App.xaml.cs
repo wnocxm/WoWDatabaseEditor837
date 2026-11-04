@@ -145,18 +145,9 @@ namespace WoWDatabaseEditorCore.Avalonia
 
         private IUserSettings CreateUserSettings()
         {
-            IUserSettings userSettings;
-            if (OperatingSystem.IsBrowser())
-            {
-                userSettings = new WebUserSettings();
-            }
-            else
-            {
-                var vfs = new VirtualFileSystem();
-                var fs = new FileSystem(vfs);
-                userSettings = new UserSettings(fs, new Lazy<IStatusBar>(new DummyStatusBar()));
-            }
-            return userSettings;
+            var vfs = new VirtualFileSystem();
+            var fs = new FileSystem(vfs);
+            return new UserSettings(fs, new Lazy<IStatusBar>(new DummyStatusBar()));
         }
         
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

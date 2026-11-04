@@ -1,0 +1,73 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Armor Quality (hotfix)",
+  "single_solution_name": "Item Armor Quality (hotfix)",
+  "multi_solution_name": "Item Armor Quality (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_armor_quality`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_armor_quality",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Qualitymod1",
+          "db_column_name": "Qualitymod1",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod2",
+          "db_column_name": "Qualitymod2",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod3",
+          "db_column_name": "Qualitymod3",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod4",
+          "db_column_name": "Qualitymod4",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod5",
+          "db_column_name": "Qualitymod5",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod6",
+          "db_column_name": "Qualitymod6",
+          "value_type": "float"
+        },
+        {
+          "name": "Qualitymod7",
+          "db_column_name": "Qualitymod7",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

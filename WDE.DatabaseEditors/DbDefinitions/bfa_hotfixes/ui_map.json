@@ -1,0 +1,104 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Ui Map (hotfix)",
+  "single_solution_name": "Ui Map (hotfix)",
+  "multi_solution_name": "Ui Map (hotfix)",
+  "description": "8.3.7 hotfixes database table `ui_map`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "ui_map",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentUiMapID",
+          "db_column_name": "ParentUiMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "System",
+          "db_column_name": "System",
+          "value_type": "int"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "int"
+        },
+        {
+          "name": "LevelRangeMin",
+          "db_column_name": "LevelRangeMin",
+          "value_type": "uint"
+        },
+        {
+          "name": "LevelRangeMax",
+          "db_column_name": "LevelRangeMax",
+          "value_type": "uint"
+        },
+        {
+          "name": "BountySetID",
+          "db_column_name": "BountySetID",
+          "value_type": "int"
+        },
+        {
+          "name": "BountyDisplayLocation",
+          "db_column_name": "BountyDisplayLocation",
+          "value_type": "uint"
+        },
+        {
+          "name": "VisibilityPlayerConditionID",
+          "db_column_name": "VisibilityPlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "HelpTextPosition",
+          "db_column_name": "HelpTextPosition",
+          "value_type": "int"
+        },
+        {
+          "name": "BkgAtlasID",
+          "db_column_name": "BkgAtlasID",
+          "value_type": "int"
+        },
+        {
+          "name": "AlternateUiMapGroup",
+          "db_column_name": "AlternateUiMapGroup",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

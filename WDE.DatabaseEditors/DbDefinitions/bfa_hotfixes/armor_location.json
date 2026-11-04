@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Armor Location (hotfix)",
+  "single_solution_name": "Armor Location (hotfix)",
+  "multi_solution_name": "Armor Location (hotfix)",
+  "description": "8.3.7 hotfixes database table `armor_location`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "armor_location",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Clothmodifier",
+          "db_column_name": "Clothmodifier",
+          "value_type": "float"
+        },
+        {
+          "name": "Leathermodifier",
+          "db_column_name": "Leathermodifier",
+          "value_type": "float"
+        },
+        {
+          "name": "Chainmodifier",
+          "db_column_name": "Chainmodifier",
+          "value_type": "float"
+        },
+        {
+          "name": "Platemodifier",
+          "db_column_name": "Platemodifier",
+          "value_type": "float"
+        },
+        {
+          "name": "Modifier",
+          "db_column_name": "Modifier",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

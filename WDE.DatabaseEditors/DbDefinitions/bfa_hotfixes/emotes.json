@@ -1,0 +1,84 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Emotes (hotfix)",
+  "single_solution_name": "Emotes (hotfix)",
+  "multi_solution_name": "Emotes (hotfix)",
+  "description": "8.3.7 hotfixes database table `emotes`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "emotes",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RaceMask",
+          "db_column_name": "RaceMask",
+          "value_type": "long"
+        },
+        {
+          "name": "EmoteSlashCommand",
+          "db_column_name": "EmoteSlashCommand",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "AnimID",
+          "db_column_name": "AnimID",
+          "value_type": "int"
+        },
+        {
+          "name": "EmoteFlags",
+          "db_column_name": "EmoteFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmoteSpecProc",
+          "db_column_name": "EmoteSpecProc",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmoteSpecProcParam",
+          "db_column_name": "EmoteSpecProcParam",
+          "value_type": "uint"
+        },
+        {
+          "name": "EventSoundID",
+          "db_column_name": "EventSoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellVisualKitID",
+          "db_column_name": "SpellVisualKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassMask",
+          "db_column_name": "ClassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

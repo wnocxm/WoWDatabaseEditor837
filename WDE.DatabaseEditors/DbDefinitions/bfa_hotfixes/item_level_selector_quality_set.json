@@ -1,0 +1,48 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Level Selector Quality Set (hotfix)",
+  "single_solution_name": "Item Level Selector Quality Set (hotfix)",
+  "multi_solution_name": "Item Level Selector Quality Set (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_level_selector_quality_set`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_level_selector_quality_set",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "IlvlRare",
+          "db_column_name": "IlvlRare",
+          "value_type": "int"
+        },
+        {
+          "name": "IlvlEpic",
+          "db_column_name": "IlvlEpic",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

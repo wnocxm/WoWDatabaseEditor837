@@ -1,0 +1,99 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Transmog Set (hotfix)",
+  "single_solution_name": "Transmog Set (hotfix)",
+  "multi_solution_name": "Transmog Set (hotfix)",
+  "description": "8.3.7 hotfixes database table `transmog_set`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "transmog_set",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassMask",
+          "db_column_name": "ClassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "TrackingQuestID",
+          "db_column_name": "TrackingQuestID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "TransmogSetGroupID",
+          "db_column_name": "TransmogSetGroupID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemNameDescriptionID",
+          "db_column_name": "ItemNameDescriptionID",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentTransmogSetID",
+          "db_column_name": "ParentTransmogSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Unknown810",
+          "db_column_name": "Unknown810",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExpansionID",
+          "db_column_name": "ExpansionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PatchID",
+          "db_column_name": "PatchID",
+          "value_type": "int"
+        },
+        {
+          "name": "UiOrder",
+          "db_column_name": "UiOrder",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

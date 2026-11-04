@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Aura Options (hotfix)",
+  "single_solution_name": "Spell Aura Options (hotfix)",
+  "multi_solution_name": "Spell Aura Options (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_aura_options`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_aura_options",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CumulativeAura",
+          "db_column_name": "CumulativeAura",
+          "value_type": "uint"
+        },
+        {
+          "name": "ProcCategoryRecovery",
+          "db_column_name": "ProcCategoryRecovery",
+          "value_type": "int"
+        },
+        {
+          "name": "ProcChance",
+          "db_column_name": "ProcChance",
+          "value_type": "uint"
+        },
+        {
+          "name": "ProcCharges",
+          "db_column_name": "ProcCharges",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellProcsPerMinuteID",
+          "db_column_name": "SpellProcsPerMinuteID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ProcTypeMask1",
+          "db_column_name": "ProcTypeMask1",
+          "value_type": "int"
+        },
+        {
+          "name": "ProcTypeMask2",
+          "db_column_name": "ProcTypeMask2",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

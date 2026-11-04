@@ -1,0 +1,116 @@
+{
+  "id": "quest_poi",
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Quest Poi",
+  "single_solution_name": "Quest Poi",
+  "multi_solution_name": "Quest Poi",
+  "description": "Contains metadata for quest points of interests",
+  "table_name": "quest_poi",
+  "table_index_name": "QuestID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Quests",
+  "icon_path": "Icons/document_point_of_interest.png",
+  "reload_command": "reload quest_poi",
+  "picker": "",
+  "primary_key": [
+    "QuestID",
+    "BlobIndex",
+    "Idx1"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Quest",
+          "db_column_name": "QuestID",
+          "value_type": "QuestParameter",
+          "preferred_width": 245.0
+        },
+        {
+          "name": "Objective Index",
+          "db_column_name": "ObjectiveIndex",
+          "value_type": "int",
+          "preferred_width": 105.0
+        },
+        {
+          "name": "Map",
+          "db_column_name": "MapID",
+          "value_type": "MapParameter",
+          "preferred_width": 145.0
+        },
+        {
+          "name": "Priority",
+          "db_column_name": "Priority",
+          "value_type": "uint",
+          "preferred_width": 60.0
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint",
+          "preferred_width": 55.0
+        },
+        {
+          "name": "Verified Build",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int",
+          "can_be_null": true
+        }
+      ]
+    },
+    {
+      "group_name": "Other (8.3.7)",
+      "fields": [
+        {
+          "name": "BlobIndex",
+          "db_column_name": "BlobIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "Idx1",
+          "db_column_name": "Idx1",
+          "value_type": "int"
+        },
+        {
+          "name": "QuestObjectiveID",
+          "db_column_name": "QuestObjectiveID",
+          "value_type": "int"
+        },
+        {
+          "name": "QuestObjectID",
+          "db_column_name": "QuestObjectID",
+          "value_type": "int"
+        },
+        {
+          "name": "UiMapID",
+          "db_column_name": "UiMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "WorldEffectID",
+          "db_column_name": "WorldEffectID",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "SpawnTrackingID",
+          "db_column_name": "SpawnTrackingID",
+          "value_type": "int"
+        },
+        {
+          "name": "AlwaysAllowMergingBlobs",
+          "db_column_name": "AlwaysAllowMergingBlobs",
+          "value_type": "uint"
+        }
+      ]
+    }
+  ]
+}

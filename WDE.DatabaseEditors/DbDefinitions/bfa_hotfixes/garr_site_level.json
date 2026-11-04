@@ -1,0 +1,88 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Garr Site Level (hotfix)",
+  "single_solution_name": "Garr Site Level (hotfix)",
+  "multi_solution_name": "Garr Site Level (hotfix)",
+  "description": "8.3.7 hotfixes database table `garr_site_level`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "garr_site_level",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "TownHallUiPosX",
+          "db_column_name": "TownHallUiPosX",
+          "value_type": "float"
+        },
+        {
+          "name": "TownHallUiPosY",
+          "db_column_name": "TownHallUiPosY",
+          "value_type": "float"
+        },
+        {
+          "name": "GarrSiteID",
+          "db_column_name": "GarrSiteID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrLevel",
+          "db_column_name": "GarrLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MapID",
+          "db_column_name": "MapID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeMovieID",
+          "db_column_name": "UpgradeMovieID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UiTextureKitID",
+          "db_column_name": "UiTextureKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxBuildingLevel",
+          "db_column_name": "MaxBuildingLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeCost",
+          "db_column_name": "UpgradeCost",
+          "value_type": "uint"
+        },
+        {
+          "name": "UpgradeGoldCost",
+          "db_column_name": "UpgradeGoldCost",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

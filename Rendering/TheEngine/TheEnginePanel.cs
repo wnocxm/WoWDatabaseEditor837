@@ -21,7 +21,6 @@ using TheEngine.Utils;
 using TheMaths;
 using Point = Avalonia.Point;
 
-[assembly: InternalsVisibleTo("RenderingTester")]
 namespace TheEngine
 {
 #if USE_OPENTK

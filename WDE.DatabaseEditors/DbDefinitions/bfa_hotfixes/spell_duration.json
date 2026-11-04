@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Duration (hotfix)",
+  "single_solution_name": "Spell Duration (hotfix)",
+  "multi_solution_name": "Spell Duration (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_duration`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_duration",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration",
+          "db_column_name": "Duration",
+          "value_type": "int"
+        },
+        {
+          "name": "DurationPerLevel",
+          "db_column_name": "DurationPerLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxDuration",
+          "db_column_name": "MaxDuration",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

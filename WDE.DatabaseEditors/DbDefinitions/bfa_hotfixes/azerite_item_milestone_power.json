@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Azerite Item Milestone Power (hotfix)",
+  "single_solution_name": "Azerite Item Milestone Power (hotfix)",
+  "multi_solution_name": "Azerite Item Milestone Power (hotfix)",
+  "description": "8.3.7 hotfixes database table `azerite_item_milestone_power`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "azerite_item_milestone_power",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredLevel",
+          "db_column_name": "RequiredLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "AzeritePowerID",
+          "db_column_name": "AzeritePowerID",
+          "value_type": "int"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "int"
+        },
+        {
+          "name": "AutoUnlock",
+          "db_column_name": "AutoUnlock",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

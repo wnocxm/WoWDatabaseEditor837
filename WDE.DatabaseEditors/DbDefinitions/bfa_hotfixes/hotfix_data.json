@@ -1,0 +1,55 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Hotfix Data (hotfix)",
+  "single_solution_name": "Hotfix Data (hotfix)",
+  "multi_solution_name": "Hotfix Data (hotfix)",
+  "description": "8.3.7 hotfixes database table `hotfix_data`.",
+  "database": "Hotfix",
+  "table_name": "hotfix_data",
+  "table_index_name": "Id",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "Id",
+    "TableHash",
+    "RecordId"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Id",
+          "db_column_name": "Id",
+          "value_type": "int"
+        },
+        {
+          "name": "TableHash",
+          "db_column_name": "TableHash",
+          "value_type": "uint"
+        },
+        {
+          "name": "RecordId",
+          "db_column_name": "RecordId",
+          "value_type": "int"
+        },
+        {
+          "name": "Deleted",
+          "db_column_name": "Deleted",
+          "value_type": "uint",
+          "can_be_null": true
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Updates (hotfix)",
+  "single_solution_name": "Updates (hotfix)",
+  "multi_solution_name": "Updates (hotfix)",
+  "description": "8.3.7 hotfixes database table `updates`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "updates",
+  "table_index_name": "name",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "name"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "name",
+          "db_column_name": "name",
+          "value_type": "string"
+        },
+        {
+          "name": "hash",
+          "db_column_name": "hash",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "state",
+          "db_column_name": "state",
+          "value_type": "int"
+        },
+        {
+          "name": "timestamp",
+          "db_column_name": "timestamp",
+          "value_type": "int"
+        },
+        {
+          "name": "speed",
+          "db_column_name": "speed",
+          "value_type": "uint"
+        }
+      ]
+    }
+  ]
+}

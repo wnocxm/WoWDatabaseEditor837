@@ -1,0 +1,53 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Learn Spell (hotfix)",
+  "single_solution_name": "Spell Learn Spell (hotfix)",
+  "multi_solution_name": "Spell Learn Spell (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_learn_spell`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_learn_spell",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "LearnSpellID",
+          "db_column_name": "LearnSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "OverridesSpellID",
+          "db_column_name": "OverridesSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "id": "vehicle_template_accessory",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityCata"
+    "TrinityWrath", "Azeroth", "TrinityCata", "TrinityBfa"
   ],
   "name": "Vehicle Template Accessory",
   "single_solution_name": "{name}'s vehicle accessories",

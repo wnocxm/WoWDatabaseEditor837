@@ -1,0 +1,188 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Char Start Outfit (hotfix)",
+  "single_solution_name": "Char Start Outfit (hotfix)",
+  "multi_solution_name": "Char Start Outfit (hotfix)",
+  "description": "8.3.7 hotfixes database table `char_start_outfit`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "char_start_outfit",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassID",
+          "db_column_name": "ClassID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SexID",
+          "db_column_name": "SexID",
+          "value_type": "uint"
+        },
+        {
+          "name": "OutfitID",
+          "db_column_name": "OutfitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PetDisplayID",
+          "db_column_name": "PetDisplayID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PetFamilyID",
+          "db_column_name": "PetFamilyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID1",
+          "db_column_name": "ItemID1",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID2",
+          "db_column_name": "ItemID2",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID3",
+          "db_column_name": "ItemID3",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID4",
+          "db_column_name": "ItemID4",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID5",
+          "db_column_name": "ItemID5",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID6",
+          "db_column_name": "ItemID6",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID7",
+          "db_column_name": "ItemID7",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID8",
+          "db_column_name": "ItemID8",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID9",
+          "db_column_name": "ItemID9",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID10",
+          "db_column_name": "ItemID10",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID11",
+          "db_column_name": "ItemID11",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID12",
+          "db_column_name": "ItemID12",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID13",
+          "db_column_name": "ItemID13",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID14",
+          "db_column_name": "ItemID14",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID15",
+          "db_column_name": "ItemID15",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID16",
+          "db_column_name": "ItemID16",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID17",
+          "db_column_name": "ItemID17",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID18",
+          "db_column_name": "ItemID18",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID19",
+          "db_column_name": "ItemID19",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID20",
+          "db_column_name": "ItemID20",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID21",
+          "db_column_name": "ItemID21",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID22",
+          "db_column_name": "ItemID22",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID23",
+          "db_column_name": "ItemID23",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID24",
+          "db_column_name": "ItemID24",
+          "value_type": "int"
+        },
+        {
+          "name": "RaceID",
+          "db_column_name": "RaceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

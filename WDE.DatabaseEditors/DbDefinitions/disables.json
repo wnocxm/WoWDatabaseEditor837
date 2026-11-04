@@ -1,7 +1,7 @@
 {
   "id": "disables",
   "compatibility": [
-    "TrinityWrath", "TrinityMaster", "TrinityCata"
+    "TrinityWrath", "TrinityMaster", "TrinityCata", "TrinityBfa"
   ],
   "name": "Disables",
   "single_solution_name": "Disables",

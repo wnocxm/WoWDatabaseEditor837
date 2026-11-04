@@ -1,0 +1,196 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Garr Follower (hotfix)",
+  "single_solution_name": "Garr Follower (hotfix)",
+  "multi_solution_name": "Garr Follower (hotfix)",
+  "description": "8.3.7 hotfixes database table `garr_follower`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "garr_follower",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "HordeSourceText",
+          "db_column_name": "HordeSourceText",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "AllianceSourceText",
+          "db_column_name": "AllianceSourceText",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "TitleName",
+          "db_column_name": "TitleName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrTypeID",
+          "db_column_name": "GarrTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrFollowerTypeID",
+          "db_column_name": "GarrFollowerTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeCreatureID",
+          "db_column_name": "HordeCreatureID",
+          "value_type": "int"
+        },
+        {
+          "name": "AllianceCreatureID",
+          "db_column_name": "AllianceCreatureID",
+          "value_type": "int"
+        },
+        {
+          "name": "HordeGarrFollRaceID",
+          "db_column_name": "HordeGarrFollRaceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AllianceGarrFollRaceID",
+          "db_column_name": "AllianceGarrFollRaceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeGarrClassSpecID",
+          "db_column_name": "HordeGarrClassSpecID",
+          "value_type": "int"
+        },
+        {
+          "name": "AllianceGarrClassSpecID",
+          "db_column_name": "AllianceGarrClassSpecID",
+          "value_type": "int"
+        },
+        {
+          "name": "Quality",
+          "db_column_name": "Quality",
+          "value_type": "uint"
+        },
+        {
+          "name": "FollowerLevel",
+          "db_column_name": "FollowerLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevelWeapon",
+          "db_column_name": "ItemLevelWeapon",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevelArmor",
+          "db_column_name": "ItemLevelArmor",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeSourceTypeEnum",
+          "db_column_name": "HordeSourceTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "AllianceSourceTypeEnum",
+          "db_column_name": "AllianceSourceTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "HordeIconFileDataID",
+          "db_column_name": "HordeIconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "AllianceIconFileDataID",
+          "db_column_name": "AllianceIconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "HordeGarrFollItemSetID",
+          "db_column_name": "HordeGarrFollItemSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AllianceGarrFollItemSetID",
+          "db_column_name": "AllianceGarrFollItemSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeUITextureKitID",
+          "db_column_name": "HordeUITextureKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AllianceUITextureKitID",
+          "db_column_name": "AllianceUITextureKitID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Vitality",
+          "db_column_name": "Vitality",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeFlavorGarrStringID",
+          "db_column_name": "HordeFlavorGarrStringID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AllianceFlavorGarrStringID",
+          "db_column_name": "AllianceFlavorGarrStringID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HordeSlottingBroadcastTextID",
+          "db_column_name": "HordeSlottingBroadcastTextID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AllySlottingBroadcastTextID",
+          "db_column_name": "AllySlottingBroadcastTextID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChrClassID",
+          "db_column_name": "ChrClassID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "Gender",
+          "db_column_name": "Gender",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

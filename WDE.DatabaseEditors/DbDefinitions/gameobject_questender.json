@@ -1,7 +1,7 @@
 {
   "id": "gameobject_questender",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata"
+    "TrinityWrath", "Azeroth", "TrinityMaster", "TrinityCata", "TrinityBfa"
   ],
   "name": "Game object Quest Ender",
   "single_solution_name": "Game object {name} quest ender",

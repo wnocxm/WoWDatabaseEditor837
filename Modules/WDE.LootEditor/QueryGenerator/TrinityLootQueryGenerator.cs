@@ -129,7 +129,7 @@ public abstract class BaseTrinityLootQueryGenerator : ILootQueryGenerator
     }
 }
 
-[RequiresCore("TrinityWrath", "Azeroth")]
+[RequiresCore("TrinityWrath", "Azeroth", "TrinityBfa")]
 [AutoRegister]
 [SingleInstance]
 public class TrinityLootQueryGenerator : BaseTrinityLootQueryGenerator

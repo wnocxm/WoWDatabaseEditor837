@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Pvp Talent Slot Unlock (hotfix)",
+  "single_solution_name": "Pvp Talent Slot Unlock (hotfix)",
+  "multi_solution_name": "Pvp Talent Slot Unlock (hotfix)",
+  "description": "8.3.7 hotfixes database table `pvp_talent_slot_unlock`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "pvp_talent_slot_unlock",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Slot",
+          "db_column_name": "Slot",
+          "value_type": "int"
+        },
+        {
+          "name": "LevelRequired",
+          "db_column_name": "LevelRequired",
+          "value_type": "int"
+        },
+        {
+          "name": "DeathKnightLevelRequired",
+          "db_column_name": "DeathKnightLevelRequired",
+          "value_type": "int"
+        },
+        {
+          "name": "DemonHunterLevelRequired",
+          "db_column_name": "DemonHunterLevelRequired",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,769 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Player Condition (hotfix)",
+  "single_solution_name": "Player Condition (hotfix)",
+  "multi_solution_name": "Player Condition (hotfix)",
+  "description": "8.3.7 hotfixes database table `player_condition`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "player_condition",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "RaceMask",
+          "db_column_name": "RaceMask",
+          "value_type": "long"
+        },
+        {
+          "name": "FailureDescription",
+          "db_column_name": "FailureDescription",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassMask",
+          "db_column_name": "ClassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "SkillLogic",
+          "db_column_name": "SkillLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "LanguageID",
+          "db_column_name": "LanguageID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinLanguage",
+          "db_column_name": "MinLanguage",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxLanguage",
+          "db_column_name": "MaxLanguage",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxFactionID",
+          "db_column_name": "MaxFactionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxReputation",
+          "db_column_name": "MaxReputation",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationLogic",
+          "db_column_name": "ReputationLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentPvpFaction",
+          "db_column_name": "CurrentPvpFaction",
+          "value_type": "int"
+        },
+        {
+          "name": "PvpMedal",
+          "db_column_name": "PvpMedal",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrevQuestLogic",
+          "db_column_name": "PrevQuestLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrQuestLogic",
+          "db_column_name": "CurrQuestLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentCompletedQuestLogic",
+          "db_column_name": "CurrentCompletedQuestLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellLogic",
+          "db_column_name": "SpellLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLogic",
+          "db_column_name": "ItemLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemFlags",
+          "db_column_name": "ItemFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "AuraSpellLogic",
+          "db_column_name": "AuraSpellLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "WorldStateExpressionID",
+          "db_column_name": "WorldStateExpressionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeatherID",
+          "db_column_name": "WeatherID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PartyStatus",
+          "db_column_name": "PartyStatus",
+          "value_type": "uint"
+        },
+        {
+          "name": "LifetimeMaxPVPRank",
+          "db_column_name": "LifetimeMaxPVPRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "AchievementLogic",
+          "db_column_name": "AchievementLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "Gender",
+          "db_column_name": "Gender",
+          "value_type": "int"
+        },
+        {
+          "name": "NativeGender",
+          "db_column_name": "NativeGender",
+          "value_type": "int"
+        },
+        {
+          "name": "AreaLogic",
+          "db_column_name": "AreaLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgLogic",
+          "db_column_name": "LfgLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyLogic",
+          "db_column_name": "CurrencyLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillID",
+          "db_column_name": "QuestKillID",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillLogic",
+          "db_column_name": "QuestKillLogic",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinExpansionLevel",
+          "db_column_name": "MinExpansionLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxExpansionLevel",
+          "db_column_name": "MaxExpansionLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MinAvgItemLevel",
+          "db_column_name": "MinAvgItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxAvgItemLevel",
+          "db_column_name": "MaxAvgItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MinAvgEquippedItemLevel",
+          "db_column_name": "MinAvgEquippedItemLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxAvgEquippedItemLevel",
+          "db_column_name": "MaxAvgEquippedItemLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseUseFlags",
+          "db_column_name": "PhaseUseFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseID",
+          "db_column_name": "PhaseID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PhaseGroupID",
+          "db_column_name": "PhaseGroupID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChrSpecializationIndex",
+          "db_column_name": "ChrSpecializationIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "ChrSpecializationRole",
+          "db_column_name": "ChrSpecializationRole",
+          "value_type": "int"
+        },
+        {
+          "name": "ModifierTreeID",
+          "db_column_name": "ModifierTreeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerType",
+          "db_column_name": "PowerType",
+          "value_type": "int"
+        },
+        {
+          "name": "PowerTypeComp",
+          "db_column_name": "PowerTypeComp",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerTypeValue",
+          "db_column_name": "PowerTypeValue",
+          "value_type": "uint"
+        },
+        {
+          "name": "WeaponSubclassMask",
+          "db_column_name": "WeaponSubclassMask",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxGuildLevel",
+          "db_column_name": "MaxGuildLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinGuildLevel",
+          "db_column_name": "MinGuildLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxExpansionTier",
+          "db_column_name": "MaxExpansionTier",
+          "value_type": "int"
+        },
+        {
+          "name": "MinExpansionTier",
+          "db_column_name": "MinExpansionTier",
+          "value_type": "int"
+        },
+        {
+          "name": "MinPVPRank",
+          "db_column_name": "MinPVPRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxPVPRank",
+          "db_column_name": "MaxPVPRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "SkillID1",
+          "db_column_name": "SkillID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "SkillID2",
+          "db_column_name": "SkillID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "SkillID3",
+          "db_column_name": "SkillID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "SkillID4",
+          "db_column_name": "SkillID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinSkill1",
+          "db_column_name": "MinSkill1",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinSkill2",
+          "db_column_name": "MinSkill2",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinSkill3",
+          "db_column_name": "MinSkill3",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinSkill4",
+          "db_column_name": "MinSkill4",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxSkill1",
+          "db_column_name": "MaxSkill1",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxSkill2",
+          "db_column_name": "MaxSkill2",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxSkill3",
+          "db_column_name": "MaxSkill3",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxSkill4",
+          "db_column_name": "MaxSkill4",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinFactionID1",
+          "db_column_name": "MinFactionID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinFactionID2",
+          "db_column_name": "MinFactionID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinFactionID3",
+          "db_column_name": "MinFactionID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinReputation1",
+          "db_column_name": "MinReputation1",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinReputation2",
+          "db_column_name": "MinReputation2",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinReputation3",
+          "db_column_name": "MinReputation3",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrevQuestID1",
+          "db_column_name": "PrevQuestID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrevQuestID2",
+          "db_column_name": "PrevQuestID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrevQuestID3",
+          "db_column_name": "PrevQuestID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrevQuestID4",
+          "db_column_name": "PrevQuestID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrQuestID1",
+          "db_column_name": "CurrQuestID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrQuestID2",
+          "db_column_name": "CurrQuestID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrQuestID3",
+          "db_column_name": "CurrQuestID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrQuestID4",
+          "db_column_name": "CurrQuestID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentCompletedQuestID1",
+          "db_column_name": "CurrentCompletedQuestID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentCompletedQuestID2",
+          "db_column_name": "CurrentCompletedQuestID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentCompletedQuestID3",
+          "db_column_name": "CurrentCompletedQuestID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrentCompletedQuestID4",
+          "db_column_name": "CurrentCompletedQuestID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID1",
+          "db_column_name": "SpellID1",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID2",
+          "db_column_name": "SpellID2",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID3",
+          "db_column_name": "SpellID3",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID4",
+          "db_column_name": "SpellID4",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID1",
+          "db_column_name": "ItemID1",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID2",
+          "db_column_name": "ItemID2",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID3",
+          "db_column_name": "ItemID3",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID4",
+          "db_column_name": "ItemID4",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemCount1",
+          "db_column_name": "ItemCount1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount2",
+          "db_column_name": "ItemCount2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount3",
+          "db_column_name": "ItemCount3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount4",
+          "db_column_name": "ItemCount4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Explored1",
+          "db_column_name": "Explored1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Explored2",
+          "db_column_name": "Explored2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Time1",
+          "db_column_name": "Time1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Time2",
+          "db_column_name": "Time2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AuraSpellID1",
+          "db_column_name": "AuraSpellID1",
+          "value_type": "int"
+        },
+        {
+          "name": "AuraSpellID2",
+          "db_column_name": "AuraSpellID2",
+          "value_type": "int"
+        },
+        {
+          "name": "AuraSpellID3",
+          "db_column_name": "AuraSpellID3",
+          "value_type": "int"
+        },
+        {
+          "name": "AuraSpellID4",
+          "db_column_name": "AuraSpellID4",
+          "value_type": "int"
+        },
+        {
+          "name": "AuraStacks1",
+          "db_column_name": "AuraStacks1",
+          "value_type": "uint"
+        },
+        {
+          "name": "AuraStacks2",
+          "db_column_name": "AuraStacks2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AuraStacks3",
+          "db_column_name": "AuraStacks3",
+          "value_type": "uint"
+        },
+        {
+          "name": "AuraStacks4",
+          "db_column_name": "AuraStacks4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Achievement1",
+          "db_column_name": "Achievement1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Achievement2",
+          "db_column_name": "Achievement2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Achievement3",
+          "db_column_name": "Achievement3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Achievement4",
+          "db_column_name": "Achievement4",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID1",
+          "db_column_name": "AreaID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID2",
+          "db_column_name": "AreaID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID3",
+          "db_column_name": "AreaID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaID4",
+          "db_column_name": "AreaID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgStatus1",
+          "db_column_name": "LfgStatus1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgStatus2",
+          "db_column_name": "LfgStatus2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgStatus3",
+          "db_column_name": "LfgStatus3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgStatus4",
+          "db_column_name": "LfgStatus4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgCompare1",
+          "db_column_name": "LfgCompare1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgCompare2",
+          "db_column_name": "LfgCompare2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgCompare3",
+          "db_column_name": "LfgCompare3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgCompare4",
+          "db_column_name": "LfgCompare4",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgValue1",
+          "db_column_name": "LfgValue1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgValue2",
+          "db_column_name": "LfgValue2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgValue3",
+          "db_column_name": "LfgValue3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LfgValue4",
+          "db_column_name": "LfgValue4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID1",
+          "db_column_name": "CurrencyID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID2",
+          "db_column_name": "CurrencyID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID3",
+          "db_column_name": "CurrencyID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID4",
+          "db_column_name": "CurrencyID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount1",
+          "db_column_name": "CurrencyCount1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount2",
+          "db_column_name": "CurrencyCount2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount3",
+          "db_column_name": "CurrencyCount3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount4",
+          "db_column_name": "CurrencyCount4",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster1",
+          "db_column_name": "QuestKillMonster1",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster2",
+          "db_column_name": "QuestKillMonster2",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster3",
+          "db_column_name": "QuestKillMonster3",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster4",
+          "db_column_name": "QuestKillMonster4",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster5",
+          "db_column_name": "QuestKillMonster5",
+          "value_type": "uint"
+        },
+        {
+          "name": "QuestKillMonster6",
+          "db_column_name": "QuestKillMonster6",
+          "value_type": "uint"
+        },
+        {
+          "name": "MovementFlags1",
+          "db_column_name": "MovementFlags1",
+          "value_type": "int"
+        },
+        {
+          "name": "MovementFlags2",
+          "db_column_name": "MovementFlags2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

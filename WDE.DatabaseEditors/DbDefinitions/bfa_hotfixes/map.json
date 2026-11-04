@@ -1,0 +1,169 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Map (hotfix)",
+  "single_solution_name": "Map (hotfix)",
+  "multi_solution_name": "Map (hotfix)",
+  "description": "8.3.7 hotfixes database table `map`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "map",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Directory",
+          "db_column_name": "Directory",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MapName",
+          "db_column_name": "MapName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MapDescription0",
+          "db_column_name": "MapDescription0",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MapDescription1",
+          "db_column_name": "MapDescription1",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "PvpShortDescription",
+          "db_column_name": "PvpShortDescription",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "PvpLongDescription",
+          "db_column_name": "PvpLongDescription",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "CorpseX",
+          "db_column_name": "CorpseX",
+          "value_type": "float"
+        },
+        {
+          "name": "CorpseY",
+          "db_column_name": "CorpseY",
+          "value_type": "float"
+        },
+        {
+          "name": "MapType",
+          "db_column_name": "MapType",
+          "value_type": "uint"
+        },
+        {
+          "name": "InstanceType",
+          "db_column_name": "InstanceType",
+          "value_type": "int"
+        },
+        {
+          "name": "ExpansionID",
+          "db_column_name": "ExpansionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaTableID",
+          "db_column_name": "AreaTableID",
+          "value_type": "uint"
+        },
+        {
+          "name": "LoadingScreenID",
+          "db_column_name": "LoadingScreenID",
+          "value_type": "int"
+        },
+        {
+          "name": "TimeOfDayOverride",
+          "db_column_name": "TimeOfDayOverride",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentMapID",
+          "db_column_name": "ParentMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "CosmeticParentMapID",
+          "db_column_name": "CosmeticParentMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "TimeOffset",
+          "db_column_name": "TimeOffset",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinimapIconScale",
+          "db_column_name": "MinimapIconScale",
+          "value_type": "float"
+        },
+        {
+          "name": "CorpseMapID",
+          "db_column_name": "CorpseMapID",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxPlayers",
+          "db_column_name": "MaxPlayers",
+          "value_type": "uint"
+        },
+        {
+          "name": "WindSettingsID",
+          "db_column_name": "WindSettingsID",
+          "value_type": "int"
+        },
+        {
+          "name": "ZmpFileDataID",
+          "db_column_name": "ZmpFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "WdtFileDataID",
+          "db_column_name": "WdtFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

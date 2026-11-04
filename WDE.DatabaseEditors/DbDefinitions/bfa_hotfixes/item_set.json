@@ -1,0 +1,144 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Set (hotfix)",
+  "single_solution_name": "Item Set (hotfix)",
+  "multi_solution_name": "Item Set (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_set`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_set",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "SetFlags",
+          "db_column_name": "SetFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredSkill",
+          "db_column_name": "RequiredSkill",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredSkillRank",
+          "db_column_name": "RequiredSkillRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID1",
+          "db_column_name": "ItemID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID2",
+          "db_column_name": "ItemID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID3",
+          "db_column_name": "ItemID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID4",
+          "db_column_name": "ItemID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID5",
+          "db_column_name": "ItemID5",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID6",
+          "db_column_name": "ItemID6",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID7",
+          "db_column_name": "ItemID7",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID8",
+          "db_column_name": "ItemID8",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID9",
+          "db_column_name": "ItemID9",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID10",
+          "db_column_name": "ItemID10",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID11",
+          "db_column_name": "ItemID11",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID12",
+          "db_column_name": "ItemID12",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID13",
+          "db_column_name": "ItemID13",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID14",
+          "db_column_name": "ItemID14",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID15",
+          "db_column_name": "ItemID15",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID16",
+          "db_column_name": "ItemID16",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID17",
+          "db_column_name": "ItemID17",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

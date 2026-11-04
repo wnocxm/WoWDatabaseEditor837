@@ -18,6 +18,7 @@ public class DatabaseResolver
         Lazy<TrinityWrathMySqlDatabaseProvider> tcWrath,
         Lazy<TrinityCataMySqlDatabaseProvider> tcCata,
         Lazy<TrinityMasterMySqlDatabaseProvider> tcMaster,
+        Lazy<TrinityBfaMySqlDatabaseProvider> tcBfa,
         Lazy<AzerothhMySqlDatabaseProvider> azeroth)
     {
         switch (core.Current.Tag)
@@ -46,6 +47,13 @@ public class DatabaseResolver
             case "TrinityMaster":
             {
                 var db= tcMaster.Value;
+                auth = db;
+                world = db;
+                break;
+            }
+            case "TrinityBfa":
+            {
+                var db= tcBfa.Value;
                 auth = db;
                 world = db;
                 break;

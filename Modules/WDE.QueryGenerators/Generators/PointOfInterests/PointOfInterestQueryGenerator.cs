@@ -7,7 +7,7 @@ namespace WDE.QueryGenerators.Generators.PointOfInterests;
 
 [AutoRegister]
 [SingleInstance]
-[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath")]
+[RequiresCore("TrinityMaster", "TrinityCata", "TrinityWrath", "TrinityBfa")]
 public class PointOfInterestQueryGenerator : BaseInsertQueryProvider<IPointOfInterest>, IDeleteQueryProvider<IPointOfInterest>
 {
     protected override object Convert(IPointOfInterest obj)

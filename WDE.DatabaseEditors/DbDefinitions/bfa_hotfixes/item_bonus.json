@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Bonus (hotfix)",
+  "single_solution_name": "Item Bonus (hotfix)",
+  "multi_solution_name": "Item Bonus (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_bonus`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_bonus",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Value1",
+          "db_column_name": "Value1",
+          "value_type": "int"
+        },
+        {
+          "name": "Value2",
+          "db_column_name": "Value2",
+          "value_type": "int"
+        },
+        {
+          "name": "Value3",
+          "db_column_name": "Value3",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentItemBonusListID",
+          "db_column_name": "ParentItemBonusListID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "uint"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

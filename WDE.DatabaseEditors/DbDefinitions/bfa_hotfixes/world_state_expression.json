@@ -1,0 +1,44 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "World State Expression (hotfix)",
+  "single_solution_name": "World State Expression (hotfix)",
+  "multi_solution_name": "World State Expression (hotfix)",
+  "description": "8.3.7 hotfixes database table `world_state_expression`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "world_state_expression",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Expression",
+          "db_column_name": "Expression",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

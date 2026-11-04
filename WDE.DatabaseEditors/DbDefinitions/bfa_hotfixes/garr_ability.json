@@ -1,0 +1,75 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Garr Ability (hotfix)",
+  "single_solution_name": "Garr Ability (hotfix)",
+  "multi_solution_name": "Garr Ability (hotfix)",
+  "description": "8.3.7 hotfixes database table `garr_ability`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "garr_ability",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrAbilityCategoryID",
+          "db_column_name": "GarrAbilityCategoryID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GarrFollowerTypeID",
+          "db_column_name": "GarrFollowerTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "FactionChangeGarrAbilityID",
+          "db_column_name": "FactionChangeGarrAbilityID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

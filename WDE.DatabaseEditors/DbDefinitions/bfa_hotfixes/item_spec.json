@@ -1,0 +1,68 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Spec (hotfix)",
+  "single_solution_name": "Item Spec (hotfix)",
+  "multi_solution_name": "Item Spec (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_spec`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_spec",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemType",
+          "db_column_name": "ItemType",
+          "value_type": "uint"
+        },
+        {
+          "name": "PrimaryStat",
+          "db_column_name": "PrimaryStat",
+          "value_type": "uint"
+        },
+        {
+          "name": "SecondaryStat",
+          "db_column_name": "SecondaryStat",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpecializationID",
+          "db_column_name": "SpecializationID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

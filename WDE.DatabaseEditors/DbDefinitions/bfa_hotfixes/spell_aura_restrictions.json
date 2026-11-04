@@ -1,0 +1,88 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Aura Restrictions (hotfix)",
+  "single_solution_name": "Spell Aura Restrictions (hotfix)",
+  "multi_solution_name": "Spell Aura Restrictions (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_aura_restrictions`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_aura_restrictions",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CasterAuraState",
+          "db_column_name": "CasterAuraState",
+          "value_type": "uint"
+        },
+        {
+          "name": "TargetAuraState",
+          "db_column_name": "TargetAuraState",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExcludeCasterAuraState",
+          "db_column_name": "ExcludeCasterAuraState",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExcludeTargetAuraState",
+          "db_column_name": "ExcludeTargetAuraState",
+          "value_type": "uint"
+        },
+        {
+          "name": "CasterAuraSpell",
+          "db_column_name": "CasterAuraSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "TargetAuraSpell",
+          "db_column_name": "TargetAuraSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "ExcludeCasterAuraSpell",
+          "db_column_name": "ExcludeCasterAuraSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "ExcludeTargetAuraSpell",
+          "db_column_name": "ExcludeTargetAuraSpell",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

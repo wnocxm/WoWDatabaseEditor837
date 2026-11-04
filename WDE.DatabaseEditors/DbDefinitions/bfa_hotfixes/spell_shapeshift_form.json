@@ -1,0 +1,139 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Shapeshift Form (hotfix)",
+  "single_solution_name": "Spell Shapeshift Form (hotfix)",
+  "multi_solution_name": "Spell Shapeshift Form (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_shapeshift_form`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_shapeshift_form",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "CreatureType",
+          "db_column_name": "CreatureType",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "AttackIconFileID",
+          "db_column_name": "AttackIconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "BonusActionBar",
+          "db_column_name": "BonusActionBar",
+          "value_type": "int"
+        },
+        {
+          "name": "CombatRoundTime",
+          "db_column_name": "CombatRoundTime",
+          "value_type": "int"
+        },
+        {
+          "name": "DamageVariance",
+          "db_column_name": "DamageVariance",
+          "value_type": "float"
+        },
+        {
+          "name": "MountTypeID",
+          "db_column_name": "MountTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureDisplayID1",
+          "db_column_name": "CreatureDisplayID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureDisplayID2",
+          "db_column_name": "CreatureDisplayID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureDisplayID3",
+          "db_column_name": "CreatureDisplayID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureDisplayID4",
+          "db_column_name": "CreatureDisplayID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID1",
+          "db_column_name": "PresetSpellID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID2",
+          "db_column_name": "PresetSpellID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID3",
+          "db_column_name": "PresetSpellID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID4",
+          "db_column_name": "PresetSpellID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID5",
+          "db_column_name": "PresetSpellID5",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID6",
+          "db_column_name": "PresetSpellID6",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID7",
+          "db_column_name": "PresetSpellID7",
+          "value_type": "uint"
+        },
+        {
+          "name": "PresetSpellID8",
+          "db_column_name": "PresetSpellID8",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

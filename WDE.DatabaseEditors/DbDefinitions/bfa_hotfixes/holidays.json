@@ -1,0 +1,318 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Holidays (hotfix)",
+  "single_solution_name": "Holidays (hotfix)",
+  "multi_solution_name": "Holidays (hotfix)",
+  "description": "8.3.7 hotfixes database table `holidays`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "holidays",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Region",
+          "db_column_name": "Region",
+          "value_type": "uint"
+        },
+        {
+          "name": "Looping",
+          "db_column_name": "Looping",
+          "value_type": "uint"
+        },
+        {
+          "name": "HolidayNameID",
+          "db_column_name": "HolidayNameID",
+          "value_type": "uint"
+        },
+        {
+          "name": "HolidayDescriptionID",
+          "db_column_name": "HolidayDescriptionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Priority",
+          "db_column_name": "Priority",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFilterType",
+          "db_column_name": "CalendarFilterType",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration1",
+          "db_column_name": "Duration1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration2",
+          "db_column_name": "Duration2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration3",
+          "db_column_name": "Duration3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration4",
+          "db_column_name": "Duration4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration5",
+          "db_column_name": "Duration5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration6",
+          "db_column_name": "Duration6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration7",
+          "db_column_name": "Duration7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration8",
+          "db_column_name": "Duration8",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration9",
+          "db_column_name": "Duration9",
+          "value_type": "uint"
+        },
+        {
+          "name": "Duration10",
+          "db_column_name": "Duration10",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date1",
+          "db_column_name": "Date1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date2",
+          "db_column_name": "Date2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date3",
+          "db_column_name": "Date3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date4",
+          "db_column_name": "Date4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date5",
+          "db_column_name": "Date5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date6",
+          "db_column_name": "Date6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date7",
+          "db_column_name": "Date7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date8",
+          "db_column_name": "Date8",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date9",
+          "db_column_name": "Date9",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date10",
+          "db_column_name": "Date10",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date11",
+          "db_column_name": "Date11",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date12",
+          "db_column_name": "Date12",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date13",
+          "db_column_name": "Date13",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date14",
+          "db_column_name": "Date14",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date15",
+          "db_column_name": "Date15",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date16",
+          "db_column_name": "Date16",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date17",
+          "db_column_name": "Date17",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date18",
+          "db_column_name": "Date18",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date19",
+          "db_column_name": "Date19",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date20",
+          "db_column_name": "Date20",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date21",
+          "db_column_name": "Date21",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date22",
+          "db_column_name": "Date22",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date23",
+          "db_column_name": "Date23",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date24",
+          "db_column_name": "Date24",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date25",
+          "db_column_name": "Date25",
+          "value_type": "uint"
+        },
+        {
+          "name": "Date26",
+          "db_column_name": "Date26",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags1",
+          "db_column_name": "CalendarFlags1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags2",
+          "db_column_name": "CalendarFlags2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags3",
+          "db_column_name": "CalendarFlags3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags4",
+          "db_column_name": "CalendarFlags4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags5",
+          "db_column_name": "CalendarFlags5",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags6",
+          "db_column_name": "CalendarFlags6",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags7",
+          "db_column_name": "CalendarFlags7",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags8",
+          "db_column_name": "CalendarFlags8",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags9",
+          "db_column_name": "CalendarFlags9",
+          "value_type": "uint"
+        },
+        {
+          "name": "CalendarFlags10",
+          "db_column_name": "CalendarFlags10",
+          "value_type": "uint"
+        },
+        {
+          "name": "TextureFileDataID1",
+          "db_column_name": "TextureFileDataID1",
+          "value_type": "int"
+        },
+        {
+          "name": "TextureFileDataID2",
+          "db_column_name": "TextureFileDataID2",
+          "value_type": "int"
+        },
+        {
+          "name": "TextureFileDataID3",
+          "db_column_name": "TextureFileDataID3",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Difficulty (hotfix)",
+  "single_solution_name": "Difficulty (hotfix)",
+  "multi_solution_name": "Difficulty (hotfix)",
+  "description": "8.3.7 hotfixes database table `difficulty`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "difficulty",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "InstanceType",
+          "db_column_name": "InstanceType",
+          "value_type": "uint"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "uint"
+        },
+        {
+          "name": "OldEnumValue",
+          "db_column_name": "OldEnumValue",
+          "value_type": "int"
+        },
+        {
+          "name": "FallbackDifficultyID",
+          "db_column_name": "FallbackDifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinPlayers",
+          "db_column_name": "MinPlayers",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxPlayers",
+          "db_column_name": "MaxPlayers",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemContext",
+          "db_column_name": "ItemContext",
+          "value_type": "uint"
+        },
+        {
+          "name": "ToggleDifficultyID",
+          "db_column_name": "ToggleDifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GroupSizeHealthCurveID",
+          "db_column_name": "GroupSizeHealthCurveID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GroupSizeDmgCurveID",
+          "db_column_name": "GroupSizeDmgCurveID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GroupSizeSpellPointsCurveID",
+          "db_column_name": "GroupSizeSpellPointsCurveID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

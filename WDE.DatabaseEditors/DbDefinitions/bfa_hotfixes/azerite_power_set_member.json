@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Azerite Power Set Member (hotfix)",
+  "single_solution_name": "Azerite Power Set Member (hotfix)",
+  "multi_solution_name": "Azerite Power Set Member (hotfix)",
+  "description": "8.3.7 hotfixes database table `azerite_power_set_member`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "azerite_power_set_member",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AzeritePowerSetID",
+          "db_column_name": "AzeritePowerSetID",
+          "value_type": "int"
+        },
+        {
+          "name": "AzeritePowerID",
+          "db_column_name": "AzeritePowerID",
+          "value_type": "int"
+        },
+        {
+          "name": "Class",
+          "db_column_name": "Class",
+          "value_type": "int"
+        },
+        {
+          "name": "Tier",
+          "db_column_name": "Tier",
+          "value_type": "int"
+        },
+        {
+          "name": "OrderIndex",
+          "db_column_name": "OrderIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

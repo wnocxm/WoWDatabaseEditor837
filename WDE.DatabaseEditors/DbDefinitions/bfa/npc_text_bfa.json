@@ -1,0 +1,136 @@
+{
+  "id": "npc_text_wrath",
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Npc Text",
+  "single_solution_name": "{name} npc text editor",
+  "multi_solution_name": "Multiple npc texts editor",
+  "description": "Npc text is the text visible when you talk with an npc",
+  "table_name": "npc_text",
+  "table_index_name": "ID",
+  "record_mode": "MultiRecord",
+  "picker": "NpcTextParameter",
+  "group_name": "Common scripting tables",
+  "icon_path": "Icons/document_npc_text.png",
+  "sort_by": [
+    "ID"
+  ],
+  "primary_key": [
+    "ID"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Broadcast Text ID 0",
+          "db_column_name": "BroadcastTextID0",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 0",
+          "db_column_name": "Probability0",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 1",
+          "db_column_name": "BroadcastTextID1",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 1",
+          "db_column_name": "Probability1",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 2",
+          "db_column_name": "BroadcastTextID2",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 2",
+          "db_column_name": "Probability2",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 3",
+          "db_column_name": "BroadcastTextID3",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 3",
+          "db_column_name": "Probability3",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 4",
+          "db_column_name": "BroadcastTextID4",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 4",
+          "db_column_name": "Probability4",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 5",
+          "db_column_name": "BroadcastTextID5",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 5",
+          "db_column_name": "Probability5",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 6",
+          "db_column_name": "BroadcastTextID6",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 6",
+          "db_column_name": "Probability6",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Broadcast Text ID 7",
+          "db_column_name": "BroadcastTextID7",
+          "value_type": "int",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Probability 7",
+          "db_column_name": "Probability7",
+          "value_type": "float",
+          "zero_is_blank": true
+        },
+        {
+          "name": "Verified Build",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int",
+          "can_be_null": true
+        }
+      ]
+    }
+  ]
+}

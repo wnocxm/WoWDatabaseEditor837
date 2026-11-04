@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Artifact Unlock (hotfix)",
+  "single_solution_name": "Artifact Unlock (hotfix)",
+  "multi_solution_name": "Artifact Unlock (hotfix)",
+  "description": "8.3.7 hotfixes database table `artifact_unlock`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "artifact_unlock",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerID",
+          "db_column_name": "PowerID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerRank",
+          "db_column_name": "PowerRank",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemBonusListID",
+          "db_column_name": "ItemBonusListID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArtifactID",
+          "db_column_name": "ArtifactID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Casting Requirements (hotfix)",
+  "single_solution_name": "Spell Casting Requirements (hotfix)",
+  "multi_solution_name": "Spell Casting Requirements (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_casting_requirements`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_casting_requirements",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "FacingCasterFlags",
+          "db_column_name": "FacingCasterFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinFactionID",
+          "db_column_name": "MinFactionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinReputation",
+          "db_column_name": "MinReputation",
+          "value_type": "int"
+        },
+        {
+          "name": "RequiredAreasID",
+          "db_column_name": "RequiredAreasID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredAuraVision",
+          "db_column_name": "RequiredAuraVision",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiresSpellFocus",
+          "db_column_name": "RequiresSpellFocus",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

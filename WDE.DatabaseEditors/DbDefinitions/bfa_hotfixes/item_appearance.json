@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Appearance (hotfix)",
+  "single_solution_name": "Item Appearance (hotfix)",
+  "multi_solution_name": "Item Appearance (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_appearance`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_appearance",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayType",
+          "db_column_name": "DisplayType",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemDisplayInfoID",
+          "db_column_name": "ItemDisplayInfoID",
+          "value_type": "int"
+        },
+        {
+          "name": "DefaultIconFileDataID",
+          "db_column_name": "DefaultIconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "UiOrder",
+          "db_column_name": "UiOrder",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

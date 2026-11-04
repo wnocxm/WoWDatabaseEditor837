@@ -1,0 +1,109 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Wmo Area Table (hotfix)",
+  "single_solution_name": "Wmo Area Table (hotfix)",
+  "multi_solution_name": "Wmo Area Table (hotfix)",
+  "description": "8.3.7 hotfixes database table `wmo_area_table`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "wmo_area_table",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "AreaName",
+          "db_column_name": "AreaName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "WmoID",
+          "db_column_name": "WmoID",
+          "value_type": "uint"
+        },
+        {
+          "name": "NameSetID",
+          "db_column_name": "NameSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "WmoGroupID",
+          "db_column_name": "WmoGroupID",
+          "value_type": "int"
+        },
+        {
+          "name": "SoundProviderPref",
+          "db_column_name": "SoundProviderPref",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundProviderPrefUnderwater",
+          "db_column_name": "SoundProviderPrefUnderwater",
+          "value_type": "uint"
+        },
+        {
+          "name": "AmbienceID",
+          "db_column_name": "AmbienceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwAmbience",
+          "db_column_name": "UwAmbience",
+          "value_type": "uint"
+        },
+        {
+          "name": "ZoneMusic",
+          "db_column_name": "ZoneMusic",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwZoneMusic",
+          "db_column_name": "UwZoneMusic",
+          "value_type": "uint"
+        },
+        {
+          "name": "IntroSound",
+          "db_column_name": "IntroSound",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwIntroSound",
+          "db_column_name": "UwIntroSound",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaTableID",
+          "db_column_name": "AreaTableID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

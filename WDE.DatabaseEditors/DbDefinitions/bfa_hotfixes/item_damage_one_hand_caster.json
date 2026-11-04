@@ -1,0 +1,78 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Damage One Hand Caster (hotfix)",
+  "single_solution_name": "Item Damage One Hand Caster (hotfix)",
+  "multi_solution_name": "Item Damage One Hand Caster (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_damage_one_hand_caster`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_damage_one_hand_caster",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevel",
+          "db_column_name": "ItemLevel",
+          "value_type": "uint"
+        },
+        {
+          "name": "Quality1",
+          "db_column_name": "Quality1",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality2",
+          "db_column_name": "Quality2",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality3",
+          "db_column_name": "Quality3",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality4",
+          "db_column_name": "Quality4",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality5",
+          "db_column_name": "Quality5",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality6",
+          "db_column_name": "Quality6",
+          "value_type": "float"
+        },
+        {
+          "name": "Quality7",
+          "db_column_name": "Quality7",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

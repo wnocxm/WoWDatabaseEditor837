@@ -1,0 +1,101 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Mount (hotfix)",
+  "single_solution_name": "Mount (hotfix)",
+  "multi_solution_name": "Mount (hotfix)",
+  "description": "8.3.7 hotfixes database table `mount`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "mount",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "SourceText",
+          "db_column_name": "SourceText",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MountTypeID",
+          "db_column_name": "MountTypeID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "SourceTypeEnum",
+          "db_column_name": "SourceTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "SourceSpellID",
+          "db_column_name": "SourceSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MountFlyRideHeight",
+          "db_column_name": "MountFlyRideHeight",
+          "value_type": "float"
+        },
+        {
+          "name": "UiModelSceneID",
+          "db_column_name": "UiModelSceneID",
+          "value_type": "int"
+        },
+        {
+          "name": "MountSpecialRiderAnimKitID",
+          "db_column_name": "MountSpecialRiderAnimKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "MountSpecialSpellVisualKitID",
+          "db_column_name": "MountSpecialSpellVisualKitID",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Gameobject Display Info (hotfix)",
+  "single_solution_name": "Gameobject Display Info (hotfix)",
+  "multi_solution_name": "Gameobject Display Info (hotfix)",
+  "description": "8.3.7 hotfixes database table `gameobject_display_info`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "gameobject_display_info",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "GeoBoxMinX",
+          "db_column_name": "GeoBoxMinX",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBoxMinY",
+          "db_column_name": "GeoBoxMinY",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBoxMinZ",
+          "db_column_name": "GeoBoxMinZ",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBoxMaxX",
+          "db_column_name": "GeoBoxMaxX",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBoxMaxY",
+          "db_column_name": "GeoBoxMaxY",
+          "value_type": "float"
+        },
+        {
+          "name": "GeoBoxMaxZ",
+          "db_column_name": "GeoBoxMaxZ",
+          "value_type": "float"
+        },
+        {
+          "name": "FileDataID",
+          "db_column_name": "FileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "ObjectEffectPackageID",
+          "db_column_name": "ObjectEffectPackageID",
+          "value_type": "int"
+        },
+        {
+          "name": "OverrideLootEffectScale",
+          "db_column_name": "OverrideLootEffectScale",
+          "value_type": "float"
+        },
+        {
+          "name": "OverrideNameScale",
+          "db_column_name": "OverrideNameScale",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

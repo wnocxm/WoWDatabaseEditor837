@@ -237,7 +237,7 @@ public class RetailSpellService : IDbcSpellService, IDbcSpellLoader
         return 0;
     }
 
-    public DBCVersions Version => DBCVersions.RETAIL;
+    public virtual DBCVersions Version => DBCVersions.RETAIL;
 
     private SpellData GetOrCreateSpellData(uint spellId)
     {

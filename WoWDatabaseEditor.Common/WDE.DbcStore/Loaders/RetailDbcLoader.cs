@@ -104,8 +104,8 @@ internal class RetailDbcLoader : BaseDbcLoader
         Load("CharTitles.db2", "Name_lang", data.CharTitleStore);
         Load("QuestSort.db2", "SortName_lang", data.QuestSortStore);
         Load("TaxiNodes.db2",  "Name_lang", data.TaxiNodeStore);
-        LoadDB2("TaxiPath.db2",  row => data.TaxiPathsStore.Add(row.ID, (row.Field<int>("FromTaxiNode"), row.Field<int>("ToTaxiNode"))));
-        LoadDB2("PhaseXPhaseGroup.db2", row => data.PhaseXPhaseGroup.Add(new (row.ID, row.Field<ushort>("PhaseID"), row.Field<int>("PhaseGroupID"))));
+        LoadDB2("TaxiPath.db2",  row => data.TaxiPathsStore.Add(row.ID, (row.FieldAs<int>("FromTaxiNode"), row.FieldAs<int>("ToTaxiNode"))));
+        LoadDB2("PhaseXPhaseGroup.db2", row => data.PhaseXPhaseGroup.Add(new (row.ID, row.FieldAs<ushort>("PhaseID"), row.FieldAs<int>("PhaseGroupID"))));
         LoadDB2("Phase.db2", row => data.PhaseStore[row.ID] = $"Phase {row.ID}");
         LoadDB2("Vehicle.db2", row =>
         {
@@ -113,7 +113,7 @@ internal class RetailDbcLoader : BaseDbcLoader
             {
                 Id = (uint)row.ID,
             };
-            var seats = row.Field<ushort[]>("SeatID");
+            var seats = row.FieldAs<ushort[]>("SeatID");
             for (int i = 0; i < IVehicle.MaxSeats; ++i)
                 veh.Seats[i] = seats[i];
             data.Vehicles.Add(veh);

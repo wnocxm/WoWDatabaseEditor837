@@ -1,0 +1,172 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Unit Power Bar (hotfix)",
+  "single_solution_name": "Unit Power Bar (hotfix)",
+  "multi_solution_name": "Unit Power Bar (hotfix)",
+  "description": "8.3.7 hotfixes database table `unit_power_bar`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "unit_power_bar",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Cost",
+          "db_column_name": "Cost",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "OutOfError",
+          "db_column_name": "OutOfError",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ToolTip",
+          "db_column_name": "ToolTip",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "MinPower",
+          "db_column_name": "MinPower",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxPower",
+          "db_column_name": "MaxPower",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartPower",
+          "db_column_name": "StartPower",
+          "value_type": "uint"
+        },
+        {
+          "name": "CenterPower",
+          "db_column_name": "CenterPower",
+          "value_type": "uint"
+        },
+        {
+          "name": "RegenerationPeace",
+          "db_column_name": "RegenerationPeace",
+          "value_type": "float"
+        },
+        {
+          "name": "RegenerationCombat",
+          "db_column_name": "RegenerationCombat",
+          "value_type": "float"
+        },
+        {
+          "name": "BarType",
+          "db_column_name": "BarType",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "StartInset",
+          "db_column_name": "StartInset",
+          "value_type": "float"
+        },
+        {
+          "name": "EndInset",
+          "db_column_name": "EndInset",
+          "value_type": "float"
+        },
+        {
+          "name": "FileDataID1",
+          "db_column_name": "FileDataID1",
+          "value_type": "int"
+        },
+        {
+          "name": "FileDataID2",
+          "db_column_name": "FileDataID2",
+          "value_type": "int"
+        },
+        {
+          "name": "FileDataID3",
+          "db_column_name": "FileDataID3",
+          "value_type": "int"
+        },
+        {
+          "name": "FileDataID4",
+          "db_column_name": "FileDataID4",
+          "value_type": "int"
+        },
+        {
+          "name": "FileDataID5",
+          "db_column_name": "FileDataID5",
+          "value_type": "int"
+        },
+        {
+          "name": "FileDataID6",
+          "db_column_name": "FileDataID6",
+          "value_type": "int"
+        },
+        {
+          "name": "Color1",
+          "db_column_name": "Color1",
+          "value_type": "int"
+        },
+        {
+          "name": "Color2",
+          "db_column_name": "Color2",
+          "value_type": "int"
+        },
+        {
+          "name": "Color3",
+          "db_column_name": "Color3",
+          "value_type": "int"
+        },
+        {
+          "name": "Color4",
+          "db_column_name": "Color4",
+          "value_type": "int"
+        },
+        {
+          "name": "Color5",
+          "db_column_name": "Color5",
+          "value_type": "int"
+        },
+        {
+          "name": "Color6",
+          "db_column_name": "Color6",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

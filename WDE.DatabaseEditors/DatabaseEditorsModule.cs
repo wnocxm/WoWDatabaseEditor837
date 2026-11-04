@@ -10,7 +10,6 @@ using WDE.Module;
 using WDE.Module.Attributes;
 using WDE.MVVM.Observable;
 
-[assembly: InternalsVisibleTo("DatabaseTester")]
 
 namespace WDE.DatabaseEditors
 {

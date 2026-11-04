@@ -1,0 +1,115 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Broadcast Text (hotfix)",
+  "single_solution_name": "Broadcast Text (hotfix)",
+  "multi_solution_name": "Broadcast Text (hotfix)",
+  "description": "8.3.7 hotfixes database table `broadcast_text`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "broadcast_text",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Text",
+          "db_column_name": "Text",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Text1",
+          "db_column_name": "Text1",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "LanguageID",
+          "db_column_name": "LanguageID",
+          "value_type": "LanguageParameter"
+        },
+        {
+          "name": "ConditionID",
+          "db_column_name": "ConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "EmotesID",
+          "db_column_name": "EmotesID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "ChatBubbleDurationMs",
+          "db_column_name": "ChatBubbleDurationMs",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundEntriesID1",
+          "db_column_name": "SoundEntriesID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundEntriesID2",
+          "db_column_name": "SoundEntriesID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmoteID1",
+          "db_column_name": "EmoteID1",
+          "value_type": "EmoteParameter"
+        },
+        {
+          "name": "EmoteID2",
+          "db_column_name": "EmoteID2",
+          "value_type": "EmoteParameter"
+        },
+        {
+          "name": "EmoteID3",
+          "db_column_name": "EmoteID3",
+          "value_type": "EmoteParameter"
+        },
+        {
+          "name": "EmoteDelay1",
+          "db_column_name": "EmoteDelay1",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmoteDelay2",
+          "db_column_name": "EmoteDelay2",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmoteDelay3",
+          "db_column_name": "EmoteDelay3",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

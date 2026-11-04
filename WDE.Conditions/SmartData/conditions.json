@@ -436,7 +436,7 @@
 
 	{
 		"id": 26,
-		"tags": ["TrinityCata", "TrinityMaster"],
+		"tags": ["TrinityCata", "TrinityMaster", "TrinityBfa"],
 		"name": "CONDITION_PHASEID",
 		"name_readable": "In phase",
 		"help": "Condition is met if target is in phase",
@@ -824,7 +824,7 @@
 	},
 	{
 		"id": 48,
-		"tags": ["TrinityMaster"],
+		"tags": ["TrinityMaster", "TrinityBfa"],
 		"name": "CONDITION_QUEST_OBJECTIVE_PROGRESS",
 		"name_readable": "Has quest objective progress",
 		"parameters": [
@@ -861,7 +861,7 @@
 	},
 	{
 		"id": 49,
-		"tags": ["TrinityMaster"],
+		"tags": ["TrinityMaster", "TrinityBfa"],
 		"name": "CONDITION_DIFFICULTY_ID",
 		"name_readable": "Is map difficulty",
 		"parameters": [
@@ -894,7 +894,7 @@
 
 	{
 		"id": 51,
-		"tags": ["TrinityMaster"],
+		"tags": ["TrinityMaster", "TrinityBfa"],
 		"name": "CONDITION_OBJECT_ENTRY_GUID_MASTER",
 		"name_readable": "Is entry/guid/type",
 		"help": "Condition is met if target has given entry, given guid or is given type",
@@ -934,7 +934,7 @@
 
 	{
 		"id": 52,
-		"tags": ["TrinityMaster"],
+		"tags": ["TrinityMaster", "TrinityBfa"],
 		"name": "CONDITION_TYPE_MASK_MASTER",
 		"name_readable": "Has typemask",
 		"help": "Condition is met if target is of given typemask",

@@ -231,7 +231,7 @@ namespace WDE.TrinityMySqlDatabase.Database
             return null;
         }
 
-        public IEnumerable<IAreaTriggerTemplate> GetAreaTriggerTemplates()
+        public virtual IEnumerable<IAreaTriggerTemplate> GetAreaTriggerTemplates()
         {
             if (!Supports<IAreaTriggerTemplate>())
                 return new List<IAreaTriggerTemplate>();
@@ -260,7 +260,7 @@ namespace WDE.TrinityMySqlDatabase.Database
             return (from t in model.CreatureClassLevelStats select t).ToList<ICreatureClassLevelStat>();
         }
 
-        public async Task<IReadOnlyList<IAreaTriggerTemplate>> GetAreaTriggerTemplatesAsync()
+        public virtual async Task<IReadOnlyList<IAreaTriggerTemplate>> GetAreaTriggerTemplatesAsync()
         {
             if (!Supports<IAreaTriggerTemplate>())
                 return new List<IAreaTriggerTemplate>();

@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Corruption Effects (hotfix)",
+  "single_solution_name": "Corruption Effects (hotfix)",
+  "multi_solution_name": "Corruption Effects (hotfix)",
+  "description": "8.3.7 hotfixes database table `corruption_effects`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "corruption_effects",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinCorruption",
+          "db_column_name": "MinCorruption",
+          "value_type": "float"
+        },
+        {
+          "name": "Aura",
+          "db_column_name": "Aura",
+          "value_type": "int"
+        },
+        {
+          "name": "PlayerConditionID",
+          "db_column_name": "PlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

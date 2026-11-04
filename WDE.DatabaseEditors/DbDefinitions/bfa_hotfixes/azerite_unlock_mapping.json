@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Azerite Unlock Mapping (hotfix)",
+  "single_solution_name": "Azerite Unlock Mapping (hotfix)",
+  "multi_solution_name": "Azerite Unlock Mapping (hotfix)",
+  "description": "8.3.7 hotfixes database table `azerite_unlock_mapping`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "azerite_unlock_mapping",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemLevel",
+          "db_column_name": "ItemLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemBonusListHead",
+          "db_column_name": "ItemBonusListHead",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemBonusListShoulders",
+          "db_column_name": "ItemBonusListShoulders",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemBonusListChest",
+          "db_column_name": "ItemBonusListChest",
+          "value_type": "int"
+        },
+        {
+          "name": "AzeriteUnlockMappingSetID",
+          "db_column_name": "AzeriteUnlockMappingSetID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

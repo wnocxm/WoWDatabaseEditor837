@@ -1,0 +1,100 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Power Type (hotfix)",
+  "single_solution_name": "Power Type (hotfix)",
+  "multi_solution_name": "Power Type (hotfix)",
+  "description": "8.3.7 hotfixes database table `power_type`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "power_type",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "NameGlobalStringTag",
+          "db_column_name": "NameGlobalStringTag",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "CostGlobalStringTag",
+          "db_column_name": "CostGlobalStringTag",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "PowerTypeEnum",
+          "db_column_name": "PowerTypeEnum",
+          "value_type": "int"
+        },
+        {
+          "name": "MinPower",
+          "db_column_name": "MinPower",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxBasePower",
+          "db_column_name": "MaxBasePower",
+          "value_type": "int"
+        },
+        {
+          "name": "CenterPower",
+          "db_column_name": "CenterPower",
+          "value_type": "int"
+        },
+        {
+          "name": "DefaultPower",
+          "db_column_name": "DefaultPower",
+          "value_type": "int"
+        },
+        {
+          "name": "DisplayModifier",
+          "db_column_name": "DisplayModifier",
+          "value_type": "int"
+        },
+        {
+          "name": "RegenInterruptTimeMS",
+          "db_column_name": "RegenInterruptTimeMS",
+          "value_type": "int"
+        },
+        {
+          "name": "RegenPeace",
+          "db_column_name": "RegenPeace",
+          "value_type": "float"
+        },
+        {
+          "name": "RegenCombat",
+          "db_column_name": "RegenCombat",
+          "value_type": "float"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Area Table (hotfix)",
+  "single_solution_name": "Area Table (hotfix)",
+  "multi_solution_name": "Area Table (hotfix)",
+  "description": "8.3.7 hotfixes database table `area_table`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "area_table",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ZoneName",
+          "db_column_name": "ZoneName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "AreaName",
+          "db_column_name": "AreaName",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ContinentID",
+          "db_column_name": "ContinentID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentAreaID",
+          "db_column_name": "ParentAreaID",
+          "value_type": "uint"
+        },
+        {
+          "name": "AreaBit",
+          "db_column_name": "AreaBit",
+          "value_type": "int"
+        },
+        {
+          "name": "SoundProviderPref",
+          "db_column_name": "SoundProviderPref",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundProviderPrefUnderwater",
+          "db_column_name": "SoundProviderPrefUnderwater",
+          "value_type": "uint"
+        },
+        {
+          "name": "AmbienceID",
+          "db_column_name": "AmbienceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwAmbience",
+          "db_column_name": "UwAmbience",
+          "value_type": "uint"
+        },
+        {
+          "name": "ZoneMusic",
+          "db_column_name": "ZoneMusic",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwZoneMusic",
+          "db_column_name": "UwZoneMusic",
+          "value_type": "uint"
+        },
+        {
+          "name": "ExplorationLevel",
+          "db_column_name": "ExplorationLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "IntroSound",
+          "db_column_name": "IntroSound",
+          "value_type": "uint"
+        },
+        {
+          "name": "UwIntroSound",
+          "db_column_name": "UwIntroSound",
+          "value_type": "uint"
+        },
+        {
+          "name": "FactionGroupMask",
+          "db_column_name": "FactionGroupMask",
+          "value_type": "uint"
+        },
+        {
+          "name": "AmbientMultiplier",
+          "db_column_name": "AmbientMultiplier",
+          "value_type": "float"
+        },
+        {
+          "name": "MountFlags",
+          "db_column_name": "MountFlags",
+          "value_type": "uint"
+        },
+        {
+          "name": "PvpCombatWorldStateID",
+          "db_column_name": "PvpCombatWorldStateID",
+          "value_type": "int"
+        },
+        {
+          "name": "WildBattlePetLevelMin",
+          "db_column_name": "WildBattlePetLevelMin",
+          "value_type": "uint"
+        },
+        {
+          "name": "WildBattlePetLevelMax",
+          "db_column_name": "WildBattlePetLevelMax",
+          "value_type": "uint"
+        },
+        {
+          "name": "WindSettingsID",
+          "db_column_name": "WindSettingsID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags1",
+          "db_column_name": "Flags1",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags2",
+          "db_column_name": "Flags2",
+          "value_type": "int"
+        },
+        {
+          "name": "LiquidTypeID1",
+          "db_column_name": "LiquidTypeID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "LiquidTypeID2",
+          "db_column_name": "LiquidTypeID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "LiquidTypeID3",
+          "db_column_name": "LiquidTypeID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "LiquidTypeID4",
+          "db_column_name": "LiquidTypeID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

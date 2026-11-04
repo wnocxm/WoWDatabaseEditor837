@@ -1,0 +1,51 @@
+{
+  "id": "areatrigger_teleport",
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Areatrigger Teleport",
+  "single_solution_name": "Areatrigger Teleport",
+  "multi_solution_name": "Areatrigger Teleport",
+  "description": "Contains all the teleport triggers definition. This table is used to complete .dbc file information.",
+  "table_name": "areatrigger_teleport",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Areatriggers",
+  "icon_path": "Icons/document_areatrigger.png",
+  "reload_command": "reload areatrigger_teleport",
+  "picker": "",
+  "primary_key": [
+    "ID"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "AreaTriggerParameter",
+          "preferred_width": 170.0
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true,
+          "preferred_width": 130.0
+        }
+      ]
+    },
+    {
+      "group_name": "Other (8.3.7)",
+      "fields": [
+        {
+          "name": "PortLocID",
+          "db_column_name": "PortLocID",
+          "value_type": "uint"
+        }
+      ]
+    }
+  ]
+}

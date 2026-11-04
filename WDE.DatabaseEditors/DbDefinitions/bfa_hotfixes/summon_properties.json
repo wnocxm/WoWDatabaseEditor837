@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Summon Properties (hotfix)",
+  "single_solution_name": "Summon Properties (hotfix)",
+  "multi_solution_name": "Summon Properties (hotfix)",
+  "description": "8.3.7 hotfixes database table `summon_properties`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "summon_properties",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Control",
+          "db_column_name": "Control",
+          "value_type": "int"
+        },
+        {
+          "name": "Faction",
+          "db_column_name": "Faction",
+          "value_type": "int"
+        },
+        {
+          "name": "Title",
+          "db_column_name": "Title",
+          "value_type": "int"
+        },
+        {
+          "name": "Slot",
+          "db_column_name": "Slot",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

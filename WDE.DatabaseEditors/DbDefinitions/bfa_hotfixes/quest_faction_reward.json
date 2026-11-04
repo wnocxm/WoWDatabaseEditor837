@@ -1,0 +1,88 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Quest Faction Reward (hotfix)",
+  "single_solution_name": "Quest Faction Reward (hotfix)",
+  "multi_solution_name": "Quest Faction Reward (hotfix)",
+  "description": "8.3.7 hotfixes database table `quest_faction_reward`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "quest_faction_reward",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Difficulty1",
+          "db_column_name": "Difficulty1",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty2",
+          "db_column_name": "Difficulty2",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty3",
+          "db_column_name": "Difficulty3",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty4",
+          "db_column_name": "Difficulty4",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty5",
+          "db_column_name": "Difficulty5",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty6",
+          "db_column_name": "Difficulty6",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty7",
+          "db_column_name": "Difficulty7",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty8",
+          "db_column_name": "Difficulty8",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty9",
+          "db_column_name": "Difficulty9",
+          "value_type": "int"
+        },
+        {
+          "name": "Difficulty10",
+          "db_column_name": "Difficulty10",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

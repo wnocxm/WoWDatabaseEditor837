@@ -1,0 +1,98 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell X Spell Visual (hotfix)",
+  "single_solution_name": "Spell X Spell Visual (hotfix)",
+  "multi_solution_name": "Spell X Spell Visual (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_x_spell_visual`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_x_spell_visual",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DifficultyID",
+          "db_column_name": "DifficultyID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellVisualID",
+          "db_column_name": "SpellVisualID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Probability",
+          "db_column_name": "Probability",
+          "value_type": "float"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "Priority",
+          "db_column_name": "Priority",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellIconFileID",
+          "db_column_name": "SpellIconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "ActiveIconFileID",
+          "db_column_name": "ActiveIconFileID",
+          "value_type": "int"
+        },
+        {
+          "name": "ViewerUnitConditionID",
+          "db_column_name": "ViewerUnitConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ViewerPlayerConditionID",
+          "db_column_name": "ViewerPlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CasterUnitConditionID",
+          "db_column_name": "CasterUnitConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CasterPlayerConditionID",
+          "db_column_name": "CasterPlayerConditionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

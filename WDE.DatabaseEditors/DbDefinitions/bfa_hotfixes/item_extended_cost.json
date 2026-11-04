@@ -1,0 +1,168 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Item Extended Cost (hotfix)",
+  "single_solution_name": "Item Extended Cost (hotfix)",
+  "multi_solution_name": "Item Extended Cost (hotfix)",
+  "description": "8.3.7 hotfixes database table `item_extended_cost`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "item_extended_cost",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredArenaRating",
+          "db_column_name": "RequiredArenaRating",
+          "value_type": "uint"
+        },
+        {
+          "name": "ArenaBracket",
+          "db_column_name": "ArenaBracket",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinFactionID",
+          "db_column_name": "MinFactionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinReputation",
+          "db_column_name": "MinReputation",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredAchievement",
+          "db_column_name": "RequiredAchievement",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID1",
+          "db_column_name": "ItemID1",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID2",
+          "db_column_name": "ItemID2",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID3",
+          "db_column_name": "ItemID3",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID4",
+          "db_column_name": "ItemID4",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemID5",
+          "db_column_name": "ItemID5",
+          "value_type": "int"
+        },
+        {
+          "name": "ItemCount1",
+          "db_column_name": "ItemCount1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount2",
+          "db_column_name": "ItemCount2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount3",
+          "db_column_name": "ItemCount3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount4",
+          "db_column_name": "ItemCount4",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemCount5",
+          "db_column_name": "ItemCount5",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID1",
+          "db_column_name": "CurrencyID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID2",
+          "db_column_name": "CurrencyID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID3",
+          "db_column_name": "CurrencyID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID4",
+          "db_column_name": "CurrencyID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyID5",
+          "db_column_name": "CurrencyID5",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount1",
+          "db_column_name": "CurrencyCount1",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount2",
+          "db_column_name": "CurrencyCount2",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount3",
+          "db_column_name": "CurrencyCount3",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount4",
+          "db_column_name": "CurrencyCount4",
+          "value_type": "uint"
+        },
+        {
+          "name": "CurrencyCount5",
+          "db_column_name": "CurrencyCount5",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

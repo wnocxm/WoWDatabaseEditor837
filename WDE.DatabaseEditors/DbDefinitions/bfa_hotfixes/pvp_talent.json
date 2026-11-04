@@ -1,0 +1,79 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Pvp Talent (hotfix)",
+  "single_solution_name": "Pvp Talent (hotfix)",
+  "multi_solution_name": "Pvp Talent (hotfix)",
+  "description": "8.3.7 hotfixes database table `pvp_talent`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "pvp_talent",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpecID",
+          "db_column_name": "SpecID",
+          "value_type": "int"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "OverridesSpellID",
+          "db_column_name": "OverridesSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "ActionBarSpellID",
+          "db_column_name": "ActionBarSpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "PvpTalentCategoryID",
+          "db_column_name": "PvpTalentCategoryID",
+          "value_type": "int"
+        },
+        {
+          "name": "LevelRequired",
+          "db_column_name": "LevelRequired",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

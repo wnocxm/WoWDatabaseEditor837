@@ -1,0 +1,200 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Faction (hotfix)",
+  "single_solution_name": "Faction (hotfix)",
+  "multi_solution_name": "Faction (hotfix)",
+  "description": "8.3.7 hotfixes database table `faction`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "faction",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ReputationRaceMask1",
+          "db_column_name": "ReputationRaceMask1",
+          "value_type": "long"
+        },
+        {
+          "name": "ReputationRaceMask2",
+          "db_column_name": "ReputationRaceMask2",
+          "value_type": "long"
+        },
+        {
+          "name": "ReputationRaceMask3",
+          "db_column_name": "ReputationRaceMask3",
+          "value_type": "long"
+        },
+        {
+          "name": "ReputationRaceMask4",
+          "db_column_name": "ReputationRaceMask4",
+          "value_type": "long"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Description",
+          "db_column_name": "Description",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationIndex",
+          "db_column_name": "ReputationIndex",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentFactionID",
+          "db_column_name": "ParentFactionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Expansion",
+          "db_column_name": "Expansion",
+          "value_type": "uint"
+        },
+        {
+          "name": "FriendshipRepID",
+          "db_column_name": "FriendshipRepID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParagonFactionID",
+          "db_column_name": "ParagonFactionID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationClassMask1",
+          "db_column_name": "ReputationClassMask1",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationClassMask2",
+          "db_column_name": "ReputationClassMask2",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationClassMask3",
+          "db_column_name": "ReputationClassMask3",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationClassMask4",
+          "db_column_name": "ReputationClassMask4",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationFlags1",
+          "db_column_name": "ReputationFlags1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationFlags2",
+          "db_column_name": "ReputationFlags2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationFlags3",
+          "db_column_name": "ReputationFlags3",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationFlags4",
+          "db_column_name": "ReputationFlags4",
+          "value_type": "uint"
+        },
+        {
+          "name": "ReputationBase1",
+          "db_column_name": "ReputationBase1",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationBase2",
+          "db_column_name": "ReputationBase2",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationBase3",
+          "db_column_name": "ReputationBase3",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationBase4",
+          "db_column_name": "ReputationBase4",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationMax1",
+          "db_column_name": "ReputationMax1",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationMax2",
+          "db_column_name": "ReputationMax2",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationMax3",
+          "db_column_name": "ReputationMax3",
+          "value_type": "int"
+        },
+        {
+          "name": "ReputationMax4",
+          "db_column_name": "ReputationMax4",
+          "value_type": "int"
+        },
+        {
+          "name": "ParentFactionMod1",
+          "db_column_name": "ParentFactionMod1",
+          "value_type": "float"
+        },
+        {
+          "name": "ParentFactionMod2",
+          "db_column_name": "ParentFactionMod2",
+          "value_type": "float"
+        },
+        {
+          "name": "ParentFactionCap1",
+          "db_column_name": "ParentFactionCap1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParentFactionCap2",
+          "db_column_name": "ParentFactionCap2",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

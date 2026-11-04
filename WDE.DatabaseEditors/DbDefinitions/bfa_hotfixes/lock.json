@@ -1,0 +1,198 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Lock (hotfix)",
+  "single_solution_name": "Lock (hotfix)",
+  "multi_solution_name": "Lock (hotfix)",
+  "description": "8.3.7 hotfixes database table `lock`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "lock",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Index1",
+          "db_column_name": "Index1",
+          "value_type": "int"
+        },
+        {
+          "name": "Index2",
+          "db_column_name": "Index2",
+          "value_type": "int"
+        },
+        {
+          "name": "Index3",
+          "db_column_name": "Index3",
+          "value_type": "int"
+        },
+        {
+          "name": "Index4",
+          "db_column_name": "Index4",
+          "value_type": "int"
+        },
+        {
+          "name": "Index5",
+          "db_column_name": "Index5",
+          "value_type": "int"
+        },
+        {
+          "name": "Index6",
+          "db_column_name": "Index6",
+          "value_type": "int"
+        },
+        {
+          "name": "Index7",
+          "db_column_name": "Index7",
+          "value_type": "int"
+        },
+        {
+          "name": "Index8",
+          "db_column_name": "Index8",
+          "value_type": "int"
+        },
+        {
+          "name": "Skill1",
+          "db_column_name": "Skill1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill2",
+          "db_column_name": "Skill2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill3",
+          "db_column_name": "Skill3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill4",
+          "db_column_name": "Skill4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill5",
+          "db_column_name": "Skill5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill6",
+          "db_column_name": "Skill6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill7",
+          "db_column_name": "Skill7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Skill8",
+          "db_column_name": "Skill8",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type1",
+          "db_column_name": "Type1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type2",
+          "db_column_name": "Type2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type3",
+          "db_column_name": "Type3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type4",
+          "db_column_name": "Type4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type5",
+          "db_column_name": "Type5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type6",
+          "db_column_name": "Type6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type7",
+          "db_column_name": "Type7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Type8",
+          "db_column_name": "Type8",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action1",
+          "db_column_name": "Action1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action2",
+          "db_column_name": "Action2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action3",
+          "db_column_name": "Action3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action4",
+          "db_column_name": "Action4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action5",
+          "db_column_name": "Action5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action6",
+          "db_column_name": "Action6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action7",
+          "db_column_name": "Action7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Action8",
+          "db_column_name": "Action8",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

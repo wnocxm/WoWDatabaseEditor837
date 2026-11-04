@@ -1,0 +1,58 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Radius (hotfix)",
+  "single_solution_name": "Spell Radius (hotfix)",
+  "multi_solution_name": "Spell Radius (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_radius`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_radius",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Radius",
+          "db_column_name": "Radius",
+          "value_type": "float"
+        },
+        {
+          "name": "RadiusPerLevel",
+          "db_column_name": "RadiusPerLevel",
+          "value_type": "float"
+        },
+        {
+          "name": "RadiusMin",
+          "db_column_name": "RadiusMin",
+          "value_type": "float"
+        },
+        {
+          "name": "RadiusMax",
+          "db_column_name": "RadiusMax",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

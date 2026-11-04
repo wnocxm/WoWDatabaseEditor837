@@ -1,7 +1,7 @@
 {
   "id": "creature_text",
   "compatibility": [
-    "TrinityWrath", "Azeroth", "TrinityCata"
+    "TrinityWrath", "Azeroth", "TrinityCata", "TrinityBfa"
   ],
   "name": "Creature texts",
   "description": "Creature texts that can be spoken via custom creature scripts",

@@ -7,7 +7,7 @@ using WDE.SqlQueryGenerator;
 namespace WDE.QueryGenerators.Generators.Gameobject;
 
 [AutoRegister]
-[RequiresCore("TrinityMaster")]
+[RequiresCore("TrinityMaster", "TrinityBfa")]
 internal class MasterGameObjectQueryProvider : BaseInsertQueryProvider<GameObjectSpawnModelEssentials>
 {
     protected override object Convert(GameObjectSpawnModelEssentials t)

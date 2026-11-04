@@ -36,6 +36,7 @@ namespace WDE.DbcStore
             containerRegistry.Register<IDbcSpellLoader, MopSpellService>(nameof(MopSpellService));
             containerRegistry.Register<IDbcSpellLoader, LegionSpellService>(nameof(LegionSpellService));
             containerRegistry.Register<IDbcSpellLoader, RetailSpellService>(nameof(RetailSpellService));
+            containerRegistry.Register<IDbcSpellLoader, BfaSpellService>(nameof(BfaSpellService));
         }
 
         // this could be moved to somewhere else. ItemModule?

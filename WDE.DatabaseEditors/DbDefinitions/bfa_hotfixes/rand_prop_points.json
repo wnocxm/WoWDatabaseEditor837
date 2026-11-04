@@ -1,0 +1,123 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Rand Prop Points (hotfix)",
+  "single_solution_name": "Rand Prop Points (hotfix)",
+  "multi_solution_name": "Rand Prop Points (hotfix)",
+  "description": "8.3.7 hotfixes database table `rand_prop_points`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "rand_prop_points",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "DamageReplaceStat",
+          "db_column_name": "DamageReplaceStat",
+          "value_type": "int"
+        },
+        {
+          "name": "DamageSecondary",
+          "db_column_name": "DamageSecondary",
+          "value_type": "int"
+        },
+        {
+          "name": "Epic1",
+          "db_column_name": "Epic1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Epic2",
+          "db_column_name": "Epic2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Epic3",
+          "db_column_name": "Epic3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Epic4",
+          "db_column_name": "Epic4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Epic5",
+          "db_column_name": "Epic5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Superior1",
+          "db_column_name": "Superior1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Superior2",
+          "db_column_name": "Superior2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Superior3",
+          "db_column_name": "Superior3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Superior4",
+          "db_column_name": "Superior4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Superior5",
+          "db_column_name": "Superior5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Good1",
+          "db_column_name": "Good1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Good2",
+          "db_column_name": "Good2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Good3",
+          "db_column_name": "Good3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Good4",
+          "db_column_name": "Good4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Good5",
+          "db_column_name": "Good5",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

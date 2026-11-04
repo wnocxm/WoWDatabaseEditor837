@@ -1,0 +1,202 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Battlemaster List (hotfix)",
+  "single_solution_name": "Battlemaster List (hotfix)",
+  "multi_solution_name": "Battlemaster List (hotfix)",
+  "description": "8.3.7 hotfixes database table `battlemaster_list`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "battlemaster_list",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "GameType",
+          "db_column_name": "GameType",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "ShortDescription",
+          "db_column_name": "ShortDescription",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "LongDescription",
+          "db_column_name": "LongDescription",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "InstanceType",
+          "db_column_name": "InstanceType",
+          "value_type": "int"
+        },
+        {
+          "name": "MinLevel",
+          "db_column_name": "MinLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxLevel",
+          "db_column_name": "MaxLevel",
+          "value_type": "int"
+        },
+        {
+          "name": "RatedPlayers",
+          "db_column_name": "RatedPlayers",
+          "value_type": "int"
+        },
+        {
+          "name": "MinPlayers",
+          "db_column_name": "MinPlayers",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxPlayers",
+          "db_column_name": "MaxPlayers",
+          "value_type": "int"
+        },
+        {
+          "name": "GroupsAllowed",
+          "db_column_name": "GroupsAllowed",
+          "value_type": "int"
+        },
+        {
+          "name": "MaxGroupSize",
+          "db_column_name": "MaxGroupSize",
+          "value_type": "int"
+        },
+        {
+          "name": "HolidayWorldState",
+          "db_column_name": "HolidayWorldState",
+          "value_type": "int"
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "int"
+        },
+        {
+          "name": "IconFileDataID",
+          "db_column_name": "IconFileDataID",
+          "value_type": "int"
+        },
+        {
+          "name": "RequiredPlayerConditionID",
+          "db_column_name": "RequiredPlayerConditionID",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID1",
+          "db_column_name": "MapID1",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID2",
+          "db_column_name": "MapID2",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID3",
+          "db_column_name": "MapID3",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID4",
+          "db_column_name": "MapID4",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID5",
+          "db_column_name": "MapID5",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID6",
+          "db_column_name": "MapID6",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID7",
+          "db_column_name": "MapID7",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID8",
+          "db_column_name": "MapID8",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID9",
+          "db_column_name": "MapID9",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID10",
+          "db_column_name": "MapID10",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID11",
+          "db_column_name": "MapID11",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID12",
+          "db_column_name": "MapID12",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID13",
+          "db_column_name": "MapID13",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID14",
+          "db_column_name": "MapID14",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID15",
+          "db_column_name": "MapID15",
+          "value_type": "int"
+        },
+        {
+          "name": "MapID16",
+          "db_column_name": "MapID16",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

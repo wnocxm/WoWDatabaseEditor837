@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Cinematic Sequences (hotfix)",
+  "single_solution_name": "Cinematic Sequences (hotfix)",
+  "multi_solution_name": "Cinematic Sequences (hotfix)",
+  "description": "8.3.7 hotfixes database table `cinematic_sequences`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "cinematic_sequences",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundID",
+          "db_column_name": "SoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera1",
+          "db_column_name": "Camera1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera2",
+          "db_column_name": "Camera2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera3",
+          "db_column_name": "Camera3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera4",
+          "db_column_name": "Camera4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera5",
+          "db_column_name": "Camera5",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera6",
+          "db_column_name": "Camera6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera7",
+          "db_column_name": "Camera7",
+          "value_type": "uint"
+        },
+        {
+          "name": "Camera8",
+          "db_column_name": "Camera8",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

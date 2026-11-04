@@ -1,0 +1,83 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Expected Stat Mod (hotfix)",
+  "single_solution_name": "Expected Stat Mod (hotfix)",
+  "multi_solution_name": "Expected Stat Mod (hotfix)",
+  "description": "8.3.7 hotfixes database table `expected_stat_mod`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "expected_stat_mod",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "CreatureHealthMod",
+          "db_column_name": "CreatureHealthMod",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerHealthMod",
+          "db_column_name": "PlayerHealthMod",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureAutoAttackDPSMod",
+          "db_column_name": "CreatureAutoAttackDPSMod",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureArmorMod",
+          "db_column_name": "CreatureArmorMod",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerManaMod",
+          "db_column_name": "PlayerManaMod",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerPrimaryStatMod",
+          "db_column_name": "PlayerPrimaryStatMod",
+          "value_type": "float"
+        },
+        {
+          "name": "PlayerSecondaryStatMod",
+          "db_column_name": "PlayerSecondaryStatMod",
+          "value_type": "float"
+        },
+        {
+          "name": "ArmorConstantMod",
+          "db_column_name": "ArmorConstantMod",
+          "value_type": "float"
+        },
+        {
+          "name": "CreatureSpellDamageMod",
+          "db_column_name": "CreatureSpellDamageMod",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

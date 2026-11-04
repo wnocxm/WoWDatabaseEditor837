@@ -1,0 +1,137 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Creature (hotfix)",
+  "single_solution_name": "Creature (hotfix)",
+  "multi_solution_name": "Creature (hotfix)",
+  "description": "8.3.7 hotfixes database table `creature`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "creature",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID1",
+          "db_column_name": "ItemID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID2",
+          "db_column_name": "ItemID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "ItemID3",
+          "db_column_name": "ItemID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Mount",
+          "db_column_name": "Mount",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayID1",
+          "db_column_name": "DisplayID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayID2",
+          "db_column_name": "DisplayID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayID3",
+          "db_column_name": "DisplayID3",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayID4",
+          "db_column_name": "DisplayID4",
+          "value_type": "uint"
+        },
+        {
+          "name": "DisplayIDProbability1",
+          "db_column_name": "DisplayIDProbability1",
+          "value_type": "float"
+        },
+        {
+          "name": "DisplayIDProbability2",
+          "db_column_name": "DisplayIDProbability2",
+          "value_type": "float"
+        },
+        {
+          "name": "DisplayIDProbability3",
+          "db_column_name": "DisplayIDProbability3",
+          "value_type": "float"
+        },
+        {
+          "name": "DisplayIDProbability4",
+          "db_column_name": "DisplayIDProbability4",
+          "value_type": "float"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string"
+        },
+        {
+          "name": "FemaleName",
+          "db_column_name": "FemaleName",
+          "value_type": "string"
+        },
+        {
+          "name": "SubName",
+          "db_column_name": "SubName",
+          "value_type": "string"
+        },
+        {
+          "name": "FemaleSubName",
+          "db_column_name": "FemaleSubName",
+          "value_type": "string"
+        },
+        {
+          "name": "Type",
+          "db_column_name": "Type",
+          "value_type": "uint"
+        },
+        {
+          "name": "Family",
+          "db_column_name": "Family",
+          "value_type": "uint"
+        },
+        {
+          "name": "Classification",
+          "db_column_name": "Classification",
+          "value_type": "uint"
+        },
+        {
+          "name": "InhabitType",
+          "db_column_name": "InhabitType",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

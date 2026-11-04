@@ -1,0 +1,37 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Updates Include (hotfix)",
+  "single_solution_name": "Updates Include (hotfix)",
+  "multi_solution_name": "Updates Include (hotfix)",
+  "description": "8.3.7 hotfixes database table `updates_include`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "updates_include",
+  "table_index_name": "path",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "path"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "path",
+          "db_column_name": "path",
+          "value_type": "string"
+        },
+        {
+          "name": "state",
+          "db_column_name": "state",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

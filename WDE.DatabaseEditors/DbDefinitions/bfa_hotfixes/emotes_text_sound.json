@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Emotes Text Sound (hotfix)",
+  "single_solution_name": "Emotes Text Sound (hotfix)",
+  "multi_solution_name": "Emotes Text Sound (hotfix)",
+  "description": "8.3.7 hotfixes database table `emotes_text_sound`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "emotes_text_sound",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "RaceID",
+          "db_column_name": "RaceID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ClassID",
+          "db_column_name": "ClassID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SexID",
+          "db_column_name": "SexID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundID",
+          "db_column_name": "SoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "EmotesTextID",
+          "db_column_name": "EmotesTextID",
+          "value_type": "uint"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

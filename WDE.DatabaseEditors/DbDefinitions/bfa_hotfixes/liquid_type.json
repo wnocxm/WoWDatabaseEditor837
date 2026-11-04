@@ -1,0 +1,320 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Liquid Type (hotfix)",
+  "single_solution_name": "Liquid Type (hotfix)",
+  "multi_solution_name": "Liquid Type (hotfix)",
+  "description": "8.3.7 hotfixes database table `liquid_type`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "liquid_type",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "Name",
+          "db_column_name": "Name",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture1",
+          "db_column_name": "Texture1",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture2",
+          "db_column_name": "Texture2",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture3",
+          "db_column_name": "Texture3",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture4",
+          "db_column_name": "Texture4",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture5",
+          "db_column_name": "Texture5",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Texture6",
+          "db_column_name": "Texture6",
+          "value_type": "string",
+          "can_be_null": true
+        },
+        {
+          "name": "Flags",
+          "db_column_name": "Flags",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundBank",
+          "db_column_name": "SoundBank",
+          "value_type": "uint"
+        },
+        {
+          "name": "SoundID",
+          "db_column_name": "SoundID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaxDarkenDepth",
+          "db_column_name": "MaxDarkenDepth",
+          "value_type": "float"
+        },
+        {
+          "name": "FogDarkenIntensity",
+          "db_column_name": "FogDarkenIntensity",
+          "value_type": "float"
+        },
+        {
+          "name": "AmbDarkenIntensity",
+          "db_column_name": "AmbDarkenIntensity",
+          "value_type": "float"
+        },
+        {
+          "name": "DirDarkenIntensity",
+          "db_column_name": "DirDarkenIntensity",
+          "value_type": "float"
+        },
+        {
+          "name": "LightID",
+          "db_column_name": "LightID",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParticleScale",
+          "db_column_name": "ParticleScale",
+          "value_type": "float"
+        },
+        {
+          "name": "ParticleMovement",
+          "db_column_name": "ParticleMovement",
+          "value_type": "uint"
+        },
+        {
+          "name": "ParticleTexSlots",
+          "db_column_name": "ParticleTexSlots",
+          "value_type": "uint"
+        },
+        {
+          "name": "MaterialID",
+          "db_column_name": "MaterialID",
+          "value_type": "uint"
+        },
+        {
+          "name": "MinimapStaticCol",
+          "db_column_name": "MinimapStaticCol",
+          "value_type": "int"
+        },
+        {
+          "name": "FrameCountTexture1",
+          "db_column_name": "FrameCountTexture1",
+          "value_type": "uint"
+        },
+        {
+          "name": "FrameCountTexture2",
+          "db_column_name": "FrameCountTexture2",
+          "value_type": "uint"
+        },
+        {
+          "name": "FrameCountTexture3",
+          "db_column_name": "FrameCountTexture3",
+          "value_type": "uint"
+        },
+        {
+          "name": "FrameCountTexture4",
+          "db_column_name": "FrameCountTexture4",
+          "value_type": "uint"
+        },
+        {
+          "name": "FrameCountTexture5",
+          "db_column_name": "FrameCountTexture5",
+          "value_type": "uint"
+        },
+        {
+          "name": "FrameCountTexture6",
+          "db_column_name": "FrameCountTexture6",
+          "value_type": "uint"
+        },
+        {
+          "name": "Color1",
+          "db_column_name": "Color1",
+          "value_type": "int"
+        },
+        {
+          "name": "Color2",
+          "db_column_name": "Color2",
+          "value_type": "int"
+        },
+        {
+          "name": "Float1",
+          "db_column_name": "Float1",
+          "value_type": "float"
+        },
+        {
+          "name": "Float2",
+          "db_column_name": "Float2",
+          "value_type": "float"
+        },
+        {
+          "name": "Float3",
+          "db_column_name": "Float3",
+          "value_type": "float"
+        },
+        {
+          "name": "Float4",
+          "db_column_name": "Float4",
+          "value_type": "float"
+        },
+        {
+          "name": "Float5",
+          "db_column_name": "Float5",
+          "value_type": "float"
+        },
+        {
+          "name": "Float6",
+          "db_column_name": "Float6",
+          "value_type": "float"
+        },
+        {
+          "name": "Float7",
+          "db_column_name": "Float7",
+          "value_type": "float"
+        },
+        {
+          "name": "Float8",
+          "db_column_name": "Float8",
+          "value_type": "float"
+        },
+        {
+          "name": "Float9",
+          "db_column_name": "Float9",
+          "value_type": "float"
+        },
+        {
+          "name": "Float10",
+          "db_column_name": "Float10",
+          "value_type": "float"
+        },
+        {
+          "name": "Float11",
+          "db_column_name": "Float11",
+          "value_type": "float"
+        },
+        {
+          "name": "Float12",
+          "db_column_name": "Float12",
+          "value_type": "float"
+        },
+        {
+          "name": "Float13",
+          "db_column_name": "Float13",
+          "value_type": "float"
+        },
+        {
+          "name": "Float14",
+          "db_column_name": "Float14",
+          "value_type": "float"
+        },
+        {
+          "name": "Float15",
+          "db_column_name": "Float15",
+          "value_type": "float"
+        },
+        {
+          "name": "Float16",
+          "db_column_name": "Float16",
+          "value_type": "float"
+        },
+        {
+          "name": "Float17",
+          "db_column_name": "Float17",
+          "value_type": "float"
+        },
+        {
+          "name": "Float18",
+          "db_column_name": "Float18",
+          "value_type": "float"
+        },
+        {
+          "name": "Int1",
+          "db_column_name": "Int1",
+          "value_type": "uint"
+        },
+        {
+          "name": "Int2",
+          "db_column_name": "Int2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Int3",
+          "db_column_name": "Int3",
+          "value_type": "uint"
+        },
+        {
+          "name": "Int4",
+          "db_column_name": "Int4",
+          "value_type": "uint"
+        },
+        {
+          "name": "Coefficient1",
+          "db_column_name": "Coefficient1",
+          "value_type": "float"
+        },
+        {
+          "name": "Coefficient2",
+          "db_column_name": "Coefficient2",
+          "value_type": "float"
+        },
+        {
+          "name": "Coefficient3",
+          "db_column_name": "Coefficient3",
+          "value_type": "float"
+        },
+        {
+          "name": "Coefficient4",
+          "db_column_name": "Coefficient4",
+          "value_type": "float"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}

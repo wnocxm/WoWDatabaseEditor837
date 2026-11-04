@@ -1,0 +1,63 @@
+{
+  "compatibility": [
+    "TrinityBfa"
+  ],
+  "name": "Spell Totems (hotfix)",
+  "single_solution_name": "Spell Totems (hotfix)",
+  "multi_solution_name": "Spell Totems (hotfix)",
+  "description": "8.3.7 hotfixes database table `spell_totems`. Remember to add a hotfix_data row so the client receives the change.",
+  "database": "Hotfix",
+  "table_name": "spell_totems",
+  "table_index_name": "ID",
+  "record_mode": "SingleRow",
+  "skip_quick_load": true,
+  "group_name": "Hotfixes",
+  "icon_path": "Icons/document_table.png",
+  "picker": "",
+  "primary_key": [
+    "ID",
+    "VerifiedBuild"
+  ],
+  "groups": [
+    {
+      "group_name": "group",
+      "fields": [
+        {
+          "name": "ID",
+          "db_column_name": "ID",
+          "value_type": "uint"
+        },
+        {
+          "name": "SpellID",
+          "db_column_name": "SpellID",
+          "value_type": "int"
+        },
+        {
+          "name": "RequiredTotemCategoryID1",
+          "db_column_name": "RequiredTotemCategoryID1",
+          "value_type": "uint"
+        },
+        {
+          "name": "RequiredTotemCategoryID2",
+          "db_column_name": "RequiredTotemCategoryID2",
+          "value_type": "uint"
+        },
+        {
+          "name": "Totem1",
+          "db_column_name": "Totem1",
+          "value_type": "int"
+        },
+        {
+          "name": "Totem2",
+          "db_column_name": "Totem2",
+          "value_type": "int"
+        },
+        {
+          "name": "VerifiedBuild",
+          "db_column_name": "VerifiedBuild",
+          "value_type": "int"
+        }
+      ]
+    }
+  ]
+}
